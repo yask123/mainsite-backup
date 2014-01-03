@@ -75,15 +75,81 @@ h1 strong {
 	background: #383838;
 }
 
+.jumbotron .container {
+	padding: 50px 30px;
+}
 
 .jumbotron {
-	margin: 60px 0;
-	padding: 60px;
+	box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
 	background: transparent;
-	text-align: center;
+	text-align: left;
+	height: 100%;
 }
 
 .jumbotron h1, .jumbotron .h1 {
 	font-weight: 300;
 	margin-bottom: 40px;
+}
+
+img.me {
+	max-width: 12em;
+	max-height: 12em;
+	margin: 2em auto!important;
+}
+
+p.custom {
+	line-height: 1.8;
+	margin-bottom: 2em;
+}
+
+p.custom-projects {
+	line-height: 1.6;
+	margin-bottom: 0em;
+	padding: 1em 2em;
+	font-size: 0.75em;
+}
+
+.jumbotron#projects {
+	background-color: #f4f4f4;
+	margin-bottom: 0;
+}
+
+.container.projects {
+	padding: 0;
+}
+
+a.btn {
+	text-decoration: none;
+	padding: 0.7em 2em;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+h1.custom {
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: 2em;
+}
+
+h2.custom {
+	font-weight: 700;
+}
+
+.row {
+	margin: 0px auto 30px auto;
+	padding: 0px auto;
+}
+
+.custom-projects-wrapper {
+	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
+	background-color: #fff;
+	margin-bottom: 30px;
+	padding: 0px;
+}
+
+@media (min-width: 992px) {
+	.custom-projects-wrapper {
+		width: 30%;
+		margin-right: 3.3%;
+	}
 }

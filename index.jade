@@ -39,7 +39,7 @@ html(lang="en")
 			// navbar
 			nav.navbar.navbar-inverse.navbar-fixed-top
 				div.container
-					//div.navbar-header
+					div.navbar-header
 						button(type="button", class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse")
 							span.sr-only Toggle navigation
 							span.icon-bar
@@ -49,26 +49,120 @@ html(lang="en")
 					div.collapse.navbar-collapse
 						ul.nav.navbar-nav
 							li
-								a(href="#") Top
+								a(href="#projects") Projects
 							li
-								a(href="#") Projects
+								a(href="#about") About
 							li
-								a(href="#") About
+								a(href="#resume") Resume
 							li
-								a(href="#") Resume
+								a(href="http://karan.github.com") Blog
 							li
-								a(href="#") Contact
-			div.jumbotron
-				h1 Hi. I'm 
-					strong Karan Goel
-				p
-					| I'm an undergraduate sophomore at the 
-					a(href='http://www.washington.edu')
-						b University of Washington 
-					| in the 
-					a(href='http://www.cs.washington.edu')
-						b Computer Science 
-					| program. I <3 
-					a(href='http://github.com/karan')
-						b code
-					| . I'm also an open data/open web evangelist on the side.
+								a(href="#contact") Contact
+			
+		div.jumbotron#top
+			div.container
+				div.col-md-4
+					img.img-circle.img-responsive.me(src="images/me.jpg")
+				div.col-md-8
+					h1.text-left Hi. I'm 
+						strong Karan Goel
+					p.custom.text-left
+						| I'm an undergraduate sophomore at the 
+						a(href='http://www.washington.edu') University of Washington 
+						| in the 
+						a(href='http://www.cs.washington.edu') Computer Science 
+						| program. I <3 
+						a(href='http://github.com/karan') code
+						| . I'm also an open data/open web evangelist on the side.
+					p.custom.text-left
+						| I've worked as a research assistant
+						| with great people like 
+						a(href='http://jeffhuang.com/') Jeff Huang
+						|  and 
+						a(href='http://hmslydia.com/') Lydia Chilton
+						| . In summer 2013, I interned at 
+						a(href='http://www.lenskart.com') Lenskart
+						|  as a Data Analyst.
+					div.btn-group
+						a.btn.btn-success.btn-default(href="http://github.com/karan", role="button") I'm on Github
+						a.btn.btn-primary.btn-default(href="#projects", role="button") See my projects
+		
+		div.jumbotron#projects
+			div.container.projects
+				h1.text-center.custom Projects
+
+				div.row
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/tpb.jpg")
+						h2.custom TPB API
+						p.custom-projects Unofficial Python API for ThePirateBay. Supports searching, sorting, pagination. Wrote the core scraper. Supports py2 and py3.
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/projects.png")
+						h2.custom 100+ Projects
+						p.custom-projects A collection of hundreds of practical, language-agnostic projects that anyone can complete. Solving these in Python. One of the top Github repos with 4k+ stars.
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/reddit.png")
+						h2.custom Reddit Scripts
+						p.custom-projects RedditAgain – Automates migrating a Reddit account to a new one.
+							br
+							NobodyDoesThis – Scans /r/DoesAnybodyElse posts with 0 score and then comments "Nope, it's just you."
+				
+				div.row
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/HN.jpg")
+						h2.custom HackerNews API
+						p.custom-projects Unofficial Python API for Hacker News. Also see HNify - RESTful API for HN.
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/jreddit.jpg")
+						h2.custom jReddit
+						p.custom-projects Java wrapper for Reddit API. Started by Omer Elnour, later abandoned.
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/yalt.jpg")
+						h2.custom YALT
+						p.custom-projects A lightweight and minimal utility to make it easier for you to learn facts.
+
+				div.row
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/music.jpg")
+						h2.custom Moodic Player
+						p.custom-projects Using last.fm API, builds a playlist for users based on their mood.
+
+		div.jumbotron#projects
+			div.container.projects
+				h1.text-center.custom Projects
+
+				div.row
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/tpb.jpg")
+						h2.custom TPB API
+						p.custom-projects Unofficial Python API for ThePirateBay. Supports searching, sorting, pagination. Wrote the core scraper. Supports py2 and py3.
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/projects.png")
+						h2.custom 100+ Projects
+						p.custom-projects A collection of hundreds of practical, language-agnostic projects that anyone can complete. Solving these in Python. One of the top Github repos with 4k+ stars.
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/reddit.png")
+						h2.custom Reddit Scripts
+						p.custom-projects RedditAgain – Automates migrating a Reddit account to a new one.
+							br
+							NobodyDoesThis – Scans /r/DoesAnybodyElse posts with 0 score and then comments "Nope, it's just you."
+				
+				div.row
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/HN.jpg")
+						h2.custom HackerNews API
+						p.custom-projects Unofficial Python API for Hacker News. Also see HNify - RESTful API for HN.
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/jreddit.jpg")
+						h2.custom jReddit
+						p.custom-projects Java wrapper for Reddit API. Started by Omer Elnour, later abandoned.
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/yalt.jpg")
+						h2.custom YALT
+						p.custom-projects A lightweight and minimal utility to make it easier for you to learn facts.
+
+				div.row
+					div.col-md-4.custom-projects-wrapper
+						img.img-responsive(src="images/music.jpg")
+						h2.custom Moodic Player
+						p.custom-projects Using last.fm API, builds a playlist for users based on their mood.
