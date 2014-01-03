@@ -158,10 +158,12 @@ h2.custom a:hover {
 
 .btn-xlarge {
 	padding: 14px 26px;
-	font-size: 21.5px;
+	font-size: 30px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
+	width: 70px;
+	text-align: center;
 }
 
 .footer {
@@ -174,4 +176,5 @@ h2.custom a:hover {
 
 a.btn.btn-xlarge {
 	padding: 14px 26px!important;
+	margin: 10px 0 10px 0;
 }
