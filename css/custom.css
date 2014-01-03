@@ -103,13 +103,13 @@ p.custom {
 }
 
 p.custom-projects {
-	line-height: 1.6;
+	line-height: 1.8;
 	margin-bottom: 0em;
-	padding: 1em 2em;
-	font-size: 0.75em;
+	padding: 2em 1.5em;
+	font-size: 0.85em;
 }
 
-.jumbotron#projects {
+.jumbotron#projects, .jumbotron#about {
 	background-color: #f4f4f4;
 	margin-bottom: 0;
 }
@@ -150,6 +150,9 @@ h2.custom {
 @media (min-width: 992px) {
 	.custom-projects-wrapper {
 		width: 30%;
-		margin-right: 3.3%;
+	}
+
+	.custom-projects-wrapper:nth-child(2) {
+		margin: 0 5%;
 	}
 }
