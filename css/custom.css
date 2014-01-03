@@ -109,13 +109,14 @@ p.custom-projects {
 	font-size: 0.85em;
 }
 
-.jumbotron#projects, .jumbotron#about {
+.jumbotron#projects, .jumbotron#contact, .jumbotron#about {
 	background-color: #f4f4f4;
 	margin-bottom: 0;
 }
 
 .container.projects {
 	padding: 0;
+	margin: 0 auto;
 }
 
 a.btn {
@@ -135,24 +136,22 @@ h2.custom {
 	font-weight: 700;
 }
 
+h2.custom a {
+	color: #3e3e3e;
+	text-decoration: none;
+}
+
+h2.custom a:hover {
+	text-decoration: none;
+	color: #3B95C6;
+	-moz-transition: color .2s ease-in-out;
+	-webkit-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
 .row {
 	margin: 0px auto 30px auto;
 	padding: 0px auto;
-}
-
-.custom-projects-wrapper {
-	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
-	background-color: #fff;
-	margin-bottom: 30px;
-	padding: 0px;
-}
-
-@media (min-width: 992px) {
-	.custom-projects-wrapper {
-		width: 30%;
-	}
-
-	.custom-projects-wrapper:nth-child(2) {
-		margin: 0 5%;
-	}
 }
