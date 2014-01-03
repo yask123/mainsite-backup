@@ -171,3 +171,7 @@ h2.custom a:hover {
 	font-size: 1.2em;
 	color: white;
 }
+
+a.btn.btn-xlarge {
+	padding: 14px 26px!important;
+}
