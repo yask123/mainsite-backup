@@ -157,9 +157,17 @@ h2.custom a:hover {
 }
 
 .btn-xlarge {
-padding: 14px 26px;
-font-size: 21.5px;
--webkit-border-radius: 8px;
--moz-border-radius: 8px;
-border-radius: 8px;
+	padding: 14px 26px;
+	font-size: 21.5px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.footer {
+	background-color: #282828;
+	padding: 0.5em;
+	font-weight: 400;
+	font-size: 1.2em;
+	color: white;
 }
