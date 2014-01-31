@@ -197,13 +197,15 @@ a.btn.btn-xlarge {
 }
 
 .jumbotron#top {
-    -webkit-animation: enter_page 1s;
-    -moz-animation:    enter_page 1s;
-    -o-animation:      enter_page 1s;
-    animation:         enter_page 1s;
+    -webkit-animation: enter_page 2s;
+    -moz-animation:    enter_page 2s;
+    -o-animation:      enter_page 2s;
+    animation:         enter_page 2s;
 }
 
-.custom-btn {
+.scale-projects, .custom-btn {
     -webkit-transition: all .2s ease-in-out;
 }
-.custom-btn:hover { -webkit-transform: scale(1.1); }
+.scale-projects:hover, .custom-btn:hover {
+    -webkit-transform: scale(1.1); 
+}
