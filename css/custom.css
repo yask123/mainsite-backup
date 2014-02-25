@@ -105,7 +105,7 @@ p.custom {
 p.custom-projects {
     line-height: 1.8;
     margin-bottom: 0em;
-    padding: 2em 1.5em;
+    padding: 1em 1.2em 1em;
     font-size: 0.85em;
 }
 
@@ -134,6 +134,7 @@ h1.custom {
 
 h2.custom {
     font-weight: 700;
+    margin: 0.5em;
 }
 
 h2.custom a {
@@ -207,5 +208,15 @@ a.btn.btn-xlarge {
     -webkit-transition: all .2s ease-in-out;
 }
 .scale-projects:hover, .custom-btn:hover {
-    -webkit-transform: scale(1.1); 
+    -webkit-transform: scale(1.05); 
+}
+
+stack-tag {
+    border: 1px solid gray;
+    font-size: 0.65em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 2px 3px;
+    padding: 3px 10px;
 }
