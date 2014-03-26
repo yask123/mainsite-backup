@@ -31,51 +31,89 @@ h1 strong {
     font-weight: 700;
 }
 
-.navbar-inverse {
-    background-color: #282828;
+#menu-toggle {
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    margin-left: -56px;
+#sidebar.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
-.container, .navbar .navbar-collapse {
-    text-align: center;
-    visibility: visible!important;
+#sidebar {
+    margin-right: -250px;
+    right: 0;
+    width: 250px;
+    background: #000;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
-
-/* On smaller displays, show the name */
-@media (max-width: 768px) {
-    .navbar .navbar-collapse {
-        visibility: visible!important;
-    }
+#menu-close {
+    top: 0;
+    right: 0;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
-.navbar-inverse .navbar-nav > li {
-    padding: 0em 0.4em;
-    margin: 0.2em 0.2em;
+ul.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    font-weight: 600;
-    border-radius: 8px;
+#sidebar > ul > div.list > li {
+    padding: 10px 30px;
     -moz-transition: background-color .2s ease-in-out;
     -webkit-transition: background-color .2s ease-in-out;
     -o-transition: background-color .2s ease-in-out;
     -ms-transition: background-color .2s ease-in-out;
     transition: background-color .2s ease-in-out;
-    color: #fff;
-    text-decoration: none;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
+#sidebar > ul > div.list > li:hover {
     background: #383838;
 }
 
-.jumbotron .container {
+#sidebar > ul > div.list > li a {
+    font-weight: 600;
+    color: #AAAAAA;
+    display: block;
+}
+
+.jumbotron .container.projects, {
     padding: 50px 30px;
 }
 
@@ -92,8 +130,10 @@ h1 strong {
 }
 
 .jumbotron#top {
-    height:100%;
+    height: 100%;
     width: 100%;
+    padding: 0px;
+    margin: 0px;
     position: relative;
 }
 
@@ -108,7 +148,6 @@ h1 strong {
     position: absolute;
     height: 100%;
     width: 100%;
-    margin: 0px -30px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -117,14 +156,16 @@ h1 strong {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    -webkit-filter: brightness(55%);
+    -moz-filter: brightness(55%);
+}
+
+.bg-blurred {
+    background-image: url("../images/me-codeday-scroll.jpg");
+    opacity: 0;
 }
 
 h1.karan-goel {
+    text-align: center;
     color: #fff;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
 }
@@ -133,6 +174,7 @@ p.text-center {
     text-align: center;
     font-size: 16px;
     color: #fff;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
 }
 
 #top > div.container.top > div > p > a {

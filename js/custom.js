@@ -14,4 +14,23 @@ $(document).ready(function() {
     }
 
     $('a[href*=#]:not([href=#])').click(scroll);
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar").addClass("active");
+    });
+
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar").removeClass("active");
+    });
+
+    $(".top").height($(window).height());
+
+    $(window).scroll(function(e) {
+        var s = $(window).scrollTop(), opacityVal = (s / 350.0);
+
+        $('.bg-blurred').css('opacity', opacityVal);
+    });
+
 });

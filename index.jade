@@ -18,9 +18,8 @@ html(lang="en")
         link(href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700", rel="stylesheet")
 
         link(rel="stylesheet", href="css/bootstrap.min.css")
-        link(rel="stylesheet", href="css/custom.css")
-        //link(rel="stylesheet", href="css/social-buttons.css")
         link(rel="stylesheet", href="css/font-awesome.css")
+        link(rel="stylesheet", href="css/custom.css")
 
         script(src="js/jquery-1.10.2.min.js")
         script(src="js/bootstrap.min.js")
@@ -36,32 +35,30 @@ html(lang="en")
             ga('send', 'pageview');
 
     body
-        div.container
             // navbar
-            nav.navbar.navbar-inverse.navbar-fixed-top
-                div.container
-                    div.navbar-header
-                        button(type="button", class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse")
-                            span.sr-only Toggle navigation
-                            span.icon-bar
-                            span.icon-bar
-                            span.icon-bar
-                    //a.navbar-brand(href="#") Karan Goel
-                    div.collapse.navbar-collapse
-                        ul.nav.navbar-nav
-                            li
-                                a(href="#projects", onclick="ga('send', 'event', 'navbar', 'click', 'Projects');") Projects
-                            li
-                                a(href="#about", onclick="ga('send', 'event', 'navbar', 'click', 'About');") About
-                            li
-                                a(href="Karan.Goel.Resume.pdf", onclick="ga('send', 'event', 'navbar', 'click', 'Resume');") Resume
-                            li
-                                a(href="http://blub.goel.im", onclick="ga('send', 'event', 'navbar', 'click', 'Blog');") Blog
-                            li
-                                a(href="#contact", onclick="ga('send', 'event', 'navbar', 'click', 'Contact');") Contact
+            a#menu-toggle.btn.btn-lg(href="#")
+                i.fa.fa-list
+            div#sidebar
+                ul.sidebar-nav
+                    a#menu-close.btn.btn-lg.pull-right(href="#")
+                        i.fa.fa-times
+                    div.list
+                        li
+                        li
+                        li
+                            a(href="#projects", onclick="ga('send', 'event', 'navbar', 'click', 'Projects');") Projects
+                        li
+                            a(href="#about", onclick="ga('send', 'event', 'navbar', 'click', 'About');") About
+                        li
+                            a(href="Karan.Goel.Resume.pdf", onclick="ga('send', 'event', 'navbar', 'click', 'Resume');") Resume
+                        li
+                            a(href="http://blub.goel.im", onclick="ga('send', 'event', 'navbar', 'click', 'Blog');") Blog
+                        li
+                            a(href="#contact", onclick="ga('send', 'event', 'navbar', 'click', 'Contact');") Contact
             
         div.jumbotron#top
             div.bg
+            div.bg.bg-blurred
             div.container.top
                 div.col-md-6.col-md-offset-3
                     img.img-circle.img-responsive.me(src="images/me.jpg")
@@ -79,8 +76,6 @@ html(lang="en")
                         | with the 
                         a(href="https://www.google.com/maps/views/home?gl=us") Street View
                         |  team in Summer 2014.
-                    //p.custom.text-center
-                        //| I am also an open web evangelist, and an open source fanatic. If you need to contact me, email me at <em>karan@goel.im</em>.
                     //div.btn-group
                         //a.btn.btn-success.btn-default(href="http://github.com/karan", role="button") I'm on Github
                         //a.btn.btn-primary.btn-default(href="#projects", role="button") See my work
