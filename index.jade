@@ -39,22 +39,30 @@ html(lang="en")
             a#menu-toggle.btn.btn-lg(href="#")
                 i.fa.fa-list
             div#sidebar
+                a#menu-close.btn.btn-lg.pull-left(href="#")
+                    i.fa.fa-times
                 ul.sidebar-nav
-                    a#menu-close.btn.btn-lg.pull-right(href="#")
-                        i.fa.fa-times
                     div.list
                         li
+                            a(href="#top", onclick="ga('send', 'event', 'navbar', 'click', 'Top');")
+                                | Top 
+                                i.fa.fa-chevron-up
                         li
+                            a(href="#about", onclick="ga('send', 'event', 'navbar', 'click', 'About');")
+                                | About 
+                                i.fa.fa-user
                         li
-                            a(href="#top", onclick="ga('send', 'event', 'navbar', 'click', 'Top');") Top
+                            a(href="#projects", onclick="ga('send', 'event', 'navbar', 'click', 'Projects');")
+                                | Projects 
+                                i.fa.fa-code
                         li
-                            a(href="#about", onclick="ga('send', 'event', 'navbar', 'click', 'About');") About
+                            a(href="Karan.Goel.Resume.pdf", onclick="ga('send', 'event', 'navbar', 'click', 'Resume');")
+                                | Resume 
+                                i.fa.fa-file
                         li
-                            a(href="#projects", onclick="ga('send', 'event', 'navbar', 'click', 'Projects');") Projects
-                        li
-                            a(href="Karan.Goel.Resume.pdf", onclick="ga('send', 'event', 'navbar', 'click', 'Resume');") Resume
-                        li
-                            a(href="http://blub.goel.im", onclick="ga('send', 'event', 'navbar', 'click', 'Blog');") Blog
+                            a(href="http://blub.goel.im", onclick="ga('send', 'event', 'navbar', 'click', 'Blog');")
+                                | Blog 
+                                i.fa.fa-rss
         
 
         div.jumbotron#top
@@ -64,15 +72,15 @@ html(lang="en")
                 img.img-circle.img-responsive.banner-img.me(src="images/me.jpg")
                 h1.karan-goel
                     strong Karan Goel
-                p.text-center
+                p.custom-p
                     | Hi. I'm Karan Goel.
-                p.text-center
+                p.custom-p
                     | I'm an undergraduate at the 
                     a(href='http://www.washington.edu') University of Washington 
                     | studying 
                     a(href='http://www.cs.washington.edu') Computer Science
                     | .
-                p.text-center
+                p.custom-p
                     | I will intern at 
                     a(href="https://www.google.com/") Google 
                     | with the 
@@ -100,7 +108,9 @@ html(lang="en")
                             i.fa.fa-google-plus
         
         div.jumbotron#about
-            h1.text-center.custom About me.
+            h1.custom-h1
+                i.fa.fa-user
+                |  About me
             div.row
                 div.col-md-4
                     div.single-item
@@ -158,7 +168,9 @@ html(lang="en")
 
 
         div.jumbotron#projects
-            h1.text-center Projects
+            h1.custom-h1
+                i.fa.fa-code
+                | Projects
 
             div.row
                 div.col-md-4
@@ -270,5 +282,5 @@ html(lang="en")
                         p.custom-projects Using last.fm API, builds a playlist for users based on their mood.
 
         div.footer
-            p.text-center Created by Karan Goel. Built with Bootstrap, HTML5, jQuery, CSS3 and lots of 
+            p.custom-p Created by Karan Goel. Built with Bootstrap, HTML5, jQuery, CSS3 and lots of 
                 span.glyphicon.glyphicon-heart-empty

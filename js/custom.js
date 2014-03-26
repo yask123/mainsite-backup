@@ -29,7 +29,6 @@ $(document).ready(function() {
 
     $(window).scroll(function(e) {
         var s = $(window).scrollTop(), opacityVal = (s / 350.0);
-
         $('.bg-blurred').css('opacity', opacityVal);
     });
 

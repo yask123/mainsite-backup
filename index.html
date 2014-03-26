@@ -29,16 +29,14 @@
   </head>
   <body>
     <!-- navbar--><a id="menu-toggle" href="#" class="btn btn-lg"><i class="fa fa-list"></i></a>
-    <div id="sidebar">
-      <ul class="sidebar-nav"><a id="menu-close" href="#" class="btn btn-lg pull-right"><i class="fa fa-times"></i></a>
+    <div id="sidebar"><a id="menu-close" href="#" class="btn btn-lg pull-left"><i class="fa fa-times"></i></a>
+      <ul class="sidebar-nav">
         <div class="list">
-          <li></li>
-          <li></li>
-          <li><a href="#top" onclick="ga('send', 'event', 'navbar', 'click', 'Top');">Top</a></li>
-          <li><a href="#about" onclick="ga('send', 'event', 'navbar', 'click', 'About');">About</a></li>
-          <li><a href="#projects" onclick="ga('send', 'event', 'navbar', 'click', 'Projects');">Projects</a></li>
-          <li><a href="Karan.Goel.Resume.pdf" onclick="ga('send', 'event', 'navbar', 'click', 'Resume');">Resume</a></li>
-          <li><a href="http://blub.goel.im" onclick="ga('send', 'event', 'navbar', 'click', 'Blog');">Blog</a></li>
+          <li><a href="#top" onclick="ga('send', 'event', 'navbar', 'click', 'Top');">Top <i class="fa fa-chevron-up"></i></a></li>
+          <li><a href="#about" onclick="ga('send', 'event', 'navbar', 'click', 'About');">About <i class="fa fa-user"></i></a></li>
+          <li><a href="#projects" onclick="ga('send', 'event', 'navbar', 'click', 'Projects');">Projects <i class="fa fa-code"></i></a></li>
+          <li><a href="Karan.Goel.Resume.pdf" onclick="ga('send', 'event', 'navbar', 'click', 'Resume');">Resume <i class="fa fa-file"></i></a></li>
+          <li><a href="http://blub.goel.im" onclick="ga('send', 'event', 'navbar', 'click', 'Blog');">Blog <i class="fa fa-rss"></i></a></li>
         </div>
       </ul>
     </div>
@@ -48,9 +46,9 @@
     <div class="bg bg-blurred"></div>
     <div class="top"><img src="images/me.jpg" class="img-circle img-responsive banner-img me">
       <h1 class="karan-goel"><strong>Karan Goel</strong></h1>
-      <p class="text-center">Hi. I'm Karan Goel.</p>
-      <p class="text-center">I'm an undergraduate at the <a href="http://www.washington.edu">University of Washington </a>studying <a href="http://www.cs.washington.edu">Computer Science</a>.</p>
-      <p class="text-center">I will intern at <a href="https://www.google.com/">Google </a>with the <a href="https://www.google.com/maps/views/home?gl=us">Street View</a> team in Summer 2014.</p>
+      <p class="custom-p">Hi. I'm Karan Goel.</p>
+      <p class="custom-p">I'm an undergraduate at the <a href="http://www.washington.edu">University of Washington </a>studying <a href="http://www.cs.washington.edu">Computer Science</a>.</p>
+      <p class="custom-p">I will intern at <a href="https://www.google.com/">Google </a>with the <a href="https://www.google.com/maps/views/home?gl=us">Street View</a> team in Summer 2014.</p>
       <ul class="list-inline col-md-6 col-md-offset-3">
         <li><a href="mailto:karan@goel.im" role="button" class="btn-social"><i class="fa fa-envelope-o"></i></a></li>
         <li><a href="http://github.com/karan" role="button" class="btn-social"><i class="fa fa-github"></i></a></li>
@@ -62,7 +60,7 @@
     </div>
   </div>
   <div id="about" class="jumbotron">
-    <h1 class="text-center custom">About me.</h1>
+    <h1 class="custom-h1"><i class="fa fa-user"></i> About me</h1>
     <div class="row">
       <div class="col-md-4">
         <div class="single-item">
@@ -85,7 +83,7 @@
     </div>
   </div>
   <div id="projects" class="jumbotron">
-    <h1 class="text-center">Projects</h1>
+    <h1 class="custom-h1"><i class="fa fa-code"></i>Projects</h1>
     <div class="row">
       <div class="col-md-4">
         <div class="single-item"><a href="https://github.com/karan/Qknowledge"><img src="images/quora.png" class="banner-img"></a>
@@ -169,6 +167,6 @@
     </div>
   </div>
   <div class="footer">
-    <p class="text-center">Created by Karan Goel. Built with Bootstrap, HTML5, jQuery, CSS3 and lots of <span class="glyphicon glyphicon-heart-empty"></span></p>
+    <p class="custom-p">Created by Karan Goel. Built with Bootstrap, HTML5, jQuery, CSS3 and lots of <span class="glyphicon glyphicon-heart-empty"></span></p>
   </div>
 </html>
