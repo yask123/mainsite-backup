@@ -229,6 +229,16 @@ img.me {
 #top > div.top > ul > li > a:hover {
     opacity: 1;
 }
+
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    opacity: 0.5;
+}
+.arrow a i {
+    color: #aaaaaa;
+}
 /********************************/
 
 /* Style individual jumbotrons */
