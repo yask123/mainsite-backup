@@ -125,7 +125,7 @@ ul.sidebar-nav {
     height: 100%;
 }
 
-.jumbotron .container.projects {
+.jumbotron .projects {
     padding: 50px 30px;
 }
 
@@ -182,6 +182,8 @@ p.text-center {
     font-size: 18px;
     color: #fff;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+    line-height: 1.8;
+    margin-bottom: 1em;
 }
 
 #top > div.top > p > a {
@@ -198,9 +200,11 @@ p.text-center {
     color: #fff;
 }
 
-.jumbotron > .top > h1.text-left {
-    text-align: left;
-    color: #fff!important;
+h1.text-center {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 2em;
+    color: #3e3e3e;
 }
 
 img.me {
@@ -223,18 +227,12 @@ img.me {
 
 .single-item {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-p.custom {
-    line-height: 1.8;
-    margin-bottom: 1em;
+    margin-bottom: 30px;
 }
 
 p.custom-projects {
     line-height: 1.8;
-    margin-bottom: 0em;
-    padding: 1em;
+    margin: 20px 0;
     font-size: 0.80em;
 }
 
@@ -253,7 +251,7 @@ p.custom-projects {
     margin-bottom: 0;
 }
 
-.container.projects {
+.projects {
     padding: 0;
     margin: 0 auto;
 }
@@ -266,13 +264,6 @@ stack-tag {
     border-radius: 3px;
     margin: 2px 3px;
     padding: 3px 10px;
-}
-
-h1.custom {
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 2em;
-    color: #3e3e3e;
 }
 
 h2.custom {
