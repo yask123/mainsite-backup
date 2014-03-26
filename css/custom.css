@@ -24,7 +24,7 @@ a img {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e!important;
+    color: #3e3e3e;
 }
 
 h1 strong {
@@ -91,10 +91,64 @@ h1 strong {
     margin-bottom: 40px;
 }
 
+.jumbotron#top {
+    height:100%;
+    width: 100%;
+    position: relative;
+}
+
+.jumbotron .container.top {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.bg {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px -30px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/me-codeday.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -webkit-filter: brightness(85%);
+}
+
+h1.karan-goel {
+    color: #fff;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+}
+
+p.text-center {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+#top > div.container.top > div > a {
+    color: #AAA;
+}
+
+.jumbotron > .container.top > h1.text-left {
+    text-align: left;
+    color: #fff!important;
+}
+
 img.me {
-    max-width: 12em;
-    max-height: 12em;
-    margin: 2em auto!important;
+    max-width: 6em;
+    max-height: 6em;
+    margin: 1em auto!important;
+    border: 3px solid #fff;
 }
 
 p.custom {
@@ -178,30 +232,6 @@ h2.custom a:hover {
 a.btn.btn-xlarge {
     padding: 14px 26px!important;
     margin: 10px 0 10px 0;
-}
-
-@-webkit-keyframes enter_page {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-moz-keyframes enter_page {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes enter_page {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes enter_page {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.jumbotron#top {
-    -webkit-animation: enter_page 2s;
-    -moz-animation:    enter_page 2s;
-    -o-animation:      enter_page 2s;
-    animation:         enter_page 2s;
 }
 
 .scale-projects, .custom-btn {
