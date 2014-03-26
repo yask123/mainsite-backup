@@ -179,7 +179,7 @@ h1.karan-goel {
 
 p.text-center {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
 }
@@ -236,6 +236,16 @@ p.custom-projects {
     margin-bottom: 0em;
     padding: 1em;
     font-size: 0.80em;
+}
+
+.banner-img {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .jumbotron#projects, .jumbotron#about {
