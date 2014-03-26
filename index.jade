@@ -48,13 +48,17 @@ html(lang="en")
                                 | Top 
                                 i.fa.fa-chevron-up
                         li
-                            a(href="#about", onclick="ga('send', 'event', 'navbar', 'click', 'About');")
-                                | About 
-                                i.fa.fa-user
+                            a(href="#work", onclick="ga('send', 'event', 'navbar', 'click', 'Work');")
+                                | Work 
+                                i.fa.fa-users
                         li
                             a(href="#projects", onclick="ga('send', 'event', 'navbar', 'click', 'Projects');")
                                 | Projects 
                                 i.fa.fa-code
+                        li
+                            a(href="#about", onclick="ga('send', 'event', 'navbar', 'click', 'About');")
+                                | About 
+                                i.fa.fa-user
                         li
                             a(href="Karan.Goel.Resume.pdf", onclick="ga('send', 'event', 'navbar', 'click', 'Resume');")
                                 | Resume 
@@ -107,64 +111,48 @@ html(lang="en")
                         a.btn-social(href="http://google.com/+KaranGoel", role="button")
                             i.fa.fa-google-plus
         
-        div.jumbotron#about
+        div.jumbotron#work
             h1.custom-h1
-                i.fa.fa-user
-                |  About me
+                i.fa.fa-users
+                |  Work
             div.row
                 div.col-md-4
                     div.single-item
-                        h3
-                            i.fa.fa-plane.fa-3x
+                        img.banner-img(src="images/google.jpg")
+                        h2.custom.invert
+                            | Google
+                            br
+                            small Summer 14
                         p.custom-projects
-                            | Originally from New Delhi, India, now in 
-                            a(href='http://en.wikipedia.org/wiki/Too_Much_Rain') Seattle, WA
-                            | , I'm an undergraduate at the 
-                            a(title='University of Washington', href='https://www.washington.edu/') University of Washington
-                            | , working towards a BS degree in 
-                            a(title='Computer Science @ UW', href='https://www.cs.washington.edu/') Computer Science
-                            | . That means I 
-                            a(title='Karan Goel @ GitHub', href='http://github.com/karan') code
-                            | . My resume is available in 
-                            a(href='Karan.Goel.Resume.pdf') PDF format
-                            |  or on 
-                            a(href='http://www.linkedin.com/in/kgoel') LinkedIn
-                            | .
+                            | In Summer 2014, I will intern at Google with the 
+                            b Street View (Maps) 
+                            | team in the Engineering Practicum program.
                 div.col-md-4
                     div.single-item
-                        h3
-                            i.fa.fa-users.fa-3x
+                        img.banner-img(src="images/lenskart.jpg")
+                        h2.custom.invert
+                            | Lenskart.com
+                            br
+                            small Summer 13
                         p.custom-projects
-                            | I've worked with 
-                            a(href='http://jeffhuang.com/') Jeff Huang
-                            |  where we investigated 
-                            a(href='https://www.microryza.com/projects/how-do-spammers-harvest-your-e-mail-address') how spammers harvest email addresses
-                            |  and with 
-                            a(href='http://hmslydia.com/') Lydia Chilton
-                            |  on her 
-                            a(href='https://www.microryza.com/projects/crowdsourcing-humor-using-humans-and-computers-together-to-write-jokes') Computational Humor
-                            |  project. In Summer 2013, I interned at 
-                            a(href='http://www.lenskart.com') Lenskart
-                            |  as a Data Analyst. In Summer 2014, I will intern at 
-                            a(href='http://www.google.com/') Google
-                            |  with the Street View (Maps) team in the 
-                            a(href="https://www.google.com/jobs/students/engpracticum‎") Engineering Practicum
-                            |  program.
-
+                            | In Summer 2013, I interned at 
+                            a(href="http://www.lenskart.com/") Lenskart.com 
+                            |  as a 
+                            b Data Analyst 
+                            | and shipped two custom dashboards with realtime data streams using Tableau.
                 div.col-md-4
                     div.single-item
-                        h3
-                            i.fa.fa-pencil.fa-3x
+                        img.banner-img(src="images/spam.jpg")
+                        h2.custom.invert
+                            | UW iSchool
+                            br
+                            small Aug 12 - Aug 13
                         p.custom-projects
-                            | Broadly, I am interested in making apps and scripts that help improve end-user productivity, and user-facing web apps. I'm also interested in 
-                            a(href='http://en.wikipedia.org/wiki/Web_scraping') web scraping
-                            |  and building API's. I spend most of my (free) time on 
-                            a(href='http://www.reddit.com/user/karangoeluw') Reddit
-                            | , 
-                            a(href='https://www.quora.com/Karan-Goel-3') Quora
-                            |  and 
-                            a(href='http://stackoverflow.com/users/2392038/karan-goel') StackOverflow
-                            | .
+                            | Assisted 
+                            a(href="http://jeffhuang.com/") Jeff Huang
+                            |  as a 
+                            b Research Assistant 
+                            | and ran statistical tests, using Python, on data and visualized it.
 
 
         div.jumbotron#projects
@@ -281,6 +269,46 @@ html(lang="en")
                         stack-tag Java
                         p.custom-projects Using last.fm API, builds a playlist for users based on their mood.
 
+        div.jumbotron#about
+            h1.custom-h1
+                i.fa.fa-user
+                |  About me
+            div.row
+                div.col-md-5.col-md-offset-1
+                    div.single-item
+                        h3.invert
+                            i.fa.fa-plane.fa-3x
+                        p.custom-projects
+                            | Originally from New Delhi, India, now in 
+                            a(href='http://en.wikipedia.org/wiki/Too_Much_Rain') Seattle, WA
+                            | , I'm an undergraduate at the 
+                            a(title='University of Washington', href='https://www.washington.edu/') University of Washington
+                            | , working towards a BS degree in 
+                            a(title='Computer Science @ UW', href='https://www.cs.washington.edu/') Computer Science
+                            | . That means I 
+                            a(title='Karan Goel @ GitHub', href='http://github.com/karan') code
+                            | . My resume is available in 
+                            a(href='Karan.Goel.Resume.pdf') PDF format
+                            |  or on 
+                            a(href='http://www.linkedin.com/in/kgoel') LinkedIn
+                            | .
+
+                div.col-md-5
+                    div.single-item
+                        h3.invert
+                            i.fa.fa-pencil.fa-3x
+                        p.custom-projects
+                            | Broadly, I am interested in making apps and scripts that help improve end-user productivity, and user-facing web apps. I'm also interested in 
+                            a(href='http://en.wikipedia.org/wiki/Web_scraping') web scraping
+                            |  and building API's. I spend most of my (free) time on 
+                            a(href='http://www.reddit.com/user/karangoeluw') Reddit
+                            | , 
+                            a(href='https://www.quora.com/Karan-Goel-3') Quora
+                            |  and 
+                            a(href='http://stackoverflow.com/users/2392038/karan-goel') StackOverflow
+                            | .
+
+
         div.footer
-            p.custom-p Created by Karan Goel. Built with Bootstrap, HTML5, jQuery, CSS3 and lots of 
+            p Created by Karan Goel. Built with Bootstrap, HTML5, jQuery, CSS3 and lots of 
                 span.glyphicon.glyphicon-heart-empty

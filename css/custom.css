@@ -28,6 +28,11 @@ h2 a {
     color: #3e3e3e;
 }
 
+h2.custom {
+    font-weight: 700;
+    margin: 1em auto 0.5em;
+}
+
 p.custom-p {
     font-size: 18px;
     color: #fff;
@@ -114,7 +119,8 @@ ul.sidebar-nav {
 
 #sidebar > ul > div.list > li {
     height: 50px;
-    padding: 10px 30px;
+    padding-right: 20px;
+    line-height: 50px;
     -moz-transition: background-color .2s ease-in-out;
     -webkit-transition: background-color .2s ease-in-out;
     -o-transition: background-color .2s ease-in-out;
@@ -140,7 +146,6 @@ ul.sidebar-nav {
 /************/
 
 
-
 .jumbotron {
     box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
     background: transparent;
@@ -148,10 +153,8 @@ ul.sidebar-nav {
     height: 100%;
 }
 
-.jumbotron .projects {
-    padding: 50px 30px;
-}
 
+/* Style the first jumbotron */
 .jumbotron#top {
     height: 100%;
     width: 100%;
@@ -226,6 +229,29 @@ img.me {
 #top > div.top > ul > li > a:hover {
     opacity: 1;
 }
+/********************************/
+
+/* Style individual jumbotrons */
+.jumbotron#projects {
+    background-color: #f4f4f4;
+    margin-bottom: 0;
+}
+
+.jumbotron#work, .jumbotron#about {
+    background-color: #3e3e3e;
+    margin-bottom: 0;
+    color: #f4f4f4;
+}
+
+.invert {
+    color: #f4f4f4
+}
+
+.jumbotron#work a:hover, .jumbotron#about a:hover {
+    color: #f4f4f4;
+}
+
+/*********/
 
 .single-item {
     text-align: center;
@@ -248,11 +274,6 @@ p.custom-projects {
     display: inline-block;
 }
 
-.jumbotron#projects, .jumbotron#about {
-    background-color: #f4f4f4;
-    margin-bottom: 0;
-}
-
 .projects {
     padding: 0;
     margin: 0 auto;
@@ -268,11 +289,6 @@ stack-tag {
     padding: 3px 10px;
 }
 
-h2.custom {
-    font-weight: 700;
-    margin: 0.5em;
-}
-
 .row {
     margin: 0px auto 30px auto;
     padding: 0px auto;
@@ -280,9 +296,9 @@ h2.custom {
 
 .footer {
     text-align: center;
-    background-color: #282828;
-    padding: 0.5em;
+    background-color: #f4f4f4;
+    padding: 4em 1em;
     font-weight: 400;
     font-size: 1.2em;
-    color: white;
+    color: #3e3e3e;
 }
