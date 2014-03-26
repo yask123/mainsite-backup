@@ -121,7 +121,7 @@ h1 strong {
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
-    -webkit-filter: brightness(85%);
+    -webkit-filter: brightness(55%);
 }
 
 h1.karan-goel {
@@ -135,8 +135,23 @@ p.text-center {
     color: #fff;
 }
 
-#top > div.container.top > div > a {
+#top > div.container.top > div > p > a {
     color: #AAA;
+    text-decoration: none;
+    -moz-transition: color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+    -ms-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+}
+
+#top > div.container.top > div > p > a:hover {
+    color: #fff;
 }
 
 .jumbotron > .container.top > h1.text-left {
@@ -153,7 +168,7 @@ img.me {
 
 p.custom {
     line-height: 1.8;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 p.custom-projects {
@@ -168,16 +183,27 @@ p.custom-projects {
     margin-bottom: 0;
 }
 
-.container.projects {
+.container.projects,
+.container.social {
     padding: 0;
     margin: 0 auto;
 }
 
-a.btn {
-    text-decoration: none;
-    padding: 0.7em 2em;
-    font-size: 1em;
-    font-weight: 600;
+stack-tag {
+    border: 1px solid gray;
+    font-size: 0.65em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 2px 3px;
+    padding: 3px 10px;
+}
+
+.scale-projects {
+    -webkit-transition: all .2s ease-in-out;
+}
+.scale-projects:hover {
+    -webkit-transform: scale(1.05); 
 }
 
 h1.custom {
@@ -211,15 +237,17 @@ h2.custom a:hover {
     padding: 0px auto;
 }
 
-.btn-xlarge {
-    padding: 14px 26px;
-    font-size: 30px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    width: 70px;
-    text-align: center;
+#top > div.container.top > ul > li > a {
+    color: #aaa;
+    font-size: 2em;
+    opacity: 0.8;
+    -webkit-transition: all .2s ease-in-out;
 }
+
+#top > div.container.top > ul > li > a:hover {
+    opacity: 1;
+}
+
 
 .footer {
     background-color: #282828;
@@ -227,26 +255,4 @@ h2.custom a:hover {
     font-weight: 400;
     font-size: 1.2em;
     color: white;
-}
-
-a.btn.btn-xlarge {
-    padding: 14px 26px!important;
-    margin: 10px 0 10px 0;
-}
-
-.scale-projects, .custom-btn {
-    -webkit-transition: all .2s ease-in-out;
-}
-.scale-projects:hover, .custom-btn:hover {
-    -webkit-transform: scale(1.05); 
-}
-
-stack-tag {
-    border: 1px solid gray;
-    font-size: 0.65em;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    margin: 2px 3px;
-    padding: 3px 10px;
 }
