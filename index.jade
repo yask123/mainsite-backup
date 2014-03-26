@@ -100,61 +100,61 @@ html(lang="en")
                             i.fa.fa-google-plus
         
         div.jumbotron#about
-            div.container.projects
-                h1.text-center.custom About me.
+            h1.text-center.custom About me.
+            div.row
+                div.col-md-4
+                    div.single-item
+                        h3
+                            i.fa.fa-plane.fa-3x
+                        p.custom-projects
+                            | Originally from New Delhi, India, now in 
+                            a(href='http://en.wikipedia.org/wiki/Too_Much_Rain') Seattle, WA
+                            | , I'm an undergraduate at the 
+                            a(title='University of Washington', href='https://www.washington.edu/') University of Washington
+                            | , working towards a BS degree in 
+                            a(title='Computer Science @ UW', href='https://www.cs.washington.edu/') Computer Science
+                            | . That means I 
+                            a(title='Karan Goel @ GitHub', href='http://github.com/karan') code
+                            | . My resume is available in 
+                            a(href='Karan.Goel.Resume.pdf') PDF format
+                            |  or on 
+                            a(href='http://www.linkedin.com/in/kgoel') LinkedIn
+                            | .
+                div.col-md-4
+                    div.single-item
+                        h3
+                            i.fa.fa-users.fa-3x
+                        p.custom-projects
+                            | I've worked with 
+                            a(href='http://jeffhuang.com/') Jeff Huang
+                            |  where we investigated 
+                            a(href='https://www.microryza.com/projects/how-do-spammers-harvest-your-e-mail-address') how spammers harvest email addresses
+                            |  and with 
+                            a(href='http://hmslydia.com/') Lydia Chilton
+                            |  on her 
+                            a(href='https://www.microryza.com/projects/crowdsourcing-humor-using-humans-and-computers-together-to-write-jokes') Computational Humor
+                            |  project. In Summer 2013, I interned at 
+                            a(href='http://www.lenskart.com') Lenskart
+                            |  as a Data Analyst. In Summer 2014, I will intern at 
+                            a(href='http://www.google.com/') Google
+                            |  with the Street View (Maps) team in the 
+                            a(href="https://www.google.com/jobs/students/engpracticum‎") Engineering Practicum
+                            |  program.
 
-                div.row
-                    div.col-md-4
-                        div.thumbnail
-                            img.img-responsive.banner-img(src="images/uwcse.png")
-                            p.custom-projects
-                                | Originally from New Delhi, India, now in 
-                                a(href='http://en.wikipedia.org/wiki/Too_Much_Rain') Seattle, WA
-                                | , I'm an undergraduate at the 
-                                a(title='University of Washington', href='https://www.washington.edu/') University of Washington
-                                | , working towards a BS degree in 
-                                a(title='Computer Science @ UW', href='https://www.cs.washington.edu/') Computer Science
-                                | . That means I 
-                                a(title='Karan Goel @ GitHub', href='http://github.com/karan') code
-                                | . My resume is available in 
-                                a(href='Karan.Goel.Resume.pdf') PDF format
-                                |  or on 
-                                a(href='http://www.linkedin.com/in/kgoel') LinkedIn
-                                | .
-
-                    div.col-md-4
-                        div.thumbnail
-                            img.img-responsive.banner-img(src="images/banner.jpg")
-                            p.custom-projects
-                                | I've worked with 
-                                a(href='http://jeffhuang.com/') Jeff Huang
-                                |  where we investigated 
-                                a(href='https://www.microryza.com/projects/how-do-spammers-harvest-your-e-mail-address') how spammers harvest email addresses
-                                |  and with 
-                                a(href='http://hmslydia.com/') Lydia Chilton
-                                |  on her 
-                                a(href='https://www.microryza.com/projects/crowdsourcing-humor-using-humans-and-computers-together-to-write-jokes') Computational Humor
-                                |  project. In Summer 2013, I interned at 
-                                a(href='http://www.lenskart.com') Lenskart
-                                |  as a Data Analyst. In Summer 2014, I will intern at 
-                                a(href='http://www.google.com/') Google
-                                |  with the Street View (Maps) team in the 
-                                a(href="https://www.google.com/jobs/students/engpracticum‎") Engineering Practicum
-                                |  program.
-
-                    div.col-md-4
-                        div.thumbnail
-                            img.img-responsive.banner-img(src="images/reddit.jpg")
-                            p.custom-projects
-                                | Broadly, I am interested in making apps and scripts that help improve end-user productivity, and user-facing web apps. I'm also interested in 
-                                a(href='http://en.wikipedia.org/wiki/Web_scraping') web scraping
-                                |  and building API's. I spend most of my (free) time on 
-                                a(href='http://www.reddit.com/user/karangoeluw') Reddit
-                                | , 
-                                a(href='https://www.quora.com/Karan-Goel-3') Quora
-                                |  and 
-                                a(href='http://stackoverflow.com/users/2392038/karan-goel') StackOverflow
-                                | .
+                div.col-md-4
+                    div.single-item
+                        h3
+                            i.fa.fa-pencil.fa-3x
+                        p.custom-projects
+                            | Broadly, I am interested in making apps and scripts that help improve end-user productivity, and user-facing web apps. I'm also interested in 
+                            a(href='http://en.wikipedia.org/wiki/Web_scraping') web scraping
+                            |  and building API's. I spend most of my (free) time on 
+                            a(href='http://www.reddit.com/user/karangoeluw') Reddit
+                            | , 
+                            a(href='https://www.quora.com/Karan-Goel-3') Quora
+                            |  and 
+                            a(href='http://stackoverflow.com/users/2392038/karan-goel') StackOverflow
+                            | .
 
 
         div.jumbotron#projects
@@ -163,18 +163,18 @@ html(lang="en")
 
                 div.row
                     div.col-md-4
-                        div.thumbnail
+                        div.single-item
                             a(href="https://github.com/karan/Qknowledge")
                                 img.img-responsive.banner-img(src="images/quora.png")
                             h2.custom
                                 a(href="https://github.com/karan/Qnowledge") Qnowledge
                             stack-tag Python
-                            p.custom-projects 
+                            p.custom-projects
                                 | Qnowledge is a knowledge API for Quora that provides access to various details of any question using a simple REST interface. Access at 
                                 b
                                     a(href="http://q.goel.im") q.goel.im
                     div.col-md-4
-                        div.thumbnail
+                        div.single-item
                             a(href="https://github.com/karan/s")
                                 img.img-responsive.banner-img(src="images/short.png")
                             h2.custom
@@ -187,7 +187,7 @@ html(lang="en")
                                 b
                                     a(href="http://s.goel.im/") Live Demo
                     div.col-md-4
-                        div.thumbnail
+                        div.single-item
                             a(href="https://github.com/karan/What-Would-I-Tweet")
                                 img.img-responsive.banner-img(src="images/tweeny.png")
                             h2.custom
@@ -201,7 +201,7 @@ html(lang="en")
 
                 div.row
                     div.col-md-4
-                        div.thumbnail
+                        div.single-item
                             a(href="https://github.com/karan/TPB")
                                 img.img-responsive.banner-img(src="images/tpb.jpg")
                             h2.custom
@@ -210,16 +210,16 @@ html(lang="en")
                             p.custom-projects Unofficial Python API for ThePirateBay. Supports searching, sorting, pagination. Wrote the core scraper. Supports py2 and py3.
 
                     div.col-md-4
-                        div.thumbnail
+                        div.single-item
                             a(href="https://github.com/karan/Projects")
                                 img.img-responsive.banner-img(src="images/projects.png")
                             h2.custom
                                 a(href="https://github.com/karan/Projects") 100+ Projects
                             stack-tag Python
                             p.custom-projects A collection of hundreds of practical, language-agnostic projects that anyone can complete. Solving these in Python. One of the top Github repos with 4k+ stars.
-                            
+
                     div.col-md-4
-                        div.thumbnail
+                        div.single-item
                             a(href="https://github.com/karan/")
                                 img.img-responsive.banner-img(src="images/reddit.png")
                             h2.custom
@@ -234,7 +234,7 @@ html(lang="en")
                 
                 div.row
                     div.col-md-4
-                        div.thumbnail
+                        div.single-item
                             a(href="https://github.com/karan/HackerNewsAPI")
                                 img.img-responsive.banner-img(src="images/HN.jpg")
                             h2.custom
@@ -244,7 +244,7 @@ html(lang="en")
                                 a(href="https://github.com/karan/HNify") HNify
                                 |  - RESTful API for HN.
                     div.col-md-4
-                        div.thumbnail
+                        div.single-item
                             a(href="https://github.com/karan/jReddit")
                                 img.img-responsive.banner-img(src="images/jreddit.jpg")
                             h2.custom
@@ -252,7 +252,7 @@ html(lang="en")
                             stack-tag Java
                             p.custom-projects Java wrapper for Reddit API. Started by Omer Elnour, later abandoned.
                     div.col-md-4
-                        div.thumbnail
+                        div.single-item
                             a(href="https://github.com/karan/YALT")
                                 img.img-responsive.banner-img(src="images/yalt.jpg")
                             h2.custom
@@ -262,7 +262,7 @@ html(lang="en")
 
                 div.row
                     div.col-md-4
-                        div.thumbnail
+                        div.single-item
                             a(href="https://github.com/karan/MoodicPlayer")
                                 img.img-responsive.banner-img(src="images/music.jpg")
                             h2.custom

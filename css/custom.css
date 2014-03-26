@@ -31,6 +31,8 @@ h1 strong {
     font-weight: 700;
 }
 
+/* Menu bar */
+
 #menu-toggle {
     top: 0;
     right: 0;
@@ -112,6 +114,9 @@ ul.sidebar-nav {
     color: #AAAAAA;
     display: block;
 }
+
+/* Menu Bar */
+/************/
 
 .jumbotron {
     box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
@@ -216,13 +221,9 @@ img.me {
     opacity: 1;
 }
 
-.thumbnail {
+.single-item {
     text-align: center;
-}
-
-.banner-img {
-    max-height: 120px;
-    vertical-align: middle;
+    margin-bottom: 20px;
 }
 
 p.custom {
@@ -233,11 +234,11 @@ p.custom {
 p.custom-projects {
     line-height: 1.8;
     margin-bottom: 0em;
-    padding: 1em 1.2em 1em;
+    padding: 1em;
     font-size: 0.80em;
 }
 
-.jumbotron#projects, .jumbotron#contact, .jumbotron#about {
+.jumbotron#projects, .jumbotron#about {
     background-color: #f4f4f4;
     margin-bottom: 0;
 }
