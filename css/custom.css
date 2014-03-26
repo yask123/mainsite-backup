@@ -113,15 +113,15 @@ ul.sidebar-nav {
     display: block;
 }
 
-.jumbotron .container.projects, {
-    padding: 50px 30px;
-}
-
 .jumbotron {
     box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
     background: transparent;
     text-align: left;
     height: 100%;
+}
+
+.jumbotron .container.projects {
+    padding: 50px 30px;
 }
 
 .jumbotron h1, .jumbotron .h1 {
@@ -135,9 +135,11 @@ ul.sidebar-nav {
     padding: 0px;
     margin: 0px;
     position: relative;
+    display: table;
 }
 
-.jumbotron .container.top {
+#top > div.top {
+    text-align: center;
     vertical-align: middle;
     display: table-cell;
 }
@@ -177,7 +179,7 @@ p.text-center {
     text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
 }
 
-#top > div.container.top > div > p > a {
+#top > div.top > p > a {
     color: #AAA;
     text-decoration: none;
     -moz-transition: color .2s ease-in-out;
@@ -185,18 +187,13 @@ p.text-center {
     -o-transition: color .2s ease-in-out;
     -ms-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
-    -moz-transition: background-color .2s ease-in-out;
-    -webkit-transition: background-color .2s ease-in-out;
-    -o-transition: background-color .2s ease-in-out;
-    -ms-transition: background-color .2s ease-in-out;
-    transition: background-color .2s ease-in-out;
 }
 
-#top > div.container.top > div > p > a:hover {
+#top > div.top > p > a:hover {
     color: #fff;
 }
 
-.jumbotron > .container.top > h1.text-left {
+.jumbotron > .top > h1.text-left {
     text-align: left;
     color: #fff!important;
 }
@@ -208,6 +205,26 @@ img.me {
     border: 3px solid #fff;
 }
 
+#top > div.top > ul > li > a {
+    color: #aaa;
+    font-size: 2em;
+    opacity: 0.8;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+#top > div.top > ul > li > a:hover {
+    opacity: 1;
+}
+
+.thumbnail {
+    text-align: center;
+}
+
+.banner-img {
+    max-height: 120px;
+    vertical-align: middle;
+}
+
 p.custom {
     line-height: 1.8;
     margin-bottom: 1em;
@@ -217,7 +234,7 @@ p.custom-projects {
     line-height: 1.8;
     margin-bottom: 0em;
     padding: 1em 1.2em 1em;
-    font-size: 0.85em;
+    font-size: 0.80em;
 }
 
 .jumbotron#projects, .jumbotron#contact, .jumbotron#about {
@@ -225,8 +242,7 @@ p.custom-projects {
     margin-bottom: 0;
 }
 
-.container.projects,
-.container.social {
+.container.projects {
     padding: 0;
     margin: 0 auto;
 }
@@ -241,17 +257,11 @@ stack-tag {
     padding: 3px 10px;
 }
 
-.scale-projects {
-    -webkit-transition: all .2s ease-in-out;
-}
-.scale-projects:hover {
-    -webkit-transform: scale(1.05); 
-}
-
 h1.custom {
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 2em;
+    color: #3e3e3e;
 }
 
 h2.custom {
@@ -278,18 +288,6 @@ h2.custom a:hover {
     margin: 0px auto 30px auto;
     padding: 0px auto;
 }
-
-#top > div.container.top > ul > li > a {
-    color: #aaa;
-    font-size: 2em;
-    opacity: 0.8;
-    -webkit-transition: all .2s ease-in-out;
-}
-
-#top > div.container.top > ul > li > a:hover {
-    opacity: 1;
-}
-
 
 .footer {
     background-color: #282828;

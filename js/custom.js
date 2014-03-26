@@ -33,4 +33,6 @@ $(document).ready(function() {
         $('.bg-blurred').css('opacity', opacityVal);
     });
 
+    $(".banner-img").width($('.thumbnail').width());
+
 });
