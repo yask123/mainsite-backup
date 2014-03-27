@@ -12,24 +12,49 @@ $(document).ready(function() {
             }
         }
     }
-
     $('a[href*=#]:not([href=#])').click(scroll);
 
+    // sidebar animation
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
+        e.stopPropagation();
         $("#sidebar").addClass("active");
     });
 
     $("#menu-close").click(function(e) {
         e.preventDefault();
+        e.stopPropagation();
         $("#sidebar").removeClass("active");
     });
 
+    $(document).click(function() {
+        if ($("#sidebar").hasClass("active")) {
+            $("#sidebar").removeClass("active");
+        }
+    });
+
+    // for a single paged top part
     $(".top").height($(window).height());
 
+    // parallex blur
     $(window).scroll(function(e) {
         var s = $(window).scrollTop(), opacityVal = (s / 350.0);
         $('.bg-blurred').css('opacity', opacityVal);
+    });
+
+    // set equal height for all items
+    function equalHeight(group) {
+       tallest = 0;
+       group.each(function() {
+          thisHeight = $(this).height();
+          if(thisHeight > tallest) {
+             tallest = thisHeight;
+          }
+       });
+       group.height(tallest);
+    }
+    $(document).ready(function() {
+       equalHeight($(".single-item").not(".col-md-5 > .single-item"));
     });
 
 });

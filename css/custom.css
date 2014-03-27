@@ -67,16 +67,6 @@ h1 > i {
     transition: all 0.3s ease 0s;
 }
 
-#sidebar.active {
-    left: 150px;
-    width: 150px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
 #menu-close {
     top: 0;
     left: 0;
@@ -106,6 +96,26 @@ h1 > i {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+
+#sidebar.active {
+    left: 150px;
+    width: 150px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+/*.bio {
+    position: absolute;
+    bottom: 30px;
+    padding: 10px;
+}
+
+p.p-bio {
+    font-size: 14px;
+}*/
 
 ul.sidebar-nav {
     position: absolute;
@@ -141,13 +151,10 @@ ul.sidebar-nav {
 #sidebar > ul > div > li > a > i {
     margin-left: 10px;
 }
-
 /* Menu Bar */
-/************/
 
 
 .jumbotron {
-    box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
     background: transparent;
     text-align: center;
     height: 100%;
@@ -168,6 +175,8 @@ ul.sidebar-nav {
     text-align: center;
     vertical-align: middle;
     display: table-cell;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .bg {
@@ -222,7 +231,7 @@ img.me {
 #top > div.top > ul > li > a {
     color: #aaa;
     font-size: 2em;
-    opacity: 0.8;
+    opacity: 0.9;
     -webkit-transition: all .2s ease-in-out;
 }
 
@@ -282,6 +291,8 @@ p.custom-projects {
     vertical-align: middle;
     border-radius: 50%;
     display: inline-block;
+    color: white;
+    opacity: 0.8;
 }
 
 .projects {

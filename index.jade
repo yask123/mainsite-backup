@@ -10,6 +10,7 @@ html(lang="en")
         meta(http-equiv="content-type", content="text/html; charset=utf-8")
         meta(name="keywords", content="Karan Goel, University of Washington, UW, Seattle")
         meta(name="description", content="Karan Goel is an undergraduate at University of Washington-Seattle.")
+        meta(name="viewport", content="width=device-width")
 
         link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
@@ -37,16 +38,16 @@ html(lang="en")
     body
             // navbar
             a#menu-toggle.btn.btn-lg(href="#")
-                i.fa.fa-list
+                i.fa.fa-list.fa-2x
             div#sidebar
                 a#menu-close.btn.btn-lg.pull-left(href="#")
-                    i.fa.fa-times
+                    i.fa.fa-times.fa-2x
                 ul.sidebar-nav
                     div.list
                         li
                             a(href="#top", onclick="ga('send', 'event', 'navbar', 'click', 'Top');")
                                 | Top 
-                                i.fa.fa-chevron-up
+                                i.fa.fa-chevron-circle-up
                         li
                             a(href="#work", onclick="ga('send', 'event', 'navbar', 'click', 'Work');")
                                 | Work 
@@ -83,15 +84,15 @@ html(lang="en")
                     | Hi. I'm Karan Goel.
                 p.custom-p
                     | I'm an undergraduate at the 
-                    a(href='http://www.washington.edu') University of Washington 
+                    strong University of Washington 
                     | studying 
-                    a(href='http://www.cs.washington.edu') Computer Science
+                    strong Computer Science
                     | .
                 p.custom-p
                     | I will intern at 
-                    a(href="https://www.google.com/") Google 
+                    strong Google 
                     | with the 
-                    a(href="https://www.google.com/maps/views/home?gl=us") Street View
+                    strong Street View
                     |  team in Summer 2014.
 
                 ul.list-inline.col-md-6.col-md-offset-3
