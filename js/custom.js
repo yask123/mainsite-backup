@@ -54,7 +54,10 @@ $(document).ready(function() {
        group.height(tallest);
     }
     $(document).ready(function() {
-       equalHeight($(".single-item").not(".col-md-5 > .single-item"));
+       equalHeight($(".jumbotron#work > .row > .col-md-4 > .single-item"));
+    });
+    $(document).ready(function() {
+       equalHeight($(".jumbotron#projects > .row > .col-md-4 > .single-item"));
     });
 
 });

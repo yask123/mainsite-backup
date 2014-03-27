@@ -251,15 +251,17 @@ img.me {
 /********************************/
 
 /* Style individual jumbotrons */
-.jumbotron#projects {
+.jumbotron#projects, .jumbotron#minibio {
     background-color: #f4f4f4;
     margin-bottom: 0;
+    font-weight: 400;
 }
 
 .jumbotron#work, .jumbotron#about {
     background-color: #3e3e3e;
     margin-bottom: 0;
     color: #f4f4f4;
+    font-weight: 400;
 }
 
 .invert {

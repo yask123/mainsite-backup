@@ -16,7 +16,7 @@ html(lang="en")
 
         meta(name="google-site-verification", content="Fjv0uLvY6KOkNRqPgPlMlASk7DwV8rvnsqLcfTU7wBI")
 
-        link(href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700", rel="stylesheet")
+        link(href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700", rel="stylesheet")
 
         link(rel="stylesheet", href="css/bootstrap.min.css")
         link(rel="stylesheet", href="css/font-awesome.css")
@@ -81,19 +81,7 @@ html(lang="en")
                 h1.karan-goel
                     strong Karan Goel
                 p.custom-p
-                    | Hi. I'm Karan Goel.
-                p.custom-p
-                    | I'm an undergraduate at the 
-                    strong University of Washington 
-                    | studying 
-                    strong Computer Science
-                    | .
-                p.custom-p
-                    | I will intern at 
-                    strong Google 
-                    | with the 
-                    strong Street View
-                    |  team in Summer 2014.
+                    | Hello. I'm Karan Goel and I like to code.
 
                 ul.list-inline.col-md-6.col-md-offset-3
                     li
@@ -106,15 +94,44 @@ html(lang="en")
                         a.btn-social(href="http://twitter.com/TheKaranGoel", role="button")
                             i.fa.fa-twitter 
                     li
-                        a.btn-social(href="https://www.youtube.com/user/TheKaranGoel", role="button")
-                            i.fa.fa-youtube-play
-                    li
                         a.btn-social(href="http://www.linkedin.com/in/kgoel", role="button")
                             i.fa.fa-linkedin 
                     li
                         a.btn-social(href="http://google.com/+KaranGoel", role="button")
                             i.fa.fa-google-plus
+                    li
+                        a.btn-social(href="https://www.youtube.com/user/TheKaranGoel", role="button")
+                            i.fa.fa-youtube-play
         
+        div.jumbotron#minibio
+            
+            div.row
+                div.col-md-6.col-md-offset-3
+                    p.custom-projects
+                        | Hi there. My name is Karan Goel.
+                    p.custom-projects
+                        | I'm an undergraduate student at the 
+                        b
+                            a(href="http://www.washington.edu") University of Washington 
+                        | in the  
+                        a(href='http://www.cs.washington.edu') Computer Science
+                        |  program.
+                    p.custom-projects
+                        | I will intern at 
+                        strong Google 
+                        | with the 
+                        a(href="https://www.google.com/maps/views/home?gl=us") Street View
+                        |  team in Summer 2014.
+                    p.custom-projects
+                        | Feel free to browse through my site or my 
+                        a(href="http://github.com/karan") Github
+                        | , or read my 
+                        a(href="Karan.Goel.Resume.pdf") resume 
+                        | and send me an 
+                        a(href="mailto:karan@goel.im") email
+                        |  if you like what you see (I'm reasonably nice).
+                    
+
         div.jumbotron#work
             h1.custom-h1
                 i.fa.fa-users
@@ -175,7 +192,8 @@ html(lang="en")
                         stack-tag MongoDB
                         stack-tag Knockout.js
                         p.custom-projects 
-                            | A suicide prevention app targeted towards young adults built at a 48-hour hackathon. I made the 
+                            | A suicide prevention app targeted towards young adults built at a 48-hour hackathon.
+                            | Comes with a mood tracker and an anonymous social network. I made the backend with a 
                             a(href="https://github.com/karan/Pillar-API") RESTful API
                             | .
                 div.col-md-4
@@ -223,7 +241,9 @@ html(lang="en")
                         h2.custom
                             a(href="https://github.com/karan/TPB") TPB API
                         stack-tag Python
-                        p.custom-projects Unofficial Python API for ThePirateBay. Supports searching, sorting, pagination. Wrote the core scraper. Supports py2 and py3.
+                        p.custom-projects 
+                            | Wrote an unofficial Python API for ThePirateBay that now supports searching, sorting, pagination etc. 
+                            | It is supported on both Python 2 and Python 3.
 
                 div.col-md-4
                     div.single-item
@@ -232,7 +252,9 @@ html(lang="en")
                         h2.custom
                             a(href="https://github.com/karan/Projects") 100+ Projects
                         stack-tag Python
-                        p.custom-projects A collection of hundreds of practical, language-agnostic projects that anyone can complete. Solving these in Python. One of the top Github repos with 4k+ stars.
+                        p.custom-projects 
+                            | Compiled a list of 100+ practical, language-agnostinc projects to
+                            | learn Python. The repo now has 4.5k+ stars and is one of the top repos on Github.
             
             div.row
                 div.col-md-4
@@ -255,9 +277,11 @@ html(lang="en")
                         h2.custom
                             a(href="https://github.com/karan/HackerNewsAPI") HackerNews API
                         stack-tag Python
-                        p.custom-projects Unofficial Python API for Hacker News. Also see 
+                        p.custom-projects 
+                            | Wrote an unofficial Python API for Hacker News that works by screen
+                            | scraping. Also ported it to a RESTful interface at  
                             a(href="https://github.com/karan/HNify") HNify
-                            |  - RESTful API for HN.
+                            |  with memcached.
                 div.col-md-4
                     div.single-item
                         a(href="https://github.com/karan/jReddit")
@@ -265,17 +289,11 @@ html(lang="en")
                         h2.custom
                             a(href="https://github.com/karan/jReddit") jReddit
                         stack-tag Java
-                        p.custom-projects Java wrapper for Reddit API. Started by Omer Elnour, later abandoned.
+                        p.custom-projects 
+                            | Took over an abandoned Java wrapper for Reddit API. Added new features,
+                            | fixed existing bugs, and continue to maintain it.
 
             div.row
-                div.col-md-4
-                    div.single-item
-                        a(href="https://github.com/karan/YALT")
-                            img.img-responsive.banner-img(src="images/yalt.jpg")
-                        h2.custom
-                            a(href="https://github.com/karan/YALT") YALT
-                        stack-tag Java
-                        p.custom-projects A lightweight and minimal utility to make it easier for you to learn facts.
                 div.col-md-4
                     div.single-item
                         a(href="https://github.com/karan/MoodicPlayer")
@@ -283,48 +301,97 @@ html(lang="en")
                         h2.custom
                             a(href="https://github.com/karan/MoodicPlayer") Moodic Player
                         stack-tag Java
-                        p.custom-projects Using last.fm API, builds a playlist for users based on their mood.
+                        p.custom-projects 
+                            | Simple GUI-based app that uses last.fm API and builds a playlist for users based on their mood.
+                            | Primarily built to learn the Java Swing library and how web API's work.
+                div.col-md-4
+                    div.single-item
+                        a(href="https://github.com/karan/YALT")
+                            img.img-responsive.banner-img(src="images/yalt.jpg")
+                        h2.custom
+                            a(href="https://github.com/karan/YALT") YALT
+                        stack-tag Java
+                        p.custom-projects 
+                            | Straight out of intro CS classes, made a lightweight and minimal 
+                            | GUI utility to make it easier for anyone to learn facts. Built to
+                            | learn the Java Swing library.
 
         div.jumbotron#about
             h1.custom-h1
                 i.fa.fa-user
                 |  About me
             div.row
-                div.col-md-5.col-md-offset-1
+                div.col-md-4
                     div.single-item
                         h3.invert
                             i.fa.fa-plane.fa-3x
                         p.custom-projects
-                            | Originally from New Delhi, India, now in 
+                            | Originally from 
+                            a(href="http://en.wikipedia.org/wiki/New_Delhi") New Delhi, India
+                            | , now in 
                             a(href='http://en.wikipedia.org/wiki/Too_Much_Rain') Seattle, WA
                             | , I'm an undergraduate at the 
                             a(title='University of Washington', href='https://www.washington.edu/') University of Washington
-                            | , working towards a BS degree in 
+                            | , in the 
                             a(title='Computer Science @ UW', href='https://www.cs.washington.edu/') Computer Science
-                            | . That means I 
-                            a(title='Karan Goel @ GitHub', href='http://github.com/karan') code
-                            | . My resume is available in 
+                            |  department. My resume is available in 
                             a(href='Karan.Goel.Resume.pdf') PDF format
                             |  or on 
                             a(href='http://www.linkedin.com/in/kgoel') LinkedIn
                             | .
 
-                div.col-md-5
+                div.col-md-4
+                    div.single-item
+                        h3.invert
+                            i.fa.fa-terminal.fa-3x
+                        p.custom-projects
+                            | Primarily, I do backend and sometimes dabble around with frontend. Broadly, I'm interested in 
+                            a(href='http://en.wikipedia.org/wiki/Web_scraping') web scraping
+                            | , data mining, and building web applications. If that sounds interesting to you, 
+                            a(href="http://github.com/karan") check out
+                            |  what I've been working on recently.
+                div.col-md-4
+                    div.single-item
+                        h3.invert
+                            i.fa.fa-github-alt.fa-3x
+                        p.custom-projects
+                            | I'm a bit of an 
+                            a(href="http://tantek.com/2010/281/b1/what-is-the-open-web") open web evangelist
+                            | , and an 
+                            a(href="http://imgs.xkcd.com/comics/open_source.png") open source
+                            |  fanatic.
+                            | I believe that open source empowers people to stop complaining
+                            | and start fixing problems.
+
+            div.row
+                div.col-md-4.col-md-offset-2
                     div.single-item
                         h3.invert
                             i.fa.fa-pencil.fa-3x
                         p.custom-projects
-                            | Broadly, I am interested in making apps and scripts that help improve end-user productivity, and user-facing web apps. I'm also interested in 
-                            a(href='http://en.wikipedia.org/wiki/Web_scraping') web scraping
-                            |  and building API's. I spend most of my (free) time on 
+                            | I spend most of my (free) time writing on 
                             a(href='http://www.reddit.com/user/karangoeluw') Reddit
                             | , 
                             a(href='https://www.quora.com/Karan-Goel-3') Quora
                             |  and 
                             a(href='http://stackoverflow.com/users/2392038/karan-goel') StackOverflow
-                            | .
-
+                            |   about India, programming and other interesting topics. 
+                div.col-md-4
+                    div.single-item
+                        h3.invert
+                            i.fa.fa-bar-chart-o.fa-3x
+                        p.custom-projects
+                            | My 
+                            a(href="http://en.wikipedia.org/wiki/Myers-Briggs_Type_Indicator") Myers-Briggs Type Indicator (MBTI)
+                            |  is 
+                            a(href="http://en.wikipedia.org/wiki/ESTJ") ESTJ
+                            | . I 
+                            a(href="http://www.celebritytypes.com/estj.php") share
+                            |  my personality type with Henry Ford, Martha Stewart, Michelle Obama and Emma Watson.
 
         div.footer
-            p Created by Karan Goel. Built with Bootstrap, HTML5, jQuery, CSS3 and lots of 
+            p 
+                | Created by Karan Goel
+            p 
+                | Built with HTML5, CSS3, Bootstrap, jQuery and lots of 
                 span.glyphicon.glyphicon-heart-empty
