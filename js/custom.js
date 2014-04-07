@@ -7,7 +7,7 @@ $(document).ready(function() {
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top
-                }, 500);
+                }, 1000);
             return false;
             }
         }
@@ -38,7 +38,10 @@ $(document).ready(function() {
 
     // parallex blur
     $(window).scroll(function(e) {
-        var s = $(window).scrollTop(), opacityVal = (s / 350.0);
+        var s = $(window).scrollTop();
+        var opacityVal = (s / 350.0);
+        // make the unblurred image visible 
+        console.log(opacityVal);
         $('.bg-blurred').css('opacity', opacityVal);
     });
 
