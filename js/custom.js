@@ -41,8 +41,12 @@ $(document).ready(function() {
         var s = $(window).scrollTop();
         var opacityVal = (s / 350.0);
         // make the unblurred image visible 
-        console.log(opacityVal);
         $('.bg-blurred').css('opacity', opacityVal);
+        
+        var x = 50+s/25;
+        console.log(x);
+        $('.bg-blurred').css('background-position', '50%'+x+'%');
+        $('.bg').css('background-position', '50%'+x+'%');
     });
 
     // set equal height for all items
