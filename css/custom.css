@@ -231,28 +231,32 @@ img.me {
 #top > div.top > ul > li > a {
     color: #aaa;
     font-size: 2em;
-    opacity: 0.9;
-    -webkit-transition: all .2s ease-in-out;
+    opacity: 1;
+    position: relative;
+    -webkit-transition: all 0.5s ease-out 0.2s;
 }
 
 #top > div.top > ul > li > a:hover {
-    opacity: 1;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
 }
 
 @-webkit-keyframes arrows {
-    20% { bottom:20px; }
-    40% { bottom:30px; }
-    60% { bottom:20px; }
-    80% { bottom:30px; }
-    100% { bottom:20px; }
+    0%, 20%, 50%, 80%, 100% {bottom: 10px;} 
+    40% {bottom: 30px;}
+    60% {bottom: 15px;}
 }
 
 .arrow {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     opacity: 0.5;
     -webkit-animation: arrows 2s infinite;
-    -webkit-animation-delay: 1s;
+    -moz-animation: arrows 2s infinite;
+    -o-animation: arrows 2s infinite;
+    animation: arrows 2s infinite;
 }
 .arrow a i {
     color: #aaaaaa;
