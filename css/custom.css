@@ -229,15 +229,19 @@ img.me {
     opacity: 1;
 }
 
-#top > div.top > ul > li > a {
+.social > li {
+    margin-right: 10px;
+}
+
+.social > li > a {
     color: #aaa;
-    font-size: 2em;
+    /*font-size: 2em;*/
     opacity: 1;
     position: relative;
     -webkit-transition: all 0.5s ease-out 0.2s;
 }
 
-#top > div.top > ul > li > a:hover {
+.social > li > a:hover {
     -webkit-transform: rotate(-360deg);
     -moz-transform: rotate(-360deg);
     -o-transform: rotate(-360deg);
