@@ -238,10 +238,9 @@ img.me {
 
 .social > li > a {
     color: #aaa;
-    /*font-size: 2em;*/
     opacity: 1;
     position: relative;
-    -webkit-transition: all 0.2s ease-out 0.2s;
+    -webkit-transition: all 0.3s ease-out 0.3s;
 }
 
 .social > li > a:hover {
