@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $(".top").height($(window).height());
+
     var scroll = function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -11,7 +13,8 @@ $(document).ready(function() {
             return false;
             }
         }
-    }
+    };
+
     $('a[href*=#]:not([href=#])').click(scroll);
 
     // sidebar animation
@@ -46,7 +49,7 @@ $(document).ready(function() {
         $('.bg-blurred').css('opacity', opacityVal);
         
         var x = 50+s/25;
-        console.log(x);
+        // console.log(x);
         $('.bg-blurred').css('background-position', '50%'+x+'%');
         $('.bg').css('background-position', '50%'+x+'%');
     });
