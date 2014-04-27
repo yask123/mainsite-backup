@@ -365,13 +365,30 @@ p.custom-projects {
     border-radius: 50%;
     display: inline-block;
     color: white;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .projects {
     padding: 0;
     margin: 0 auto;
 }
+
+.projects-hn, .projects-jreddit, .projects-music, .projects-pillar, .projects-projects, 
+.projects-quora, .projects-reddit, .projects-short, .projects-tpb, .projects-tweeny, 
+.projects-yalt
+{ display: block; background: url('png.png') no-repeat; }
+ 
+.projects-hn { background-position: -1px -0px; width: 180px; height: 180px; }
+.projects-jreddit { background-position: -182px -0px; width: 180px; height: 180px; }
+.projects-music { background-position: -363px -0px; width: 180px; height: 180px; }
+.projects-pillar { background-position: -1px -181px; width: 180px; height: 180px; }
+.projects-projects { background-position: -182px -181px; width: 180px; height: 180px; }
+.projects-quora { background-position: -363px -181px; width: 180px; height: 180px; }
+.projects-reddit { background-position: -1px -362px; width: 180px; height: 180px; }
+.projects-short { background-position: -182px -362px; width: 180px; height: 180px; }
+.projects-tpb { background-position: -363px -362px; width: 180px; height: 180px; }
+.projects-tweeny { background-position: -1px -543px; width: 180px; height: 180px; }
+.projects-yalt { background-position: -182px -543px; width: 180px; height: 180px; }
 
 stack-tag {
     border: 1px solid gray;
