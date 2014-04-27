@@ -40,8 +40,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/css/custom.min.css': 'css/custom.css',
-          'dist/css/font-awesome.min.css': 'css/font-awesome.css'
+          'dist/css/custom.min.css': 'css/custom.css'
         }
       }
     }
