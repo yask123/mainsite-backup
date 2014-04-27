@@ -375,20 +375,43 @@ p.custom-projects {
 
 .projects-hn, .projects-jreddit, .projects-music, .projects-pillar, .projects-projects, 
 .projects-quora, .projects-reddit, .projects-short, .projects-tpb, .projects-tweeny, 
-.projects-yalt
-{ background: url('/images/projects.png') no-repeat; }
+.projects-yalt { 
+    background: url('/images/projects.png') no-repeat; 
+}
  
-.projects-hn { background-position: -1px -0px; vertical-align: middle; }
-.projects-jreddit { background-position: -182px -0px; vertical-align: middle; }
-.projects-music { background-position: -363px -0px; vertical-align: middle; }
-.projects-pillar { background-position: -1px -181px; vertical-align: middle; }
-.projects-projects { background-position: -182px -181px; vertical-align: middle; }
-.projects-quora { background-position: -363px -181px; vertical-align: middle; }
-.projects-reddit { background-position: -1px -362px; vertical-align: middle; }
-.projects-short { background-position: -182px -362px; vertical-align: middle; }
-.projects-tpb { background-position: -363px -362px; vertical-align: middle; }
-.projects-tweeny { background-position: -1px -543px; vertical-align: middle; }
-.projects-yalt { background-position: -182px -543px; vertical-align: middle; }
+.projects-hn { 
+    background-position: -1px -0px; vertical-align: middle; 
+}
+.projects-jreddit { 
+    background-position: -182px -0px; vertical-align: middle; 
+}
+.projects-music { 
+    background-position: -363px -0px; vertical-align: middle; 
+}
+.projects-pillar { 
+    background-position: -1px -181px; vertical-align: middle; 
+}
+.projects-projects { 
+    background-position: -182px -181px; vertical-align: middle; 
+}
+.projects-quora { 
+    background-position: -363px -181px; vertical-align: middle; 
+}
+.projects-reddit { 
+    background-position: -1px -362px; vertical-align: middle; 
+}
+.projects-short { 
+    background-position: -182px -362px; vertical-align: middle; 
+}
+.projects-tpb { 
+    background-position: -363px -362px; vertical-align: middle; 
+}
+.projects-tweeny { 
+    background-position: -1px -543px; vertical-align: middle; 
+}
+.projects-yalt { 
+    background-position: -182px -543px; vertical-align: middle; 
+}
 
 stack-tag {
     border: 1px solid gray;
