@@ -33,8 +33,10 @@ $(document).ready(function() {
         }
     });
 
-    // for a single paged top part
-    $(".top").height($(window).height());
+    $(window).resize(function () {
+        // for a single paged top part
+        $(".top").height($(window).height());
+    });
 
     // parallex blur
     $(window).scroll(function(e) {

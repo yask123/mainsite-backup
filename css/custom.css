@@ -131,9 +131,9 @@ ul.sidebar-nav {
 }
 
 #sidebar > ul > div.list > li {
-    height: 50px;
-    padding-right: 20px;
-    line-height: 50px;
+    height: 70px;
+    padding-right: 30px;
+    line-height: 70px;
     -moz-transition: background-color .2s ease-in-out;
     -webkit-transition: background-color .2s ease-in-out;
     -o-transition: background-color .2s ease-in-out;
@@ -146,13 +146,14 @@ ul.sidebar-nav {
 }
 
 #sidebar > ul > div.list > li a {
+    font-size: 1.3em;
     font-weight: 600;
     color: #AAAAAA;
     display: block;
 }
 
 #sidebar > ul > div > li > a > i {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 /* Menu Bar */
 
