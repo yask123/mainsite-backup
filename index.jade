@@ -54,7 +54,6 @@ html(lang="en")
         div.page-wrapper
             div.jumbotron#top
                 div.bg
-                div.bg.bg-blurred
                 div.arrow.col-md-2.col-md-offset-5
                     a(href="#minibio")
                         i.fa.fa-angle-down.fa-5x
@@ -82,23 +81,26 @@ html(lang="en")
                                 i.fa.fa-google-plus.fa-2x
             
             div.jumbotron#minibio
-                div.row
+                div.jumbo-inner-wrapper
+                    div.arrow.col-md-2.col-md-offset-5
+                        a(href="#work")
+                            i.fa.fa-angle-down.fa-5x.dark
                     div.col-md-8.col-md-offset-2
-                        p.custom-projects
+                        p
                             | Hi there. My name is Karan Goel.
-                        p.custom-projects
+                        p
                             | I'm an undergraduate at the 
                             a(href="http://www.washington.edu", target="_blank") University of Washington 
                             | in the  
                             a(href='http://www.cs.washington.edu', target="_blank") Computer Science
                             |  program and I love making new things, mostly on the web.
-                        p.custom-projects
+                        p
                             | I will intern at 
                             strong Google 
                             | with the 
                             a(href="https://www.google.com/maps/views/home?gl=us", target="_blank") Street View
                             |  team in Summer 2014.
-                        p.custom-projects
+                        p
                             | Feel free to browse through this site or my 
                             a(href="http://karan.github.io", target="_blank") 
                                 b blog
@@ -110,55 +112,56 @@ html(lang="en")
                             |  if you like what you see (I'm reasonably nice).
 
             div.jumbotron#work
-                h1.custom-h1
-                    i.fa.fa-users
-                    |  Work
-                div.row
-                    div.col-md-4
-                        div.single-item
-                            img.banner-img(src="images/google.png")
-                            h2.custom.invert
-                                | Google
-                                br
-                                small Summer '14
-                                br
-                                small Mountain View
-                            p.custom-projects
-                                | In Summer 2014, I will intern at Google with the 
-                                b Street View (Maps) 
-                                | team in the Engineering Practicum program.
-                    div.col-md-4
-                        div.single-item
-                            img.banner-img(src="images/lenskart.png")
-                            h2.custom.invert
-                                | Lenskart.com
-                                br
-                                small Summer '13
-                                br
-                                small New Delhi
-                            p.custom-projects
-                                | In Summer 2013, I interned at 
-                                a(href="http://www.lenskart.com/", target="_blank") Lenskart.com 
-                                |  as a 
-                                b Data Analyst 
-                                | and shipped two custom dashboards with realtime data streams using Tableau.
-                    div.col-md-4
-                        div.single-item
-                            img.banner-img(src="images/spam.png")
-                            h2.custom.invert
-                                | UW iSchool
-                                br
-                                small Aug '12 - Aug '13
-                                br
-                                small Seattle
-                            p.custom-projects
-                                | Assisted 
-                                a(href="http://jeffhuang.com/", target="_blank") Jeff Huang
-                                |  as a 
-                                b Research Assistant 
-                                | . Collected data, ran statistical tests, visualized the findings and published a 
-                                a(href="http://karan.github.io/email-spam/") blog post
-                                |  about the results.
+                div.jumbo-inner-wrapper
+                    h1.custom-h1
+                        i.fa.fa-users
+                        |  Work
+                    div.row
+                        div.col-md-4
+                            div.single-item
+                                img.banner-img(src="images/google.png")
+                                h2.custom.invert
+                                    | Google
+                                    br
+                                    small Summer '14
+                                    br
+                                    small Mountain View
+                                p
+                                    | In Summer 2014, I will intern at Google with the 
+                                    b Street View (Maps) 
+                                    | team in the Engineering Practicum program.
+                        div.col-md-4
+                            div.single-item
+                                img.banner-img(src="images/lenskart.png")
+                                h2.custom.invert
+                                    | Lenskart.com
+                                    br
+                                    small Summer '13
+                                    br
+                                    small New Delhi
+                                p
+                                    | In Summer 2013, I interned at 
+                                    a(href="http://www.lenskart.com/", target="_blank") Lenskart.com 
+                                    |  as a 
+                                    b Data Analyst 
+                                    | and shipped two custom dashboards with realtime data streams using Tableau.
+                        div.col-md-4
+                            div.single-item
+                                img.banner-img(src="images/spam.png")
+                                h2.custom.invert
+                                    | UW iSchool
+                                    br
+                                    small Aug '12 - Aug '13
+                                    br
+                                    small Seattle
+                                p
+                                    | Assisted 
+                                    a(href="http://jeffhuang.com/", target="_blank") Jeff Huang
+                                    |  as a 
+                                    b Research Assistant 
+                                    | . Collected data, ran statistical tests, visualized the findings and published a 
+                                    a(href="http://karan.github.io/email-spam/") blog post
+                                    |  about the results.
 
 
             div.jumbotron#projects
@@ -180,7 +183,7 @@ html(lang="en")
                             stack-tag Node.js
                             stack-tag MongoDB
                             stack-tag Knockout.js
-                            p.custom-projects 
+                            p 
                                 | A suicide prevention app targeted towards young adults built at a 48-hour hackathon.
                                 | Comes with a mood tracker and an anonymous social network. I made the backend with a 
                                 a(href="https://github.com/karan/Pillar-API", target="_blank") RESTful API
@@ -193,7 +196,7 @@ html(lang="en")
                             h2.custom
                                 a(href="http://q.goel.im") Qnowledge
                             stack-tag Python
-                            p.custom-projects
+                            p
                                 | Qnowledge is a knowledge API for Quora that provides access to various details of any question using a simple REST interface.
 
                     div.col-md-4
@@ -205,7 +208,7 @@ html(lang="en")
                             stack-tag Node.js
                             stack-tag Angular.js
                             stack-tag Redis
-                            p.custom-projects 
+                            p 
                                 | A high-performance, anonymous URL shortener built using Redis + Node.js with an API-backed design.
                     
                 div.row
@@ -217,7 +220,7 @@ html(lang="en")
                                 a(href="http://tweeny.goel.im/", target="_blank") What would I tweet?
                             stack-tag Python
                             stack-tag Angular.js
-                            p.custom-projects 
+                            p 
                                 | Automatically generates tweets for you by training a Markov bot based on bigram probabilities derived from your tweet history.
 
                     div.col-md-4
@@ -227,7 +230,7 @@ html(lang="en")
                             h2.custom
                                 a(href="https://github.com/karan/TPB", target="_blank") TPB API
                             stack-tag Python
-                            p.custom-projects 
+                            p 
                                 | Wrote an unofficial Python API for ThePirateBay that now supports searching, sorting, pagination etc. 
                                 | It is supported on both Python 2 and Python 3.
 
@@ -238,7 +241,7 @@ html(lang="en")
                             h2.custom
                                 a(href="https://github.com/karan/Projects", target="_blank") 100+ Projects
                             stack-tag Python
-                            p.custom-projects 
+                            p 
                                 | Compiled a list of 100+ practical, language-agnostinc projects to
                                 | learn Python. The repo now has 4.5k+ stars and is one of the top repos on Github.
                 
@@ -250,7 +253,7 @@ html(lang="en")
                             h2.custom
                                 a(href="https://github.com/karan/", target="_blank") Reddit Scripts
                             stack-tag Python
-                            p.custom-projects
+                            p
                                 a(href="https://github.com/karan/RedditAgain", target="_blank") RedditAgain
                                 |  – Automates migrating a Reddit account to a new one.
                                 br
@@ -263,7 +266,7 @@ html(lang="en")
                             h2.custom
                                 a(href="https://github.com/karan/HackerNewsAPI", target="_blank") HackerNews API
                             stack-tag Python
-                            p.custom-projects 
+                            p 
                                 | Wrote an unofficial Python API for Hacker News that works by screen
                                 | scraping. Also ported it to a RESTful interface at  
                                 a(href="https://github.com/karan/HNify", target="_blank") HNify
@@ -275,7 +278,7 @@ html(lang="en")
                             h2.custom
                                 a(href="https://github.com/karan/jReddit", target="_blank") jReddit
                             stack-tag Java
-                            p.custom-projects 
+                            p 
                                 | Took over an abandoned Java wrapper for Reddit API. Added new features,
                                 | fixed existing bugs, and continue to maintain it.
 
@@ -287,7 +290,7 @@ html(lang="en")
                             h2.custom
                                 a(href="https://github.com/karan/MoodicPlayer", target="_blank") Moodic Player
                             stack-tag Java
-                            p.custom-projects 
+                            p 
                                 | Simple GUI-based app that uses last.fm API and builds a playlist for users based on their mood.
                                 | Primarily built to learn the Java Swing library and how web API's work.
                     div.col-md-4
@@ -297,7 +300,7 @@ html(lang="en")
                             h2.custom
                                 a(href="https://github.com/karan/YALT", target="_blank") YALT
                             stack-tag Java
-                            p.custom-projects 
+                            p 
                                 | Straight out of intro CS classes, made a lightweight and minimal 
                                 | GUI utility to make it easier for anyone to learn facts. Built to
                                 | learn the Java Swing library.
@@ -311,7 +314,7 @@ html(lang="en")
                         div.single-item
                             h3.invert
                                 i.fa.fa-plane.fa-3x
-                            p.custom-projects
+                            p
                                 | Originally from 
                                 a(href="http://en.wikipedia.org/wiki/New_Delhi", target="_blank") New Delhi, India
                                 | , now in 
@@ -330,7 +333,7 @@ html(lang="en")
                         div.single-item
                             h3.invert
                                 i.fa.fa-terminal.fa-3x
-                            p.custom-projects
+                            p
                                 | Primarily, I do backend and sometimes dabble around with frontend. Broadly, I'm interested in 
                                 a(href='http://en.wikipedia.org/wiki/Web_scraping', target="_blank") web scraping
                                 | , data mining, and building web applications. If that sounds interesting to you, 
@@ -340,7 +343,7 @@ html(lang="en")
                         div.single-item
                             h3.invert
                                 i.fa.fa-github-alt.fa-3x
-                            p.custom-projects
+                            p
                                 | I'm a bit of an 
                                 a(href="http://tantek.com/2010/281/b1/what-is-the-open-web", target="_blank") open web evangelist
                                 | , and an 
@@ -354,7 +357,7 @@ html(lang="en")
                         div.single-item
                             h3.invert
                                 i.fa.fa-pencil.fa-3x
-                            p.custom-projects
+                            p
                                 | I spend most of my (free) time writing on 
                                 a(href='http://www.reddit.com/user/karangoeluw', target="_blank") Reddit
                                 | , 
@@ -366,7 +369,7 @@ html(lang="en")
                         div.single-item
                             h3.invert
                                 i.fa.fa-bar-chart-o.fa-3x
-                            p.custom-projects
+                            p
                                 | My 
                                 a(href="http://en.wikipedia.org/wiki/Myers-Briggs_Type_Indicator", target="_blank") Myers-Briggs Type Indicator (MBTI)
                                 |  is 

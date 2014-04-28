@@ -53,6 +53,12 @@ a:hover {
     text-decoration: none;
 }
 
+p {
+    font-size: 0.7em;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
 a img {
     border: 0;
 }
@@ -105,6 +111,7 @@ h1 > i {
     position: fixed;
     z-index: 1;
     color: #fff;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 #menu-close {
@@ -119,7 +126,7 @@ h1 > i {
     margin-left: -200px;
     left: 0;
     width: 200px;
-    background: #000;
+    background: #111111;
     position: fixed;
     height: 100%;
     overflow-y: auto;
@@ -144,13 +151,13 @@ ul.sidebar-nav {
     list-style: none;
     margin: 50px 0 0;
     padding: 0;
-    text-align: right
+    text-align: right;
 }
 
 #sidebar > ul > div.list > li {
-    height: 70px;
+    height: 50px;
     padding-right: 30px;
-    line-height: 70px;
+    line-height: 50px;
     -moz-transition: background .2s ease-in-out;
     -webkit-transition: background .2s ease-in-out;
     -o-transition: background .2s ease-in-out;
@@ -163,7 +170,7 @@ ul.sidebar-nav {
 }
 
 #sidebar > ul > div.list > li a {
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 600;
     color: #AAAAAA;
     display: block;
@@ -191,21 +198,23 @@ ul.sidebar-nav {
 
 .jumbotron {
     background: transparent;
-    /*text-align: center;*/
+    text-align: center;
     height: 100%;
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.jumbo-inner-wrapper {
+    padding: 3em 0;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
 /* Style the first jumbotron */
-.jumbotron#top {
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    position: relative;
-    display: table;
-}
-
 #top > div.top {
     text-align: center;
     vertical-align: middle;
@@ -285,9 +294,15 @@ h1.karan-goel {
     -o-animation: arrows 2s infinite;
     animation: arrows 2s infinite;
 }
+
 .arrow a i {
     color: #ffffff;
 }
+
+i.fa.fa-angle-down.fa-5x.dark {
+    color: #AAAAAA;
+}
+
 /********************************/
 
 /* Style individual jumbotrons */
@@ -317,12 +332,6 @@ h1.karan-goel {
 .single-item {
     text-align: center;
     margin-bottom: 30px;
-}
-
-p.custom-projects {
-    line-height: 1.8;
-    margin: 20px 0;
-    font-size: 0.80em;
 }
 
 .banner-img {

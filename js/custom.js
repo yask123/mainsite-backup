@@ -3,6 +3,12 @@ $(document).ready(function() {
     // set height of the main top page the same as height of browser window
     $(".top").height($(window).height());
 
+    for (var i = 0; i < $(".jumbotron").length; i++) {
+        if ($(".jumbotron").eq(i).height() < $(window).height()) {
+            $(".jumbotron").eq(i).height($(window).height());
+        }
+    }
+
     // on initial load, hide sidebar pannel
     $("#menu-toggle").hide();
     // when scrolling beyond top part, show menu
