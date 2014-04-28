@@ -77,7 +77,7 @@ $(document).ready(function() {
        equalHeight($(".jumbotron#work > .row > .col-md-4 > .single-item"));
     });
     $(document).ready(function() {
-       equalHeight($(".jumbotron#projects > .row > .col-md-4 > .single-item"));
+       equalHeight($(".jumbotron#projects > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item"));
     });
 
     // change bg color on selecting different social networks

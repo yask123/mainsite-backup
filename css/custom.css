@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/7YGmE4Ls5b94ct65u07hVQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/0XxGQsSc1g4rdRdjJKZrNL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -14,7 +27,7 @@ html, body {
 
 body {
     font-family: 'PT Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #a4b6c4;
     overflow-x: hidden;
     font-size: 16pt;
@@ -39,12 +52,6 @@ a:hover {
     font-size: 1em;
     line-height: 1.8;
     margin: 20px 0;
-}
-
-.single-item > .custom.invert > small {
-    font-size: 0.6em;
-    opacity: 0.5;
-    color: #a4b6c4;
 }
 
 a img {
@@ -90,6 +97,12 @@ h1.jumbo-title {
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 1.5em;
+}
+
+small {
+    font-size: 0.7em;
+    color: #fff;
+    opacity: 0.9;
 }
 
 /* Menu bar */
@@ -160,7 +173,7 @@ ul.sidebar-nav {
 
 #sidebar > ul > div.list > li a {
     font-size: 0.8em;
-    font-weight: 600;
+    font-weight: 700;
     color: #AAAAAA;
     display: block;
 }
@@ -297,10 +310,6 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
     padding: 0 10px;
 }
 
-.invert {
-    color: #2a2c2b;
-}
-
 p.light {
     color: #ffffff;
     opacity: 1;
@@ -319,15 +328,12 @@ p.light > a:hover {
     margin-bottom: 0.5em;
 }
 
-.about {
-    color: #a4b6c4;
-}
-
 /*********/
 
 .single-item {
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 2em;
+    /*margin-bottom: 2em;*/
 }
 
 .item-image {
@@ -335,7 +341,6 @@ p.light > a:hover {
     display: table;
     width: 180px;
     height: 180px;
-    /*background: #ffffff;*/
     margin: 0 auto;
 }
 
@@ -347,28 +352,12 @@ p.light > a:hover {
     display: table-cell;
     position: absolute;
     top: 20px;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin: auto;
     border-radius: 50%;
 }
-
-.item-title {
-    background: #111111;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
-    padding: 10px 10px 20px 10px;
-}
-
-/*#projects >.jumbo-inner-wrapper > .row > .col-md-4 > .single-item > .item-image {
-    background: #111111;
-}
-
-#projects >.jumbo-inner-wrapper > .row > .col-md-4 > .single-item > .item-image > .item-title {
-    background: #ffffff;
-}*/
 
 .projects-hn, .projects-jreddit, .projects-music, .projects-pillar, .projects-projects, 
 .projects-quora, .projects-reddit, .projects-short, .projects-tpb, .projects-tweeny, 
@@ -408,6 +397,41 @@ p.light > a:hover {
 }
 .projects-yalt { 
     background-position: -182px -543px; vertical-align: middle; 
+}
+
+/* Borders of cards of projects */
+#pillar {
+    border-bottom: 5px solid #509ff1;
+}
+#qnowledge {
+    border-bottom: 5px solid #a72400;
+}
+#short {
+    border-bottom: 5px solid #003e79;
+}
+#tpb {
+    border-bottom: 5px solid #02191b;
+}
+#reddit {
+    border-bottom: 5px solid #333333;
+}
+#hn {
+    border-bottom: 5px solid #ff6400;
+}
+#music {
+    border-bottom: 5px solid #c68f4e;
+}
+#yalt {
+    border-bottom: 5px solid #fcd300;
+}
+#jreddit {
+    border-bottom: 5px solid #202020;
+}
+#projects-repo {
+    border-bottom: 5px solid #a09779;
+}
+#tweeny {
+    border-bottom: 5px solid #5b5958;
 }
 
 stack-tag {

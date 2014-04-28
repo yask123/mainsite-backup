@@ -17,6 +17,11 @@ html(lang="en")
 
         meta(name="google-site-verification", content="Fjv0uLvY6KOkNRqPgPlMlASk7DwV8rvnsqLcfTU7wBI")
 
+        link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
+        link(rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css")
+        link(rel="stylesheet", href="dist/css/custom.min.css")
+        //- link(rel="stylesheet", href="/css/custom.css")
+
     body
         // navbar
         a#menu-toggle.btn.btn-lg(href="#")
@@ -58,7 +63,6 @@ html(lang="en")
                     a(href="#minibio")
                         i.fa.fa-angle-down.fa-5x
                 div.top
-                    //- img.banner-img.me(src="images/me.png")
                     h1.karan-goel Karan Goel
                     p.tagline
                         | Hello. I'm Karan Goel and I make cool stuff.
@@ -119,7 +123,7 @@ html(lang="en")
                     div.row
                         div.col-md-4
                             div.single-item
-                                div.item-image#google
+                                div.item-image
                                     img.banner-img(src="images/google.png")
                                 h2.custom
                                     | Google
@@ -131,7 +135,7 @@ html(lang="en")
                                     | team in the Engineering Practicum program.
                         div.col-md-4
                             div.single-item
-                                div.item-image#lenskart
+                                div.item-image
                                     img.banner-img(src="images/lenskart.png")
                                 h2.custom
                                     | Lenskart.com
@@ -145,7 +149,7 @@ html(lang="en")
                                     | and shipped two custom dashboards with realtime data streams using Tableau.
                         div.col-md-4
                             div.single-item
-                                div.item-image#spam
+                                div.item-image
                                     img.banner-img(src="/images/spam.png")
                                 h2.custom
                                     | UW iSchool
@@ -168,13 +172,14 @@ html(lang="en")
                         | Projects
                     
                     div.col-md-6.div.col-md-offset-3 
-                        p If you'd like to be the first to know when I make something new, 
-                            a(href="http://eepurl.com/SRIPT", target="_blank") sign up for free.
+                        p Leave 
+                            a(href="http://eepurl.com/SRIPT", target="_blank") your e-mail here 
+                            | and stay tuned about my projects. I won't spam you. Seriously.
 
                     div.row
                         div.col-md-4
-                            div.single-item
-                                div.item-image#pillar
+                            div.single-item#pillar
+                                div.item-image
                                     a(href="https://github.com/karan/Pillar", target="_blank")
                                         img.banner-img.projects-pillar
                                 h2.custom
@@ -189,8 +194,8 @@ html(lang="en")
                                     | .
 
                         div.col-md-4
-                            div.single-item
-                                div.item-image#spam
+                            div.single-item#qnowledge
+                                div.item-image
                                     a(href="http://q.goel.im", target="_blank")
                                         img.banner-img.projects-quora
                                 h2.custom
@@ -200,8 +205,8 @@ html(lang="en")
                                     | Qnowledge is a knowledge API for Quora that provides access to various details of any question using a simple REST interface.
 
                         div.col-md-4
-                            div.single-item
-                                div.item-image#spam
+                            div.single-item#short
+                                div.item-image
                                     a(href="http://s.goel.im/", target="_blank")
                                         img.banner-img.projects-short
                                 h2.custom
@@ -214,8 +219,8 @@ html(lang="en")
                         
                     div.row
                         div.col-md-4
-                            div.single-item
-                                div.item-image#spam
+                            div.single-item#tweeny
+                                div.item-image
                                     a(href="http://tweeny.goel.im/", target="_blank")
                                         img.banner-img.projects-tweeny
                                 h2.custom
@@ -226,8 +231,8 @@ html(lang="en")
                                     | Automatically generates tweets for you by training a Markov bot based on bigram probabilities derived from your tweet history.
 
                         div.col-md-4
-                            div.single-item
-                                div.item-image#spam
+                            div.single-item#tpb
+                                div.item-image
                                     a(href="https://github.com/karan/TPB")
                                         img.banner-img.projects-tpb
                                 h2.custom
@@ -238,8 +243,8 @@ html(lang="en")
                                     | It is supported on both Python 2 and Python 3.
 
                         div.col-md-4
-                            div.single-item
-                                div.item-image#spam
+                            div.single-item#projects
+                                div.item-image
                                     a(href="https://github.com/karan/Projects", target="_blank")
                                         img.banner-img.projects-projects
                                 h2.custom
@@ -251,8 +256,8 @@ html(lang="en")
                     
                     div.row
                         div.col-md-4
-                            div.single-item
-                                div.item-image#spam
+                            div.single-item#reddit
+                                div.item-image
                                     a(href="https://github.com/karan/", target="_blank")
                                         img.banner-img.projects-reddit
                                 h2.custom
@@ -265,8 +270,8 @@ html(lang="en")
                                     a(href="https://github.com/karan/NobodyDoesThis", target="_blank") NobodyDoesThis
                                     |  – Scans /r/DoesAnybodyElse posts with 0 score and then comments "Nope, it's just you."
                         div.col-md-4
-                            div.single-item
-                                div.item-image#spam
+                            div.single-item#hn
+                                div.item-image
                                     a(href="https://github.com/karan/HackerNewsAPI", target="_blank")
                                         img.banner-img.projects-hn
                                 h2.custom
@@ -278,8 +283,8 @@ html(lang="en")
                                     a(href="https://github.com/karan/HNify", target="_blank") HNify
                                     |  with memcached.
                         div.col-md-4
-                            div.single-item
-                                div.item-image#spam
+                            div.single-item#jreddit
+                                div.item-image
                                     a(href="https://github.com/karan/jReddit", target="_blank")
                                         img.banner-img.projects-jreddit
                                 h2.custom
@@ -291,8 +296,8 @@ html(lang="en")
 
                     div.row
                         div.col-md-4
-                            div.single-item
-                                div.item-image#spam
+                            div.single-item#music
+                                div.item-image
                                     a(href="https://github.com/karan/MoodicPlayer", target="_blank")
                                         img.banner-img.projects-music
                                 h2.custom
@@ -302,8 +307,8 @@ html(lang="en")
                                     | Simple GUI-based app that uses last.fm API and builds a playlist for users based on their mood.
                                     | Primarily built to learn the Java Swing library and how web API's work.
                         div.col-md-4
-                            div.single-item
-                                div.item-image#spam
+                            div.single-item#yalt
+                                div.item-image
                                     a(href="https://github.com/karan/YALT", target="_blank")
                                         img.banner-img.projects-yalt
                                 h2.custom
@@ -351,6 +356,31 @@ html(lang="en")
                         div.col-md-4
                             div.single-item
                                 h3
+                                    i.fa.fa-star.fa-3x
+                                p.light People do seem to live what I do. I've been 
+                                    a(href="http://www.reddit.com/r/programming/comments/1isd63/want_to_learn_a_new_language_solve_these_100/") featured 
+                                    a(href="http://www.reddit.com/r/webdev/comments/1ysxq5/intro_to_nodejs_expressjs_mongodb_for_beginners/") multiple 
+                                    a(href="http://www.reddit.com/r/Python/comments/1lkfzm/thepiratebay_api_for_python/") times 
+                                    a(href="http://www.reddit.com/r/learnpython/comments/1svn38/rlearnpython_best_of_2013_nominations_thread/ce1o2jx") on Reddit 
+                                    | and 
+                                    a(href="https://news.ycombinator.com/item?id=6038242") hit 
+                                    a(href="https://news.ycombinator.com/item?id=6374031") frontpage 
+                                    a(href="https://news.ycombinator.com/item?id=7602045") of 
+                                    a(href="https://news.ycombinator.com/item?id=7631088") Hacker News
+                                    |  about half a dozen times.
+
+                    div.row
+                        div.col-md-4
+                            div.single-item
+                                h3
+                                    i.fa.fa-group.fa-3x
+                                p.light I started the first maker club at the UW called 
+                                    a(href="http://students.washington.edu/uwsudo/") Sudo Soldiers
+                                    | . With an awesome team of officers, we have almost made the club
+                                    | a cult by organizing weekly student-led technical workshops.
+                        div.col-md-4
+                            div.single-item
+                                h3
                                     i.fa.fa-github-alt.fa-3x
                                 p.light I'm a bit of an 
                                     a(href="http://tantek.com/2010/281/b1/what-is-the-open-web", target="_blank") open web evangelist
@@ -360,8 +390,7 @@ html(lang="en")
                                     | I believe that open source empowers people to stop complaining
                                     | and start fixing problems.
 
-                    div.row
-                        div.col-md-4.col-md-offset-2
+                        div.col-md-4
                             div.single-item
                                 h3
                                     i.fa.fa-pencil.fa-3x
@@ -372,18 +401,6 @@ html(lang="en")
                                     |  and 
                                     a(href='http://stackoverflow.com/users/2392038/karan-goel', target="_blank") StackOverflow
                                     |   about programming, open source and other interesting topics. 
-                        
-                        div.col-md-4
-                            div.single-item
-                                h3
-                                    i.fa.fa-bar-chart-o.fa-3x
-                                p.light My 
-                                    a(href="http://en.wikipedia.org/wiki/Myers-Briggs_Type_Indicator", target="_blank") Myers-Briggs Type Indicator (MBTI)
-                                    |  is 
-                                    a(href="http://en.wikipedia.org/wiki/ESTJ", target="_blank") ESTJ
-                                    | . I 
-                                    a(href="http://www.celebritytypes.com/estj.php", target="_blank") share
-                                    |  my personality type with Henry Ford, Martha Stewart, Michelle Obama and Emma Watson.
 
             div.footer
                 p 
@@ -392,15 +409,10 @@ html(lang="en")
                     | Built with HTML5, CSS3, Bootstrap, jQuery, Font Awesome and lots of 
                     span.glyphicon.glyphicon-heart-empty
 
-    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
-    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css")
-    //- link(rel="stylesheet", href="dist/css/custom.min.css")
-    link(rel="stylesheet", href="/css/custom.css")
-
     script(src="//code.jquery.com/jquery-1.11.0.min.js")
     script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
-    script(src="/js/custom.js")
-    //- script(src="dist/js/custom.min.js")
+    //- script(src="/js/custom.js")
+    script(src="dist/js/custom.min.js")
 
     script.
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
