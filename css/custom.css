@@ -69,7 +69,7 @@ a:hover {
 .single-item > .custom.invert > small {
     font-size: 0.6em;
     opacity: 0.5;
-    color: #fff;
+    color: #999;
 }
 
 a img {
@@ -324,7 +324,7 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
 }
 
 .invert {
-    color: #f4f4f4
+    color: #2a2c2b;
 }
 
 p.light {
@@ -333,7 +333,7 @@ p.light {
 }
 
 p.light > a {
-    color: #ffffff;
+    color: #2a2c2b;
 }
 
 p.light > a:hover {
@@ -355,8 +355,8 @@ p.light > a:hover {
 .item-image {
     position: relative;
     display: table;
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
     background: #ffffff;
     margin: 0 auto;
 }
