@@ -22,12 +22,14 @@ $(document).ready(function() {
         e.preventDefault();
         e.stopPropagation();
         $("#sidebar").addClass("active");
+        $(".page-wrapper").addClass("moveRight");
     });
 
     $("#menu-close").click(function(e) {
         e.preventDefault();
         e.stopPropagation();
         $("#sidebar").removeClass("active");
+        $(".page-wrapper").removeClass("moveRight");
     });
 
     $(document).click(function() {
