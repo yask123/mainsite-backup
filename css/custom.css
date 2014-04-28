@@ -40,6 +40,7 @@ body {
 }
 
 a {
+    color: #C0414C;
     text-decoration: none;
     -moz-transition: color .2s ease-in-out;
     -webkit-transition: color .2s ease-in-out;
@@ -49,23 +50,14 @@ a {
 }
 
 a:hover {
-    color: #001F3F;
+    color: #2a2c2b;
     text-decoration: none;
 }
 
-p {
-    font-size: 0.6em;
+.jumbotron p, p {
+    font-size: 0.9em;
     line-height: 1.8;
     margin: 20px 0;
-}
-
-p.light {
-    color: #ffffff;
-    opacity: 1;
-}
-
-p.light > a {
-    color: #2a2c2b;
 }
 
 .single-item > .custom.invert > small {
@@ -84,11 +76,8 @@ h1, h2, h3, h4, h5, h6, h2 a {
 }
 
 h2 a {
+    color: #C0414C;
     padding: 0.01em 0.3em;
-}
-
-h2 a:hover {
-    color: #428bca;
     -webkit-transition: background 0.5s linear;
     -moz-transition: background 0.5s linear;
     -o-transition: background 0.5s linear;
@@ -96,12 +85,16 @@ h2 a:hover {
     transition: background 0.5s linear;
 }
 
+h2 a:hover {
+    color: #2a2c2b;
+}
+
 h2.custom {
     font-weight: 700;
     margin: 1em auto 0.5em;
 }
 
-p.custom-p {
+p.tagline {
     font-size: 1.5em;
     color: #fff;
     line-height: 1.25em;
@@ -323,19 +316,16 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
 
 /* Style individual jumbotrons */
 .jumbotron#projects, .jumbotron#minibio {
-    background: #f4f4f4;
+    background: #ffffff;
+    color: #2a2c2b;
     margin-bottom: 0;
     font-weight: 400;
 }
 
-.jumbotron#work {
-    background: #e8843b;
-}
-
-.jumbotron#about {
-    background: #3e3e3e;
+.jumbotron#work, .jumbotron#about {
+    background: #2a2c2b;
     margin-bottom: 0;
-    color: #f4f4f4;
+    color: #ffffff;
     font-weight: 400;
 }
 
@@ -343,8 +333,22 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
     color: #f4f4f4
 }
 
-.jumbotron#work a:hover, .jumbotron#about a:hover {
-    color: #f4f4f4;
+p.light {
+    color: #ffffff;
+    opacity: 1;
+}
+
+p.light > a {
+    color: #9C727A;
+}
+
+p.light > a:hover {
+    color: #ffffff;
+}
+
+.jumbo-title.dark {
+    color: #2a2c2b;
+    margin-bottom: 0.5em;
 }
 
 /*********/
