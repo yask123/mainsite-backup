@@ -40,13 +40,13 @@ html, body {
 body {
     font-family: 'Open Sans', sans-serif!important;
     font-weight: 300;
-    color: #3e3e3e;
+    color: #a4b6c4;
     overflow-x: hidden;
     font-size: 16pt;
 }
 
 a {
-    color: #2a2c2b;
+    color: #3a75bc;
     text-decoration: none;
     -moz-transition: color .2s ease-in-out;
     -webkit-transition: color .2s ease-in-out;
@@ -56,12 +56,12 @@ a {
 }
 
 a:hover {
-    color: #bbb;
+    color: #a4b6c4;
     text-decoration: none;
 }
 
 .jumbotron p, p {
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.8;
     margin: 20px 0;
 }
@@ -69,7 +69,7 @@ a:hover {
 .single-item > .custom.invert > small {
     font-size: 0.6em;
     opacity: 0.5;
-    color: #999;
+    color: #a4b6c4;
 }
 
 a img {
@@ -78,7 +78,7 @@ a img {
 
 h1, h2, h3, h4, h5, h6, h2 a {
     font-family: 'Open Sans', sans-serif;
-    color: #3e3e3e;
+    color: #ffffff;
 }
 
 h2 a {
@@ -309,14 +309,14 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
 /* Style individual jumbotrons */
 .jumbotron#projects, .jumbotron#minibio {
     background: #ffffff;
-    color: #999;
+    color: #a4b6c4;
     margin-bottom: 0;
     font-weight: 400;
     padding: 0 10px;
 }
 
 .jumbotron#work, .jumbotron#about {
-    background: #3c3c3c;
+    background: #3366a4;
     margin-bottom: 0;
     color: #ffffff;
     font-weight: 400;
@@ -328,21 +328,25 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
 }
 
 p.light {
-    color: #999;
+    color: #ffffff;
     opacity: 1;
 }
 
 p.light > a {
-    color: #2a2c2b;
+    color: #a4b6c4;
 }
 
 p.light > a:hover {
-    color: #999;
+    color: #ffffff;
 }
 
 .jumbo-title.dark {
     color: #2a2c2b;
     margin-bottom: 0.5em;
+}
+
+.about {
+    color: #a4b6c4;
 }
 
 /*********/
@@ -357,7 +361,7 @@ p.light > a:hover {
     display: table;
     width: 180px;
     height: 180px;
-    background: #ffffff;
+    /*background: #ffffff;*/
     margin: 0 auto;
 }
 
@@ -372,6 +376,7 @@ p.light > a:hover {
     left: 0;
     right: 0;
     margin: auto;
+    border-radius: 50%;
 }
 
 .item-title {
@@ -383,13 +388,13 @@ p.light > a:hover {
     padding: 10px 10px 20px 10px;
 }
 
-#projects >.jumbo-inner-wrapper > .row > .col-md-4 > .single-item > .item-image {
+/*#projects >.jumbo-inner-wrapper > .row > .col-md-4 > .single-item > .item-image {
     background: #111111;
 }
 
 #projects >.jumbo-inner-wrapper > .row > .col-md-4 > .single-item > .item-image > .item-title {
     background: #ffffff;
-}
+}*/
 
 .projects-hn, .projects-jreddit, .projects-music, .projects-pillar, .projects-projects, 
 .projects-quora, .projects-reddit, .projects-short, .projects-tpb, .projects-tweeny, 
