@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, h2 a {
 }
 
 h2 a {
-    color: #3e3e3e;
+    color: #2a2c2b;
     padding: 0.01em 0.3em;
     -webkit-transition: background 0.5s linear;
     -moz-transition: background 0.5s linear;
@@ -86,7 +86,7 @@ h2 a {
 }
 
 h2 a:hover {
-    color: #C0414C;
+    color: #bbb;
 }
 
 h2.custom {

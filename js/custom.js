@@ -53,6 +53,7 @@ $(document).ready(function() {
     $(document).click(function() {
         if ($("#sidebar").hasClass("active")) {
             $("#sidebar").removeClass("active");
+            $(".page-wrapper").removeClass("moveRight");
         }
     });
 
