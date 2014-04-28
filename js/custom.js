@@ -41,19 +41,6 @@ $(document).ready(function() {
         $(".top").height($(window).height());
     });
 
-    // parallex blur
-    $(window).scroll(function(e) {
-        var s = $(window).scrollTop();
-        var opacityVal = (s / 350.0);
-        // make the unblurred image visible 
-        $('.bg-blurred').css('opacity', opacityVal);
-        
-        var x = 50+s/25;
-        // console.log(x);
-        $('.bg-blurred').css('background-position', '50%'+x+'%');
-        $('.bg').css('background-position', '50%'+x+'%');
-    });
-
     // set equal height for all items
     function equalHeight(group) {
        tallest = 0;
@@ -70,6 +57,15 @@ $(document).ready(function() {
     });
     $(document).ready(function() {
        equalHeight($(".jumbotron#projects > .row > .col-md-4 > .single-item"));
+    });
+
+    // change bg color on selecting different social networks
+    $(".btn-twitter1").mouseover(function(e) {
+        $(".bg").css("background", "#2094ca");
+    });
+
+    $(".btn-github1").mouseover(function(e) {
+        $(".bg").css("background", "#4a535b");
     });
 
 });
