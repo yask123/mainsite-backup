@@ -54,9 +54,24 @@ a:hover {
 }
 
 p {
-    font-size: 0.7em;
+    font-size: 0.6em;
     line-height: 1.8;
     margin: 20px 0;
+}
+
+p.light {
+    color: #ffffff;
+    opacity: 1;
+}
+
+p.light > a {
+    color: #2a2c2b;
+}
+
+.single-item > .custom.invert > small {
+    font-size: 0.6em;
+    opacity: 0.5;
+    color: #fff;
 }
 
 a img {
@@ -93,14 +108,15 @@ p.custom-p {
     margin-bottom: 1em;
 }
 
-h1.custom-h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-bottom: 1em;
-}
-
 h1 > i {
     margin-right: 20px;
+}
+
+h1.jumbo-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5em;
 }
 
 /* Menu bar */
@@ -299,7 +315,7 @@ h1.karan-goel {
     color: #ffffff;
 }
 
-i.fa.fa-angle-down.fa-5x.dark {
+i.fa.fa-angle-down.fa-5x.dark, .dark {
     color: #AAAAAA;
 }
 
@@ -312,7 +328,11 @@ i.fa.fa-angle-down.fa-5x.dark {
     font-weight: 400;
 }
 
-.jumbotron#work, .jumbotron#about {
+.jumbotron#work {
+    background: #e8843b;
+}
+
+.jumbotron#about {
     background: #3e3e3e;
     margin-bottom: 0;
     color: #f4f4f4;
@@ -343,7 +363,6 @@ i.fa.fa-angle-down.fa-5x.dark {
     border-radius: 50%;
     display: inline-block;
     color: white;
-    opacity: 0.8;
 }
 
 .projects {
