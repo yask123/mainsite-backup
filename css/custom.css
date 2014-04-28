@@ -346,15 +346,43 @@ p.light > a:hover {
     margin-bottom: 30px;
 }
 
-.banner-img {
+.item-image {
     position: relative;
+    display: table;
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.banner-img {
     width: 180px;
     height: 180px;
     overflow: hidden;
     vertical-align: middle;
-    border-radius: 50%;
-    display: inline-block;
-    color: white;
+    display: table-cell;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.item-title {
+    background: #111111;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    padding: 10px 10px 20px 10px;
+}
+
+#projects >.jumbo-inner-wrapper > .row > .col-md-4 > .single-item > .item-image {
+    background: #111111;
+}
+
+#projects >.jumbo-inner-wrapper > .row > .col-md-4 > .single-item > .item-image > .item-title {
+    background: #ffffff;
 }
 
 .projects-hn, .projects-jreddit, .projects-music, .projects-pillar, .projects-projects, 
