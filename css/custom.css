@@ -40,7 +40,7 @@ body {
 }
 
 a {
-    color: #C0414C;
+    color: #2a2c2b;
     text-decoration: none;
     -moz-transition: color .2s ease-in-out;
     -webkit-transition: color .2s ease-in-out;
@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-    color: #2a2c2b;
+    color: #bbb;
     text-decoration: none;
 }
 
@@ -303,14 +303,14 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
 /* Style individual jumbotrons */
 .jumbotron#projects, .jumbotron#minibio {
     background: #ffffff;
-    color: #2a2c2b;
+    color: #999;
     margin-bottom: 0;
     font-weight: 400;
     padding: 0 10px;
 }
 
 .jumbotron#work, .jumbotron#about {
-    background: #2a2c2b;
+    background: #3c3c3c;
     margin-bottom: 0;
     color: #ffffff;
     font-weight: 400;
@@ -322,16 +322,16 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
 }
 
 p.light {
-    color: #ffffff;
+    color: #999;
     opacity: 1;
 }
 
 p.light > a {
-    color: #9C727A;
+    color: #ffffff;
 }
 
 p.light > a:hover {
-    color: #ffffff;
+    color: #999;
 }
 
 .jumbo-title.dark {
