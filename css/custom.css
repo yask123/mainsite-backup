@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, h2 a {
 }
 
 h2 a {
-    color: #C0414C;
+    color: #3e3e3e;
     padding: 0.01em 0.3em;
     -webkit-transition: background 0.5s linear;
     -moz-transition: background 0.5s linear;
@@ -86,7 +86,7 @@ h2 a {
 }
 
 h2 a:hover {
-    color: #2a2c2b;
+    color: #C0414C;
 }
 
 h2.custom {
@@ -254,20 +254,6 @@ h1.karan-goel {
     opacity: 0.5;
 }
 
-#top > div.top > p > a {
-    color: #AAA;
-    text-decoration: none;
-    -moz-transition: color .2s ease-in-out;
-    -webkit-transition: color .2s ease-in-out;
-    -o-transition: color .2s ease-in-out;
-    -ms-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
-}
-
-#top > div.top > p > a:hover {
-    color: #fff;
-}
-
 .social > li {
     margin-right: 10px;
 }
@@ -320,6 +306,7 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
     color: #2a2c2b;
     margin-bottom: 0;
     font-weight: 400;
+    padding: 0 10px;
 }
 
 .jumbotron#work, .jumbotron#about {
@@ -327,6 +314,7 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
     margin-bottom: 0;
     color: #ffffff;
     font-weight: 400;
+    padding: 0 10px;
 }
 
 .invert {
@@ -367,11 +355,6 @@ p.light > a:hover {
     border-radius: 50%;
     display: inline-block;
     color: white;
-}
-
-.projects {
-    padding: 0;
-    margin: 0 auto;
 }
 
 .projects-hn, .projects-jreddit, .projects-music, .projects-pillar, .projects-projects, 
@@ -435,9 +418,7 @@ div.col-md-6.div.col-md-offset-3 {
 
 .footer {
     text-align: center;
-    background: #f4f4f4;
+    background: #ffffff;
     padding: 4em 1em;
     font-weight: 400;
-    font-size: 0.9em;
-    color: #3e3e3e;
 }
