@@ -1,8 +1,22 @@
 $(document).ready(function() {
 
+    // set height of the main top page the same as height of browser window
     $(".top").height($(window).height());
 
-    var scroll = function() {
+    // on initial load, hide sidebar pannel
+    $("#menu-toggle").hide();
+    // when scrolling beyond top part, show menu
+    $(window).bind('scroll', function() {
+        if($(this).scrollTop() >= $("#top").height()) {
+            $("#menu-toggle").show();
+        } else {
+            $("#menu-toggle").hide();
+        }
+    })
+
+    var scroll;
+
+    $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -13,9 +27,7 @@ $(document).ready(function() {
             return false;
             }
         }
-    };
-
-    $('a[href*=#]:not([href=#])').click(scroll);
+    });
 
     // sidebar animation
     $("#menu-toggle").click(function(e) {
