@@ -60,12 +60,24 @@ $(document).ready(function() {
     });
 
     // change bg color on selecting different social networks
-    $(".btn-twitter1").mouseover(function(e) {
+    $(".btn-twitter").mouseover(function(e) {
         $(".bg").css("background", "#2094ca");
     });
 
-    $(".btn-github1").mouseover(function(e) {
+    $(".btn-github").mouseover(function(e) {
         $(".bg").css("background", "#4a535b");
+    });
+
+    $(".btn-email").mouseover(function(e) {
+        $(".bg").css("background", "#DD4B39");
+    });
+
+    $(".btn-linkedin").mouseover(function(e) {
+        $(".bg").css("background", "#0077b5");
+    });
+
+    $(".btn-gplus").mouseover(function(e) {
+        $(".bg").css("background", "#DD4B39");
     });
 
 });

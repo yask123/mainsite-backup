@@ -258,13 +258,9 @@ h1.karan-goel {
 
 .social > li > a {
     color: #ffffff;
-    opacity: 1;
+    opacity: 0.5;
     position: relative;
     -webkit-transition: all 0.3s ease-out 0.3s;
-}
-
-#top > .top > ul.social > li > a {
-    opacity: 0.5;
 }
 
 .social > li > a:hover {
@@ -273,27 +269,6 @@ h1.karan-goel {
     -o-transform: rotate(-360deg);
     transform: rotate(-360deg);
     opacity: 1;
-}
-
-/* change color of buttons on hover */
-.btn-github2:hover {
-    color: #333333;
-}
-
-.btn-twitter:hover {
-    color: #00aced;
-}
-
-.btn-email:hover {
-    color: #DD4B39;
-}
-
-.btn-linkedin:hover {
-    color: #0077b5;
-}
-
-.btn-gplus:hover {
-    color: #dd4b39;
 }
 
 @-webkit-keyframes arrows {
@@ -306,13 +281,14 @@ h1.karan-goel {
     position: absolute;
     bottom: 10px;
     opacity: 0.5;
+    text-align: center;
     -webkit-animation: arrows 2s infinite;
     -moz-animation: arrows 2s infinite;
     -o-animation: arrows 2s infinite;
     animation: arrows 2s infinite;
 }
 .arrow a i {
-    color: #aaaaaa;
+    color: #ffffff;
 }
 /********************************/
 
