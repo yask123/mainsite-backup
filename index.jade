@@ -172,9 +172,15 @@ html(lang="en")
                         | Projects
                     
                     div.col-md-6.div.col-md-offset-3 
-                        p Leave 
-                            a(href="http://eepurl.com/SRIPT", target="_blank") your e-mail here 
-                            | and stay tuned about my projects. I won't spam you. Seriously.
+                        form#mc-embedded-subscribe-form.validate(action='http://goel.us3.list-manage.com/subscribe/post?u=e6728b4299cef4104e10240b9&id=7fd1fe0c0d', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
+                            p Leave your e-mail here and stay tuned about my projects.
+                            input#mce-EMAIL.email(type='email', value='', name='EMAIL', placeholder='email address', required='required')
+                            input#mc-embedded-subscribe.button(type='submit', value='Go', name='subscribe')
+                            p
+                                small I won't spam you. Seriously.
+                            div(style='position: absolute; left: -5000px;')
+                                input(type='text', name='b_e6728b4299cef4104e10240b9_7fd1fe0c0d', value='')
+
 
                     div.row
                         div.col-md-4
