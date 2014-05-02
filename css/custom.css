@@ -16,6 +16,23 @@ html, body {
     overflow-x: hidden;
 }
 
+::-webkit-input-placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+:-moz-placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+::-moz-placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+:-ms-input-placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +44,7 @@ html, body {
 
 body {
     font-family: 'PT Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     color: #a4b6c4;
     overflow-x: hidden;
     font-size: 16pt;
@@ -36,16 +53,19 @@ body {
 a {
     color: #3a75bc;
     text-decoration: none;
-    -moz-transition: color .2s ease-in-out;
-    -webkit-transition: color .2s ease-in-out;
-    -o-transition: color .2s ease-in-out;
-    -ms-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 a:hover {
     color: #a4b6c4;
     text-decoration: none;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 .jumbotron p, p {
@@ -60,20 +80,27 @@ a img {
 
 h1, h2, h3, h4, h5, h6, h2 a {
     color: #ffffff;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 h2 a {
     color: #2087d6;
     padding: 0.01em 0.3em;
-    -webkit-transition: background 0.5s linear;
-    -moz-transition: background 0.5s linear;
-    -o-transition: background 0.5s linear;
-    -ms-transition: background 0.5s linear;
-    transition: background 0.5s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 h2 a:hover {
-    color: #a4b6c4;
+    color: #439add;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 h2.custom {
@@ -298,7 +325,6 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
     background: #ffffff;
     color: #a4b6c4;
     margin-bottom: 0;
-    font-weight: 400;
     padding: 0 10px;
 }
 
@@ -306,7 +332,6 @@ i.fa.fa-angle-down.fa-5x.dark, .dark {
     background: #3366a4;
     margin-bottom: 0;
     color: #ffffff;
-    font-weight: 400;
     padding: 0 10px;
 }
 
@@ -460,25 +485,57 @@ div.col-md-6.div.col-md-offset-3 {
     font-weight: 400;
 }
 
-#mc-embedded-subscribe-form {
-    background-color: #3366a4;
-    padding: 20px;
+/* Subscription box */
+
+
+.jumbotron#subscribe {
+    background: #439add;
+    margin-bottom: 0;
     color: #ffffff;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#mc-embedded-subscribe-form h2 {
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-bottom: 1em;
 }
 
 input#mce-EMAIL.email {
-    border-radius: 8px;
+    border-radius: 10px;
+    height: 50px;
     width: 60%;
+    max-width: 300px;
+    padding: 7px 10px;
     display: inline-block;
-    padding: 5px;
     font-weight: bold;
+    background: #7ab7e7;
+    color: #ffffff;
+    border: 5px solid rgba(37, 79, 149, 0.5);
+    margin-right: 3%;
 }
 
 input#mc-embedded-subscribe {
-    border-radius: 8px;
-    width: 20%;
+    border-radius: 10px;
+    width: 30%;
+    max-width: 120px;
     display: inline-block;
-    padding: 5px;
+    height: 50px;
+    padding: 7px 10px;
     color: #ffffff;
-    background-color: #a4b6c4;
+    background-color: #439add;
+    border: 5px solid #ffffff;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+input#mc-embedded-subscribe:hover {
+    background-color: #3366a4;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
