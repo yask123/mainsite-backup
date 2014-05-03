@@ -126,10 +126,10 @@ h1.jumbo-title {
     margin-bottom: 1.5em;
 }
 
-small {
-    font-size: 0.7em;
+small.text {
+    font-size: 0.6em;
     color: #fff;
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 /* Menu bar */
@@ -384,6 +384,12 @@ p.light > a:hover {
     border-radius: 50%;
 }
 
+/* we add a border bottom for every card in projects */
+.jumbotron#projects > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item {
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+}
+
 .projects-hn, .projects-jreddit, .projects-music, .projects-pillar, .projects-projects, 
 .projects-quora, .projects-reddit, .projects-short, .projects-tpb, .projects-tweeny, 
 .projects-yalt { 
@@ -426,37 +432,37 @@ p.light > a:hover {
 
 /* Borders of cards of projects */
 #pillar {
-    border-bottom: 5px solid #509ff1;
+    border-bottom-color: #509ff1;
 }
 #qnowledge {
-    border-bottom: 5px solid #a72400;
+    border-bottom-color: #a72400;
 }
 #short {
-    border-bottom: 5px solid #003e79;
+    border-bottom-color: #003e79;
 }
 #tpb {
-    border-bottom: 5px solid #02191b;
+    border-bottom-color: #02191b;
 }
 #reddit {
-    border-bottom: 5px solid #333333;
+    border-bottom-color: #333333;
 }
 #hn {
-    border-bottom: 5px solid #ff6400;
+    border-bottom-color: #ff6400;
 }
 #music {
-    border-bottom: 5px solid #c68f4e;
+    border-bottom-color: #c68f4e;
 }
 #yalt {
-    border-bottom: 5px solid #fcd300;
+    border-bottom-color: #fcd300;
 }
 #jreddit {
-    border-bottom: 5px solid #202020;
+    border-bottom-color: #202020;
 }
 #projects-repo {
-    border-bottom: 5px solid #a09779;
+    border-bottom-color: #a09779;
 }
 #tweeny {
-    border-bottom: 5px solid #5b5958;
+    border-bottom-color: #5b5958;
 }
 
 stack-tag {

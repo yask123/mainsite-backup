@@ -20,8 +20,7 @@ $(document).ready(function() {
         }
     });
 
-    var scroll;
-
+    // smooth scroll
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -57,6 +56,7 @@ $(document).ready(function() {
         }
     });
 
+    // fluid response when browser size changes
     $(window).resize(function () {
         // for a single paged top part
         $(".top").height($(window).height());
@@ -64,21 +64,20 @@ $(document).ready(function() {
 
     // set equal height for all items
     function equalHeight(group) {
-       tallest = 0;
-       group.each(function() {
-          thisHeight = $(this).height();
-          if(thisHeight > tallest) {
-             tallest = thisHeight;
-          }
-       });
-       group.height(tallest);
+        tallest = 0;
+        group.each(function() {
+            thisHeight = $(this).height();
+            if(thisHeight > tallest) {
+                tallest = thisHeight;
+            }
+        });
+        group.height(tallest);
     }
-    $(document).ready(function() {
-       equalHeight($(".jumbotron#work > .row > .col-md-4 > .single-item"));
-    });
-    $(document).ready(function() {
-       equalHeight($(".jumbotron#projects > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item"));
-    });
+
+    // make cards in work section the same height
+    equalHeight($(".jumbotron#work > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item"));
+    // make cards in projects secton the same height
+    equalHeight($(".jumbotron#projects > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item"));
 
     // change bg color on selecting different social networks
     $(".btn-twitter").mouseover(function(e) {
