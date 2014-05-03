@@ -62,6 +62,11 @@ $(document).ready(function() {
         $(".top").height($(window).height());
     });
 
+    // make cards in work section the same height
+    equalHeight($(".jumbotron#work > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item"));
+    // make cards in projects secton the same height
+    equalHeight($(".jumbotron#projects > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item"));
+
     // set equal height for all items
     function equalHeight(group) {
         tallest = 0;
@@ -73,11 +78,6 @@ $(document).ready(function() {
         });
         group.height(tallest);
     }
-
-    // make cards in work section the same height
-    equalHeight($(".jumbotron#work > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item"));
-    // make cards in projects secton the same height
-    equalHeight($(".jumbotron#projects > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item"));
 
     // change bg color on selecting different social networks
     $(".btn-twitter").mouseover(function(e) {
