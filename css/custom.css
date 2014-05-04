@@ -144,8 +144,8 @@ small.text {
 }
 
 #menu-close {
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 5px;
     color: #fff;
     border-radius: 10px;
     height: 50px;
@@ -161,11 +161,11 @@ small.text {
     overflow-y: auto;
     z-index: 1000;
     float: left;
-    -webkit-transition: left 0.4s ease 0s;
-    -moz-transition: left 0.4s ease 0s;
-    -ms-transition: left 0.4s ease 0s;
-    -o-transition: left 0.4s ease 0s;
-    transition: left 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 #sidebar.active {
@@ -175,38 +175,37 @@ small.text {
 
 ul.sidebar-nav {
     position: absolute;
-    top: 0;
+    top: 70px;
     width: 200px;
     list-style: none;
-    margin: 50px 0 0;
     padding: 0;
-    text-align: right;
 }
 
-#sidebar > ul > div.list > li {
+#sidebar > ul > div.list > a {
     height: 50px;
-    padding-right: 30px;
     line-height: 50px;
-    -moz-transition: background .2s ease-in-out;
-    -webkit-transition: background .2s ease-in-out;
-    -o-transition: background .2s ease-in-out;
-    -ms-transition: background .2s ease-in-out;
-    transition: background .2s ease-in-out;
+    display: block;
+    padding-left: 40px;
 }
 
-#sidebar > ul > div.list > li:hover {
-    background: #383838;
-}
-
-#sidebar > ul > div.list > li a {
+#sidebar > ul > div.list > a > li {
     font-size: 0.8em;
     font-weight: 700;
     color: #AAAAAA;
     display: block;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
-#sidebar > ul > div > li > a > i {
-    margin-left: 15px;
+#sidebar > ul > div.list > a > li:hover {
+    color: #ffffff;
+}
+
+#sidebar > ul > div > a > li > i {
+    margin-right: 15px;
 }
 /* Menu Bar */
 
@@ -214,11 +213,11 @@ ul.sidebar-nav {
 .page-wrapper {
     left: 0px;
     position: absolute;
-    -webkit-transition: left 0.4s ease 0s;
-    -moz-transition: left 0.4s ease 0s;
-    -ms-transition: left 0.4s ease 0s;
-    -o-transition: left 0.4s ease 0s;
-    transition: left 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 .moveRight {
@@ -260,11 +259,11 @@ ul.sidebar-nav {
     height: 100%;
     width: 100%;
     background: #60BA59;
-    -webkit-transition: background .5s;
-    -moz-transition: background .5s;
-    -ms-transition: background .5s;
-    -o-transition: background .5s;
-    transition: background .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
 h1.karan-goel {
