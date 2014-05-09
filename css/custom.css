@@ -77,8 +77,8 @@ a:hover {
 }
 
 .jumbotron p, p {
-    font-size: 1em;
-    line-height: 1.8;
+    font-size: 0.9em;
+    line-height: 1.8em;
     margin: 20px 0
 }
 
