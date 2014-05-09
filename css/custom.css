@@ -264,7 +264,7 @@ h1.karan-goel {
     color: #fff;
     font-weight: 400;
     font-size: 2.6em;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .social > li {
@@ -273,7 +273,7 @@ h1.karan-goel {
 
 .social > li > a {
     color: #ffffff;
-    opacity: 0.5;
+    opacity: 0.6;
     position: relative;
     -webkit-transition: all 0.3s ease-out 0.3s;
 }
