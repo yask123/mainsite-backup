@@ -49,11 +49,19 @@ $(document).ready(function() {
         $(".page-wrapper").removeClass("moveRight");
     });
 
-    $(document).click(function() {
+    function closeSidebar() {
         if ($("#sidebar").hasClass("active")) {
             $("#sidebar").removeClass("active");
             $(".page-wrapper").removeClass("moveRight");
         }
+    }
+
+    $(document).click(function() {
+        closeSidebar();
+    });
+
+    $("#sidebar a").click(function() {
+        setTimeout(closeSidebar, 500);
     });
 
     // fluid response when browser size changes
