@@ -403,7 +403,7 @@ i.fa.fa-angle-down.fa-5x.dark,
 /* we add a border bottom for every card in projects */
 .jumbotron#projects .single-item {
     border-bottom-style: solid;
-    border-bottom-width: 5px
+    border-bottom-width: 5px;
 }
 
 .projects-hn, 
