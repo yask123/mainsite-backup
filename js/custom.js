@@ -63,9 +63,9 @@ $(document).ready(function() {
     });
 
     // make cards in work section the same height
-    equalHeight($(".jumbotron#work > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item"));
+    equalHeight($(".jumbotron#work .single-item"));
     // make cards in projects secton the same height
-    equalHeight($(".jumbotron#projects > .jumbo-inner-wrapper > .row > .col-md-4 > .single-item"));
+    equalHeight($(".jumbotron#projects .single-item"));
 
     // set equal height for all items
     function equalHeight(group) {
