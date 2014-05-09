@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/7YGmE4Ls5b94ct65u07hVQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
 @font-face {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/0XxGQsSc1g4rdRdjJKZrNL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
 html, body {
@@ -43,7 +43,7 @@ html, body {
 }
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #a4b6c4;
     overflow-x: hidden;
@@ -124,12 +124,6 @@ h1.jumbo-title {
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 1.5em;
-}
-
-small.text {
-    font-size: 0.6em;
-    color: #fff;
-    opacity: 0.5;
 }
 
 /* Menu bar */
@@ -258,7 +252,7 @@ ul.sidebar-nav {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #60BA59;
+    background: #319753;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
@@ -509,9 +503,9 @@ div.col-md-6.div.col-md-offset-3 {
 input#mce-EMAIL.email {
     border-radius: 10px;
     height: 50px;
-    width: 60%;
-    max-width: 300px;
-    padding: 7px 10px;
+    width: 70%;
+    max-width: 350px;
+    padding: 7px 15px;
     display: inline-block;
     font-weight: bold;
     background: #7ab7e7;
@@ -522,8 +516,8 @@ input#mce-EMAIL.email {
 
 input#mc-embedded-subscribe {
     border-radius: 10px;
-    width: 30%;
-    max-width: 120px;
+    width: 25%;
+    max-width: 100px;
     display: inline-block;
     height: 50px;
     padding: 7px 10px;
