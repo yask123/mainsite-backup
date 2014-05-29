@@ -43,11 +43,27 @@ module.exports = function(grunt) {
           'dist/css/custom.min.css': 'css/custom.css'
         }
       }
+    },
+
+    watch: {
+      css: {
+        files: [
+          'css/custom.css'
+        ],
+        tasks: ['cssmin']
+      },
+      js: {
+        files: [
+          'js/custom.js'
+        ],
+        tasks: ['jshint','uglify']
+      }
     }
 
   });
 
   grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']);
+  grunt.registerTask('dev', ['watch']);
 
   // ===========================================================================
   // LOAD GRUNT PLUGINS ========================================================

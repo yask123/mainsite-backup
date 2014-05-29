@@ -269,6 +269,9 @@ h1.karan-goel {
     opacity: 0.6
 }
 
+.social {
+    padding: 0;
+}
 .social li {
     margin-right: 10px
 }
