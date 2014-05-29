@@ -407,11 +407,6 @@ h1.karan-goel {
 }
 
 /* we add a border bottom for every card in projects */
-.jumbotron#projects .single-item {
-    border-bottom-style: solid;
-    border-bottom-width: 5px;
-}
-
 .projects-hn, 
 .projects-jreddit, 
 .projects-music,
@@ -479,51 +474,6 @@ h1.karan-goel {
 .projects-yalt {
     background-position: -182px -543px;
     vertical-align: middle
-}
-
-/* Borders of cards of projects */
-#pillar {
-    border-bottom-color: #509ff1
-}
-
-#qnowledge {
-    border-bottom-color: #a72400
-}
-
-#short {
-    border-bottom-color: #003e79
-}
-
-#tpb {
-    border-bottom-color: #02191b
-}
-
-#reddit {
-    border-bottom-color: #333
-}
-
-#hn {
-    border-bottom-color: #ff6400
-}
-
-#music {
-    border-bottom-color: #c68f4e
-}
-
-#yalt {
-    border-bottom-color: #fcd300
-}
-
-#jreddit {
-    border-bottom-color: #202020
-}
-
-#projects-repo {
-    border-bottom-color: #a09779
-}
-
-#tweeny {
-    border-bottom-color: #5b5958
 }
 
 /* The tag-like look for each language in projects */
