@@ -3,11 +3,14 @@ $(document).ready(function() {
     // set height of the main top page the same as height of browser window
     $(".top").height($(window).height());
 
-    // for (var i = 0; i < $(".jumbotron").length; i++) {
-    //     if ($(".jumbotron").eq(i).height() < $(window).height()) {
-    //         $(".jumbotron").eq(i).height($(window).height());
-    //     }
-    // }
+    // set equal height for all jumbotrons
+    function heightJumbotrons() {
+        for (var i = 0; i < $(".jumbotron").length; i++) {
+            if ($(".jumbotron").eq(i).height() < $(window).height()) {
+                $(".jumbotron").eq(i).height($(window).height());
+            }
+        }
+    }
 
     // on initial load, hide sidebar pannel
     $("#menu-toggle").hide();
@@ -68,12 +71,14 @@ $(document).ready(function() {
     $(window).resize(function () {
         // for a single paged top part
         $(".top").height($(window).height());
+        heightJumbotrons();
     });
 
     // make cards in work section the same height
     equalHeight($(".jumbotron#work .single-item"));
     // make cards in projects secton the same height
     equalHeight($(".jumbotron#projects .single-item"));
+    heightJumbotrons();
 
     // set equal height for all items
     function equalHeight(group) {

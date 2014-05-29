@@ -316,7 +316,10 @@ h1.karan-goel {
     color: #fff
 }
 
-i.fa.fa-angle-down.fa-5x.dark, 
+.dark-arrow {
+    color: #93adc1!important
+}
+
 .dark {
     color: #AAA
 }
