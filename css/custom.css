@@ -295,6 +295,13 @@ h1.karan-goel {
     opacity: 1
 }
 
+/* iphone landscape and portrait */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    .btn-gplus {
+        visibility: hidden;
+    }
+}
+
 @-webkit-keyframes arrows {
     0%, 20%, 50%, 80%, 100% {bottom: 10px;} 
     40% {bottom: 30px;}
