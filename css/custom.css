@@ -12,6 +12,13 @@
     src: local("Open Sans Bold"), local("OpenSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format("woff")
 }
 
+@font-face {
+    font-family: 'Grand Hotel';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Grand Hotel'), local('GrandHotel-Regular'), url(http://themes.googleusercontent.com/static/fonts/grandhotel/v2/NrGQkrs9rbHm5EYx0Eil0rrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
 /* Start styling the page */
 * {
     margin: 0;
@@ -109,13 +116,6 @@ h2 a:hover {
     -o-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear
-}
-
-p.tagline {
-    font-size: 1.3em;
-    color: #fff;
-    line-height: 1.25em;
-    margin-bottom: 2em
 }
 
 h1 > i {
@@ -246,7 +246,8 @@ small.text {
     display: table-cell;
     float: none;
     padding-left: 1em;
-    padding-right: 1em
+    padding-right: 1em;
+    margin-bottom: 2em;
 }
 
 .bg {
@@ -264,9 +265,17 @@ small.text {
 
 h1.karan-goel {
     color: #fff;
-    font-weight: 400;
-    font-size: 2.6em;
-    opacity: 0.6
+    font-size: 4.6em;
+    opacity: 1;
+    font-family: 'Grand Hotel', cursive;
+}
+
+p.tagline {
+    font-size: 1.3em;
+    color: #fff;
+    opacity: 0.6;
+    line-height: 1.25em;
+    margin: 2em 0 4em;
 }
 
 .social {

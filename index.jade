@@ -5,11 +5,11 @@ doctype html
 
 html(lang="en")
     head
-        title Home of Karan Goel
+        title Karan Goel - Home
 
         meta(http-equiv="content-type", content="text/html; charset=utf-8")
         meta(name="keywords", content="Karan Goel, University of Washington, UW, Seattle")
-        meta(name="description", content="Karan Goel is an undergraduate at University of Washington-Seattle.")
+        meta(name="description", content="Karan Goel is a developer, and student at University of Washington.")
         
         meta(name="viewport", content="width=device-width")
 
@@ -22,6 +22,13 @@ html(lang="en")
         link(rel="stylesheet", href="dist/css/custom.min.css")
         //- link(rel="stylesheet", href="/css/custom.css")
 
+        //- Faebook open graph
+        meta(property='og:title', content='Karan Goel - Home')
+        meta(property='og:url', content='http://www.goel.im')
+        meta(property='og:site_name', content='Karan Goel - Home')
+        meta(property='og:type', content='website')
+
+
     body
         // navbar
         a#menu-toggle.btn.btn-lg(href="#")
@@ -30,7 +37,7 @@ html(lang="en")
             a#menu-close.btn.btn-lg.pull-right(href="#")
                 i.fa.fa-list.fa-2x
             ul.sidebar-nav
-                div.list
+                .list
                     a(href="#top", onclick="ga('send', 'event', 'navbar', 'click', 'Top');")
                         li
                             i.fa.fa-chevron-circle-up
@@ -56,16 +63,16 @@ html(lang="en")
                             i.fa.fa-rss
                             | Blog 
         
-        div.page-wrapper
-            div.jumbotron#top
-                div.bg
-                div.arrow.col-xs-4.col-xs-offset-4
+        .page-wrapper
+            .jumbotron#top
+                .bg
+                .arrow.col-xs-4.col-xs-offset-4
                     a(href="#minibio")
                         i.fa.fa-angle-down.fa-5x
-                div.top
-                    h1.karan-goel Karan Goel
-                    p.tagline
-                        | Hello. I'm Karan Goel and I make cool stuff.
+                .top
+                    //- .brand
+                    h1.karan-goel karan goel
+                    p.tagline I'm a developer & maker of fine things.
 
                     ul.list-inline.col-md-6.col-md-offset-3.social
                         li
@@ -87,12 +94,12 @@ html(lang="en")
                             a.btn-social.btn-gplus(href="http://google.com/+KaranGoel", role="button", target="_blank")
                                 i.fa.fa-google-plus.fa-2x
             
-            div.jumbotron#minibio
-                div.arrow.col-xs-4.col-xs-offset-4
+            .jumbotron#minibio
+                .arrow.col-xs-4.col-xs-offset-4
                     a(href="#work")
                         i.fa.fa-angle-down.fa-5x.dark-arrow
-                div.jumbo-inner-wrapper
-                    div.col-md-8.col-md-offset-2
+                .jumbo-inner-wrapper
+                    .col-md-8.col-md-offset-2
                         p
                             | Hi there. My name is Karan Goel.
                         p
@@ -116,15 +123,15 @@ html(lang="en")
                             a(href="mailto:karan@goel.im", target="_blank") email
                             |  if you like what you see (I'm reasonably nice).
 
-            div.jumbotron#work
-                div.jumbo-inner-wrapper
+            .jumbotron#work
+                .jumbo-inner-wrapper
                     h1.section-title
                         i.fa.fa-users
                         |  Work
-                    div.row
-                        div.col-md-4
-                            div.single-item
-                                div.item-image
+                    .row
+                        .col-md-4
+                            .single-item
+                                .item-image
                                     img.banner-img(src="images/google.png")
                                 h2.single-item-title
                                     | Google
@@ -134,9 +141,9 @@ html(lang="en")
                                     | In Summer 2014, I will intern at Google with the 
                                     b Street View (Maps) 
                                     | team in the Engineering Practicum program.
-                        div.col-md-4
-                            div.single-item
-                                div.item-image
+                        .col-md-4
+                            .single-item
+                                .item-image
                                     img.banner-img(src="images/lenskart.png")
                                 h2.single-item-title
                                     | Lenskart.com
@@ -148,9 +155,9 @@ html(lang="en")
                                     |  as a 
                                     b Data Analyst 
                                     | and shipped two custom dashboards with realtime data streams using Tableau.
-                        div.col-md-4
-                            div.single-item
-                                div.item-image
+                        .col-md-4
+                            .single-item
+                                .item-image
                                     img.banner-img(src="/images/spam.png")
                                 h2.single-item-title
                                     | UW iSchool
@@ -166,16 +173,16 @@ html(lang="en")
                                     |  about the results.
 
 
-            div.jumbotron#projects
-                div.jumbo-inner-wrapper
+            .jumbotron#projects
+                .jumbo-inner-wrapper
                     h1.section-title.dark
                         i.fa.fa-code
                         | Projects
 
-                    div.row
-                        div.col-md-4
-                            div.single-item#pillar
-                                div.item-image
+                    .row
+                        .col-md-4
+                            .single-item#pillar
+                                .item-image
                                     a(href="https://github.com/karan/Pillar", target="_blank")
                                         img.banner-img.projects-pillar
                                 h2.single-item-title
@@ -189,9 +196,9 @@ html(lang="en")
                                     | suicide prevention app targeted towards young adults. Features a mood tracker 
                                     | and an anonymous social network. Built at a 48-hour hackathon.
 
-                        div.col-md-4
-                            div.single-item#qnowledge
-                                div.item-image
+                        .col-md-4
+                            .single-item#qnowledge
+                                .item-image
                                     a(href="http://q.goel.im", target="_blank")
                                         img.banner-img.projects-quora
                                 h2.single-item-title
@@ -200,9 +207,9 @@ html(lang="en")
                                 p
                                     | Qnowledge is a knowledge API for Quora that provides access to various details of any question using a simple REST interface.
 
-                        div.col-md-4
-                            div.single-item#short
-                                div.item-image
+                        .col-md-4
+                            .single-item#short
+                                .item-image
                                     a(href="http://s.goel.im/", target="_blank")
                                         img.banner-img.projects-short
                                 h2.single-item-title
@@ -213,10 +220,10 @@ html(lang="en")
                                 p 
                                     | A high-performance, anonymous URL shortener built using Redis + Node.js with an API-backed design.
                         
-                    div.row
-                        div.col-md-4
-                            div.single-item#tweeny
-                                div.item-image
+                    .row
+                        .col-md-4
+                            .single-item#tweeny
+                                .item-image
                                     a(href="http://tweeny.goel.im/", target="_blank")
                                         img.banner-img.projects-tweeny
                                 h2.single-item-title
@@ -226,9 +233,9 @@ html(lang="en")
                                 p 
                                     | Automatically generates tweets for you by training a Markov bot based on bigram probabilities derived from your tweet history.
 
-                        div.col-md-4
-                            div.single-item#tpb
-                                div.item-image
+                        .col-md-4
+                            .single-item#tpb
+                                .item-image
                                     a(href="https://github.com/karan/TPB")
                                         img.banner-img.projects-tpb
                                 h2.single-item-title
@@ -238,9 +245,9 @@ html(lang="en")
                                     | Wrote an unofficial Python API for ThePirateBay that now supports searching, sorting, pagination etc. 
                                     | It is supported on both Python 2 and Python 3.
 
-                        div.col-md-4
-                            div.single-item#projects-repo
-                                div.item-image
+                        .col-md-4
+                            .single-item#projects-repo
+                                .item-image
                                     a(href="https://github.com/karan/Projects", target="_blank")
                                         img.banner-img.projects-projects
                                 h2.single-item-title
@@ -250,10 +257,10 @@ html(lang="en")
                                     | Compiled a list of 100+ practical, language-agnostinc projects to
                                     | learn Python. The repo now has 4.5k+ stars and is one of the top repos on Github.
                     
-                    div.row
-                        div.col-md-4
-                            div.single-item#reddit
-                                div.item-image
+                    .row
+                        .col-md-4
+                            .single-item#reddit
+                                .item-image
                                     a(href="https://github.com/karan/", target="_blank")
                                         img.banner-img.projects-reddit
                                 h2.single-item-title
@@ -265,9 +272,9 @@ html(lang="en")
                                     br
                                     a(href="https://github.com/karan/NobodyDoesThis", target="_blank") NobodyDoesThis
                                     |  – Scans /r/DoesAnybodyElse posts with 0 score and then comments "Nope, it's just you."
-                        div.col-md-4
-                            div.single-item#hn
-                                div.item-image
+                        .col-md-4
+                            .single-item#hn
+                                .item-image
                                     a(href="https://github.com/karan/HackerNewsAPI", target="_blank")
                                         img.banner-img.projects-hn
                                 h2.single-item-title
@@ -278,9 +285,9 @@ html(lang="en")
                                     | scraping. Also ported it to a RESTful interface at  
                                     a(href="https://github.com/karan/HNify", target="_blank") HNify
                                     |  with memcached.
-                        div.col-md-4
-                            div.single-item#jreddit
-                                div.item-image
+                        .col-md-4
+                            .single-item#jreddit
+                                .item-image
                                     a(href="https://github.com/karan/jReddit", target="_blank")
                                         img.banner-img.projects-jreddit
                                 h2.single-item-title
@@ -290,10 +297,10 @@ html(lang="en")
                                     | Took over an abandoned Java wrapper for Reddit API. Added new features,
                                     | fixed existing bugs, and continue to maintain it.
 
-                    div.row
-                        div.col-md-4
-                            div.single-item#music
-                                div.item-image
+                    .row
+                        .col-md-4
+                            .single-item#music
+                                .item-image
                                     a(href="https://github.com/karan/MoodicPlayer", target="_blank")
                                         img.banner-img.projects-music
                                 h2.single-item-title
@@ -302,9 +309,9 @@ html(lang="en")
                                 p 
                                     | Simple GUI-based app that uses last.fm API and builds a playlist for users based on their mood.
                                     | Primarily built to learn the Java Swing library and how web API's work.
-                        div.col-md-4
-                            div.single-item#yalt
-                                div.item-image
+                        .col-md-4
+                            .single-item#yalt
+                                .item-image
                                     a(href="https://github.com/karan/YALT", target="_blank")
                                         img.banner-img.projects-yalt
                                 h2.single-item-title
@@ -315,8 +322,8 @@ html(lang="en")
                                     | GUI utility to make it easier for anyone to learn facts. Built to
                                     | learn the Java Swing library.
 
-            div.jumbotron#subscribe
-                div.col-md-6.div.col-md-offset-3 
+            .jumbotron#subscribe
+                .col-md-6.col-md-offset-3 
                     form#mc-embedded-subscribe-form.validate(action='http://goel.us3.list-manage.com/subscribe/post?u=e6728b4299cef4104e10240b9&id=7fd1fe0c0d', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
                         h2 Leave your e-mail here and stay tuned about my projects.
                         input#mce-EMAIL.email(type='email', value='', name='EMAIL', required='required', placeholder="your@email.com")
@@ -324,14 +331,14 @@ html(lang="en")
                         div(style='position: absolute; left: -5000px;')
                             input(type='text', name='b_e6728b4299cef4104e10240b9_7fd1fe0c0d', value='')
             
-            div.jumbotron#about
-                div.jumbo-inner-wrapper
+            .jumbotron#about
+                .jumbo-inner-wrapper
                     h1.section-title
                         i.fa.fa-user
                         |  About me
-                    div.row
-                        div.col-md-4
-                            div.single-item
+                    .row
+                        .col-md-4
+                            .single-item
                                 h3
                                     i.fa.fa-plane.fa-3x
                                 p.light Originally from 
@@ -348,8 +355,8 @@ html(lang="en")
                                     a(href='http://www.linkedin.com/in/kgoel', target="_blank") LinkedIn
                                     | .
 
-                        div.col-md-4
-                            div.single-item
+                        .col-md-4
+                            .single-item
                                 h3
                                     i.fa.fa-terminal.fa-3x
                                 p.light Primarily, I do backend and sometimes dabble around with frontend. Broadly, I'm interested in 
@@ -358,8 +365,8 @@ html(lang="en")
                                     a(href="http://github.com/karan", target="_blank") check out
                                     |  what I've been working on recently.
 
-                        div.col-md-4
-                            div.single-item
+                        .col-md-4
+                            .single-item
                                 h3
                                     i.fa.fa-star.fa-3x
                                 p.light People do seem to like what I do. I've been 
@@ -374,17 +381,17 @@ html(lang="en")
                                     a(href="https://news.ycombinator.com/item?id=7631088") Hacker News
                                     |  about half a dozen times.
 
-                    div.row
-                        div.col-md-4
-                            div.single-item
+                    .row
+                        .col-md-4
+                            .single-item
                                 h3
                                     i.fa.fa-group.fa-3x
                                 p.light I started the first maker club at the UW called 
                                     a(href="http://students.washington.edu/uwsudo/") Sudo Soldiers
                                     | . With an awesome team of officers, we have almost made the club
                                     | a cult by organizing weekly student-led technical workshops.
-                        div.col-md-4
-                            div.single-item
+                        .col-md-4
+                            .single-item
                                 h3
                                     i.fa.fa-github-alt.fa-3x
                                 p.light I'm a bit of an 
@@ -395,8 +402,8 @@ html(lang="en")
                                     | I believe that open source empowers people to stop complaining
                                     | and start fixing problems.
 
-                        div.col-md-4
-                            div.single-item
+                        .col-md-4
+                            .single-item
                                 h3
                                     i.fa.fa-pencil.fa-3x
                                 p.light I spend most of my (free) time writing on 
@@ -407,7 +414,7 @@ html(lang="en")
                                     a(href='http://stackoverflow.com/users/2392038/karan-goel', target="_blank") StackOverflow
                                     |   about programming, open source and other interesting topics. 
 
-            div.footer
+            .footer
                 p 
                     | Created by Karan Goel
                 p 
