@@ -304,7 +304,6 @@ p.tagline {
     opacity: 1
 }
 
-
 @-webkit-keyframes arrows {
     0%, 20%, 50%, 80%, 100% {bottom: 10px;} 
     40% {bottom: 30px;}
