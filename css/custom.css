@@ -54,12 +54,12 @@ html, body {
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    color: #93adc1;
+    color: #3366a4;
     font-size: 16pt
 }
 
 a {
-    color: #3a75bc;
+    color: #93adc1;
     text-decoration: none;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -68,7 +68,7 @@ a {
 }
 
 a:hover {
-    color: #93adc1;
+    color: #3366a4;
     text-decoration: none;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -112,10 +112,10 @@ h2 a:hover {
 }
 
 p.tagline {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #fff;
     line-height: 1.25em;
-    margin-bottom: 1em
+    margin-bottom: 2em
 }
 
 h1 > i {
@@ -157,11 +157,11 @@ small.text {
     height: 100%;
     z-index: 1000;
     float: left;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease-in 0s;
+    -moz-transition: all 0.4s ease-in 0s;
+    -ms-transition: all 0.4s ease-in 0s;
+    -o-transition: all 0.4s ease-in 0s;
+    transition: all 0.4s ease-in 0s;
 }
 
 #sidebar.active {
@@ -208,11 +208,11 @@ small.text {
 .page-wrapper {
     position: relative;
     left: 0;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease-in 0s;
+    -moz-transition: all 0.4s ease-in 0s;
+    -ms-transition: all 0.4s ease-in 0s;
+    -o-transition: all 0.4s ease-in 0s;
+    transition: all 0.4s ease-in 0s;
 }
 
 .moveRight {
@@ -245,8 +245,8 @@ small.text {
     vertical-align: middle;
     display: table-cell;
     float: none;
-    padding-left: 10px;
-    padding-right: 10px
+    padding-left: 1em;
+    padding-right: 1em
 }
 
 .bg {
@@ -256,10 +256,10 @@ small.text {
     height: 100%;
     width: 100%;
     background: #319753;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear
 }
 
 h1.karan-goel {
@@ -280,10 +280,10 @@ h1.karan-goel {
     color: #fff;
     opacity: 0.6;
     position: relative;
-    -moz-transition: all 0.3s ease-out 0.3s;
-    -o-transition: all 0.3s ease-out 0.3s;
-    -webkit-transition: all 0.3s ease-out 0.3s;
-    transition: all 0.3s ease-out 0.3s
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear
 }
 
 .social a:hover {
@@ -295,12 +295,6 @@ h1.karan-goel {
     opacity: 1
 }
 
-/* iphone landscape and portrait */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
-    .btn-gplus {
-        visibility: hidden;
-    }
-}
 
 @-webkit-keyframes arrows {
     0%, 20%, 50%, 80%, 100% {bottom: 10px;} 
@@ -324,7 +318,7 @@ h1.karan-goel {
 }
 
 .dark-arrow {
-    color: #93adc1!important
+    color: #3366a4!important
 }
 
 .dark {
@@ -337,7 +331,7 @@ h1.karan-goel {
 .jumbotron#projects, 
 .jumbotron#minibio {
     background: #fff;
-    color: #93adc1;
+    color: #3366a4;
     margin-bottom: 0;
     padding: 0 10px
 }
@@ -565,4 +559,28 @@ input#mc-embedded-subscribe:hover {
     -o-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear
+}
+
+
+/* iphone landscape and portrait */
+@media screen and (min-width : 320px) and (max-width : 568px) {
+    body {
+        font-size: 13pt;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    .social li {
+        margin-right: 0;
+    }
+
+    .btn-gplus, .btn-linkedin {
+        display: none;
+    }
+
+    .arrow {
+        font-size: 0.5em;
+    }
 }

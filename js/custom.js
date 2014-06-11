@@ -113,4 +113,8 @@ $(document).ready(function() {
         $(".bg").css("background", "#DD4B39");
     });
 
+    $(".btn-blog").mouseover(function(e) {
+        $(".bg").css("background", "#CF5300");
+    });
+
 });
