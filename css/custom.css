@@ -493,8 +493,7 @@ stack-tag {
 }
 
 .row {
-    margin: 0 auto 30px auto;
-    padding: 0 auto
+    margin: 0 auto 30px;
 }
 
 .footer {
@@ -576,11 +575,15 @@ input#mc-embedded-subscribe:hover {
         margin-right: 0;
     }
 
-    .btn-gplus, .btn-linkedin {
+    .btn-gplus, .btn-linkedin, .item-image {
         display: none;
     }
 
     .arrow {
         font-size: 0.5em;
+    }
+
+    .row {
+        margin: 0 auto;
     }
 }

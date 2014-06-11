@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    var viewport = {
+        width  : $(window).width(),
+        height : $(window).height()
+    };
+
     // set height of the main top page the same as height of browser window
     $(".top").height($(window).height());
 
@@ -74,10 +79,13 @@ $(document).ready(function() {
         heightJumbotrons();
     });
 
-    // make cards in work section the same height
-    equalHeight($(".jumbotron#work .single-item"));
-    // make cards in projects secton the same height
-    equalHeight($(".jumbotron#projects .single-item"));
+    // make single items equal height only if we are not in mobile viewport
+    if (viewport.width > 568) {
+        // make cards in work section the same height
+        equalHeight($(".jumbotron#work .single-item"));
+        // make cards in projects secton the same height
+        equalHeight($(".jumbotron#projects .single-item"));
+    }
     heightJumbotrons();
 
     // set equal height for all items
