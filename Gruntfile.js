@@ -45,6 +45,21 @@ module.exports = function(grunt) {
       }
     },
 
+    jade: {
+      compile: {
+        options: {
+          data: {
+            debug: false,
+            timestamp: "<%= new Date().getTime() %>"
+          }
+        },
+        files: {
+          ""
+          "index.html": ["includes/index.jade"]
+        }
+      }
+    },
+
     watch: {
       css: {
         files: [
@@ -72,8 +87,8 @@ module.exports = function(grunt) {
   // make sure you have run npm install so our app can find these
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jade');
 
 };
