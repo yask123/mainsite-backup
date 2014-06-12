@@ -6,7 +6,8 @@ $(document).ready(function() {
     // set equal height for all jumbotrons
     function heightJumbotrons() {
         for (var i = 0; i < $(".jumbotron").length; i++) {
-            if ($(".jumbotron:not(#subscribe)").eq(i).height() < $(window).height()) {
+            if (($(".jumbotron:not(#minibio)").eq(i).height() < $(window).height()) &&
+                ($(".jumbotron:not(#subscribe)").eq(i).height() < $(window).height())) {
                 $(".jumbotron").eq(i).height($(window).height());
             }
         }

@@ -394,9 +394,12 @@ p.tagline {
 }
 
 .single-item-title {
-    color: #2087d6;
     font-weight: 700;
     margin: 1em auto 0.5em
+}
+
+#projects .single-item-title {
+    color: #2087d6;
 }
 
 .banner-img {
