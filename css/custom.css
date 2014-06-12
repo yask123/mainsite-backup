@@ -427,7 +427,7 @@ p.tagline {
 .projects-tpb,
 .projects-tweeny,
 .projects-yalt {
-    /*background: url(/images/projects.png) no-repeat*/
+    background: url(/images/projects.png) no-repeat;
 }
 
 .projects-hn {

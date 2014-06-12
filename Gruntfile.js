@@ -54,8 +54,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          ""
-          "index.html": ["includes/index.jade"]
+          "index.html": ["index.jade"]
         }
       }
     },
@@ -72,6 +71,13 @@ module.exports = function(grunt) {
           'js/custom.js'
         ],
         tasks: ['jshint','uglify']
+      },
+      jade: {
+        files: [
+          'index.jade',
+          'includes/**/*.jade'
+        ],
+        tasks: ['jade']
       }
     }
 
