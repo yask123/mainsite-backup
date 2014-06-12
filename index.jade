@@ -5,29 +5,7 @@ doctype html
 
 html(lang="en")
     head
-        title Karan Goel - Home
-
-        meta(http-equiv="content-type", content="text/html; charset=utf-8")
-        meta(name="keywords", content="Karan Goel, University of Washington, UW, Seattle")
-        meta(name="description", content="Karan Goel is a developer, and student at University of Washington.")
-        
-        meta(name="viewport", content="width=device-width")
-
-        link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
-
-        meta(name="google-site-verification", content="Fjv0uLvY6KOkNRqPgPlMlASk7DwV8rvnsqLcfTU7wBI")
-
-        link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
-        link(rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css")
-        link(rel="stylesheet", href="dist/css/custom.min.css")
-        //- link(rel="stylesheet", href="/css/custom.css")
-
-        //- Faebook open graph
-        meta(property='og:title', content='Karan Goel - Home')
-        meta(property='og:url', content='http://www.goel.im')
-        meta(property='og:site_name', content='Karan Goel - Home')
-        meta(property='og:type', content='website')
-
+        include includes/head
 
     body
         // navbar
@@ -73,363 +51,32 @@ html(lang="en")
                     h1.karan-goel karan goel
                     p.tagline I'm a developer & maker of fine things.
 
-                    ul.list-inline.col-md-6.col-md-offset-3.social
-                        //- li
-                            a.btn-social.btn-email(href="mailto:karan@goel.im", role="button", target="_blank")
-                                i.fa.fa-envelope-o.fa-2x
-                        li
-                            a.btn-social.btn-github(href="http://github.com/karan", role="button", target="_blank")
-                                i.fa.fa-github.fa-2x
-                        li
-                            a.btn-social.btn-twitter(href="http://twitter.com/KaranGoel", role="button", target="_blank")
-                                i.fa.fa-twitter.fa-2x
-                        li
-                            a.btn-social.btn-blog(href="http://karan.github.io", role="button", target="_blank")
-                                i.fa.fa-rss.fa-2x
-                        li
-                            a.btn-social.btn-linkedin(href="http://www.linkedin.com/in/kgoel", role="button", target="_blank")
-                                i.fa.fa-linkedin.fa-2x
-                        li
-                            a.btn-social.btn-gplus(href="http://google.com/+KaranGoel", role="button", target="_blank")
-                                i.fa.fa-google-plus.fa-2x
+                    include includes/social
             
             .jumbotron#minibio
                 .arrow.col-xs-4.col-xs-offset-4
                     a(href="#work")
                         i.fa.fa-angle-down.fa-5x.dark-arrow
                 .jumbo-inner-wrapper
-                    .col-md-8.col-md-offset-2
-                        p
-                            | Hi there. My name is Karan Goel.
-                        p
-                            | I'm an undergraduate at the 
-                            a(href="http://www.washington.edu", target="_blank") University of Washington 
-                            | in the  
-                            a(href='http://www.cs.washington.edu', target="_blank") Computer Science
-                            |  program and I love making new things, mostly on the web.
-                        p
-                            | I will intern at Google with the 
-                            a(href="https://www.google.com/maps/views/home?gl=us", target="_blank") Street View
-                            |  team in Summer 2014.
-                        p
-                            | Feel free to browse through this site or my 
-                            a(href="http://karan.github.io", target="_blank") 
-                                b blog
-                            | , or read my 
-                            b
-                                a(href="Karan.Goel.Resume.pdf", target="_blank") resume 
-                            | and send me an 
-                            a(href="mailto:karan@goel.im", target="_blank") email
-                            |  if you like what you see (I'm reasonably nice).
+                    include includes/minibio
 
             .jumbotron#work
                 .jumbo-inner-wrapper
-                    h1.section-title
-                        i.fa.fa-users
-                        |  Work
-                    .row
-                        .col-md-4
-                            .single-item
-                                .item-image
-                                    img.banner-img(src="images/google.png")
-                                h2.single-item-title
-                                    | Google
-                                    br
-                                    small.text Summer '14 - Mountain View
-                                p.light
-                                    | In Summer 2014, I will intern at Google with the 
-                                    b Street View (Maps) 
-                                    | team in the Engineering Practicum program.
-                        .col-md-4
-                            .single-item
-                                .item-image
-                                    img.banner-img(src="images/lenskart.png")
-                                h2.single-item-title
-                                    | Lenskart.com
-                                    br
-                                    small.text Summer '13 - New Delhi
-                                p.light
-                                    | In Summer 2013, I interned at 
-                                    a(href="http://www.lenskart.com/", target="_blank") Lenskart.com 
-                                    |  as a 
-                                    b Data Analyst 
-                                    | and shipped two custom dashboards with realtime data streams using Tableau.
-                        .col-md-4
-                            .single-item
-                                .item-image
-                                    img.banner-img(src="/images/spam.png")
-                                h2.single-item-title
-                                    | UW iSchool
-                                    br
-                                    small.text Aug '12 - Aug '13 - Seattle
-                                p.light
-                                    | Assisted 
-                                    a(href="http://jeffhuang.com/", target="_blank") Jeff Huang
-                                    |  as a 
-                                    b Research Assistant
-                                    | . Collected data, ran statistical tests, visualized the findings and published a 
-                                    a(href="http://karan.github.io/email-spam/") blog post
-                                    |  about the results.
+                    include includes/work
 
 
             .jumbotron#projects
                 .jumbo-inner-wrapper
-                    h1.section-title.dark
-                        i.fa.fa-code
-                        | Projects
-
-                    .row
-                        .col-md-4
-                            .single-item#pillar
-                                .item-image
-                                    a(href="https://github.com/karan/Pillar", target="_blank")
-                                        img.banner-img.projects-pillar
-                                h2.single-item-title
-                                    a(href="https://github.com/karan/Pillar", target="_blank") Pillar
-                                stack-tag Node.js
-                                stack-tag MongoDB
-                                stack-tag Knockout.js
-                                p 
-                                    | An 
-                                    a(href="https://github.com/karan/Pillar-API", target="_blank") API backed 
-                                    | suicide prevention app targeted towards young adults. Features a mood tracker 
-                                    | and an anonymous social network. Built at a 48-hour hackathon.
-
-                        .col-md-4
-                            .single-item#qnowledge
-                                .item-image
-                                    a(href="http://q.goel.im", target="_blank")
-                                        img.banner-img.projects-quora
-                                h2.single-item-title
-                                        a(href="http://q.goel.im") Qnowledge
-                                stack-tag Python
-                                p
-                                    | Qnowledge is a knowledge API for Quora that provides access to various details of any question using a simple REST interface.
-
-                        .col-md-4
-                            .single-item#short
-                                .item-image
-                                    a(href="http://s.goel.im/", target="_blank")
-                                        img.banner-img.projects-short
-                                h2.single-item-title
-                                        a(href="http://s.goel.im/", target="_blank") s
-                                stack-tag Node.js
-                                stack-tag Angular.js
-                                stack-tag Redis
-                                p 
-                                    | A high-performance, anonymous URL shortener built using Redis + Node.js with an API-backed design.
-                        
-                    .row
-                        .col-md-4
-                            .single-item#tweeny
-                                .item-image
-                                    a(href="http://tweeny.goel.im/", target="_blank")
-                                        img.banner-img.projects-tweeny
-                                h2.single-item-title
-                                        a(href="http://tweeny.goel.im/", target="_blank") What would I tweet?
-                                stack-tag Python
-                                stack-tag Angular.js
-                                p 
-                                    | Automatically generates tweets for you by training a Markov bot based on bigram probabilities derived from your tweet history.
-
-                        .col-md-4
-                            .single-item#tpb
-                                .item-image
-                                    a(href="https://github.com/karan/TPB")
-                                        img.banner-img.projects-tpb
-                                h2.single-item-title
-                                        a(href="https://github.com/karan/TPB", target="_blank") TPB API
-                                stack-tag Python
-                                p 
-                                    | Wrote an unofficial Python API for ThePirateBay that now supports searching, sorting, pagination etc. 
-                                    | It is supported on both Python 2 and Python 3.
-
-                        .col-md-4
-                            .single-item#projects-repo
-                                .item-image
-                                    a(href="https://github.com/karan/Projects", target="_blank")
-                                        img.banner-img.projects-projects
-                                h2.single-item-title
-                                        a(href="https://github.com/karan/Projects", target="_blank") 100+ Projects
-                                stack-tag Python
-                                p 
-                                    | Compiled a list of 100+ practical, language-agnostinc projects to
-                                    | learn Python. The repo now has 4.5k+ stars and is one of the top repos on Github.
+                    include includes/projects
                     
-                    .row
-                        .col-md-4
-                            .single-item#reddit
-                                .item-image
-                                    a(href="https://github.com/karan/", target="_blank")
-                                        img.banner-img.projects-reddit
-                                h2.single-item-title
-                                        a(href="https://github.com/karan/", target="_blank") Reddit Scripts
-                                stack-tag Python
-                                p
-                                    a(href="https://github.com/karan/RedditAgain", target="_blank") RedditAgain
-                                    |  – Automates migrating a Reddit account to a new one.
-                                    br
-                                    a(href="https://github.com/karan/NobodyDoesThis", target="_blank") NobodyDoesThis
-                                    |  – Scans /r/DoesAnybodyElse posts with 0 score and then comments "Nope, it's just you."
-                        .col-md-4
-                            .single-item#hn
-                                .item-image
-                                    a(href="https://github.com/karan/HackerNewsAPI", target="_blank")
-                                        img.banner-img.projects-hn
-                                h2.single-item-title
-                                        a(href="https://github.com/karan/HackerNewsAPI", target="_blank") HackerNews API
-                                stack-tag Python
-                                p 
-                                    | Wrote an unofficial Python API for Hacker News that works by screen
-                                    | scraping. Also ported it to a RESTful interface at  
-                                    a(href="https://github.com/karan/HNify", target="_blank") HNify
-                                    |  with memcached.
-                        .col-md-4
-                            .single-item#jreddit
-                                .item-image
-                                    a(href="https://github.com/karan/jReddit", target="_blank")
-                                        img.banner-img.projects-jreddit
-                                h2.single-item-title
-                                        a(href="https://github.com/karan/jReddit", target="_blank") jReddit
-                                stack-tag Java
-                                p 
-                                    | Took over an abandoned Java wrapper for Reddit API. Added new features,
-                                    | fixed existing bugs, and continue to maintain it.
-
-                    .row
-                        .col-md-4
-                            .single-item#music
-                                .item-image
-                                    a(href="https://github.com/karan/MoodicPlayer", target="_blank")
-                                        img.banner-img.projects-music
-                                h2.single-item-title
-                                        a(href="https://github.com/karan/MoodicPlayer", target="_blank") Moodic Player
-                                stack-tag Java
-                                p 
-                                    | Simple GUI-based app that uses last.fm API and builds a playlist for users based on their mood.
-                                    | Primarily built to learn the Java Swing library and how web API's work.
-                        .col-md-4
-                            .single-item#yalt
-                                .item-image
-                                    a(href="https://github.com/karan/YALT", target="_blank")
-                                        img.banner-img.projects-yalt
-                                h2.single-item-title
-                                        a(href="https://github.com/karan/YALT", target="_blank") YALT
-                                stack-tag Java
-                                p 
-                                    | Straight out of intro CS classes, made a lightweight and minimal 
-                                    | GUI utility to make it easier for anyone to learn facts. Built to
-                                    | learn the Java Swing library.
-
             .jumbotron#subscribe
-                .col-md-6.col-md-offset-3 
-                    form#mc-embedded-subscribe-form.validate(action='http://goel.us3.list-manage.com/subscribe/post?u=e6728b4299cef4104e10240b9&id=7fd1fe0c0d', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
-                        h2 Leave your e-mail here and stay tuned about my projects.
-                        input#mce-EMAIL.email(type='email', value='', name='EMAIL', required='required', placeholder="your@email.com")
-                        input#mc-embedded-subscribe.button(type='submit', value="Go", name='subscribe')
-                        div(style='position: absolute; left: -5000px;')
-                            input(type='text', name='b_e6728b4299cef4104e10240b9_7fd1fe0c0d', value='')
+                include includes/email
             
             .jumbotron#about
                 .jumbo-inner-wrapper
-                    h1.section-title
-                        i.fa.fa-user
-                        |  About me
-                    .row
-                        .col-md-4
-                            .single-item
-                                h3
-                                    i.fa.fa-plane.fa-3x
-                                p.light Originally from 
-                                    a(href="http://en.wikipedia.org/wiki/New_Delhi", target="_blank") New Delhi, India
-                                    | , now in 
-                                    a(href='http://en.wikipedia.org/wiki/Too_Much_Rain', target="_blank") Seattle, WA
-                                    | , I'm an undergraduate at the 
-                                    a(href='https://www.washington.edu/', target="_blank") University of Washington
-                                    | , in the 
-                                    a(href='https://www.cs.washington.edu/', target="_blank") Computer Science
-                                    |  department. My resume is available in 
-                                    a(href='Karan.Goel.Resume.pdf', target="_blank") PDF format
-                                    |  or on 
-                                    a(href='http://www.linkedin.com/in/kgoel', target="_blank") LinkedIn
-                                    | .
-
-                        .col-md-4
-                            .single-item
-                                h3
-                                    i.fa.fa-terminal.fa-3x
-                                p.light Primarily, I do backend and sometimes dabble around with frontend. Broadly, I'm interested in 
-                                    a(href='http://en.wikipedia.org/wiki/Web_scraping', target="_blank") web scraping
-                                    | , data mining, and building web applications. If that sounds interesting to you, 
-                                    a(href="http://github.com/karan", target="_blank") check out
-                                    |  what I've been working on recently.
-
-                        .col-md-4
-                            .single-item
-                                h3
-                                    i.fa.fa-star.fa-3x
-                                p.light People do seem to like what I do. I've been 
-                                    a(href="http://www.reddit.com/r/programming/comments/1isd63/want_to_learn_a_new_language_solve_these_100/") featured 
-                                    a(href="http://www.reddit.com/r/webdev/comments/1ysxq5/intro_to_nodejs_expressjs_mongodb_for_beginners/") multiple 
-                                    a(href="http://www.reddit.com/r/Python/comments/1lkfzm/thepiratebay_api_for_python/") times 
-                                    a(href="http://www.reddit.com/r/learnpython/comments/1svn38/rlearnpython_best_of_2013_nominations_thread/ce1o2jx") on Reddit 
-                                    | and 
-                                    a(href="https://news.ycombinator.com/item?id=6038242") hit 
-                                    a(href="https://news.ycombinator.com/item?id=6374031") frontpage 
-                                    a(href="https://news.ycombinator.com/item?id=7602045") of 
-                                    a(href="https://news.ycombinator.com/item?id=7631088") Hacker News
-                                    |  about half a dozen times.
-
-                    .row
-                        .col-md-4
-                            .single-item
-                                h3
-                                    i.fa.fa-group.fa-3x
-                                p.light I started the first maker club at the UW called 
-                                    a(href="http://students.washington.edu/uwsudo/") Sudo Soldiers
-                                    | . With an awesome team of officers, we have almost made the club
-                                    | a cult by organizing weekly student-led technical workshops.
-                        .col-md-4
-                            .single-item
-                                h3
-                                    i.fa.fa-github-alt.fa-3x
-                                p.light I'm a bit of an 
-                                    a(href="http://tantek.com/2010/281/b1/what-is-the-open-web", target="_blank") open web evangelist
-                                    | , and an 
-                                    a(href="http://imgs.xkcd.com/comics/open_source.png", target="_blank") open source
-                                    |  fanatic.
-                                    | I believe that open source empowers people to stop complaining
-                                    | and start fixing problems.
-
-                        .col-md-4
-                            .single-item
-                                h3
-                                    i.fa.fa-pencil.fa-3x
-                                p.light I spend most of my (free) time writing on 
-                                    a(href='http://www.reddit.com/user/karangoeluw', target="_blank") Reddit
-                                    | , 
-                                    a(href='https://www.quora.com/Karan-Goel-3', target="_blank") Quora
-                                    |  and 
-                                    a(href='http://stackoverflow.com/users/2392038/karan-goel', target="_blank") StackOverflow
-                                    |   about programming, open source and other interesting topics. 
+                    include includes/about
 
             .footer
-                p 
-                    | Created by Karan Goel
-                p 
-                    | Built with HTML5, CSS3, Bootstrap, jQuery, Font Awesome and lots of 
-                    span.glyphicon.glyphicon-heart-empty
+                include includes/footer
 
-    script(src="//code.jquery.com/jquery-1.11.0.min.js")
-    script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
-    //- script(src="/js/custom.js")
-    script(src="dist/js/custom.min.js")
-
-    script.
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-9509587-16', 'goel.im');
-        ga('send', 'pageview');
+    include includes/scripts
