@@ -416,74 +416,29 @@ p.tagline {
 }
 
 /* we add a border bottom for every card in projects */
-.projects-hn, 
-.projects-jreddit, 
-.projects-music,
-.projects-pillar,
-.projects-projects,
-.projects-quora,
-.projects-reddit,
-.projects-short,
-.projects-tpb,
-.projects-tweeny,
-.projects-yalt {
+.projects-griddit, .projects-harmonic, .projects-hn, .projects-jreddit, .projects-music, 
+.projects-pillar, .projects-projects, .projects-quora, .projects-reddit, .projects-sc1, 
+.projects-sc2, .projects-short, .projects-tpb, .projects-tweeny, .projects-yalt, 
+.projects-zipup {
     background: url(/images/projects.png) no-repeat;
 }
 
-.projects-hn {
-    background-position: -1px 0;
-    vertical-align: middle
-}
-
-.projects-jreddit {
-    background-position: -182px 0;
-    vertical-align: middle
-}
-
-.projects-music {
-    background-position: -363px 0;
-    vertical-align: middle
-}
-
-.projects-pillar {
-    background-position: -1px -181px;
-    vertical-align: middle
-}
-
-.projects-projects {
-    background-position: -182px -181px;
-    vertical-align: middle
-}
-
-.projects-quora {
-    background-position: -363px -181px;
-    vertical-align: middle
-}
-
-.projects-reddit {
-    background-position: -1px -362px;
-    vertical-align: middle
-}
-
-.projects-short {
-    background-position: -182px -362px;
-    vertical-align: middle
-}
-
-.projects-tpb {
-    background-position: -363px -362px;
-    vertical-align: middle
-}
-
-.projects-tweeny {
-    background-position: -1px -543px;
-    vertical-align: middle
-}
-
-.projects-yalt {
-    background-position: -182px -543px;
-    vertical-align: middle
-}
+.projects-griddit { background-position: -0px -0px; width: 180px; height: 180px; }
+.projects-harmonic { background-position: -180px -0px; width: 180px; height: 180px; }
+.projects-hn { background-position: -360px -0px; width: 180px; height: 180px; }
+.projects-jreddit { background-position: -540px -0px; width: 180px; height: 180px; }
+.projects-music { background-position: -0px -180px; width: 180px; height: 180px; }
+.projects-pillar { background-position: -180px -180px; width: 180px; height: 180px; }
+.projects-projects { background-position: -360px -180px; width: 180px; height: 180px; }
+.projects-quora { background-position: -540px -180px; width: 180px; height: 180px; }
+.projects-reddit { background-position: -0px -360px; width: 180px; height: 180px; }
+.projects-sc1 { background-position: -180px -360px; width: 180px; height: 180px; }
+.projects-sc2 { background-position: -360px -360px; width: 180px; height: 180px; }
+.projects-short { background-position: -540px -360px; width: 180px; height: 180px; }
+.projects-tpb { background-position: -0px -540px; width: 180px; height: 180px; }
+.projects-tweeny { background-position: -180px -540px; width: 180px; height: 180px; }
+.projects-yalt { background-position: -360px -540px; width: 180px; height: 180px; }
+.projects-zipup { background-position: -540px -540px; width: 180px; height: 180px; }
 
 /* The tag-like look for each language in projects */
 stack-tag {
@@ -583,7 +538,7 @@ input#mc-embedded-subscribe:hover {
         margin-right: 0;
     }
 
-    .btn-gplus, .btn-linkedin, .item-image {
+    .btn-gplus, .btn-linkedin {
         display: none;
     }
 
