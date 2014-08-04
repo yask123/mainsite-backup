@@ -1,0 +1,138 @@
+{
+  "hackathons": [
+    {
+      "name": "Facebook PNW Hackathon 2013",
+      "when": "Spring 2013",
+      "where": "47.616875,-122.329713",
+      "result": {
+        "what": "",
+        "standing": "",
+        "prize": ""
+      },
+      "hack": {
+        "name": "",
+        "tagline": "",
+        "link": ""
+      }
+    },
+    {
+      "name": "Facebook PNW Hackathon 2014",
+      "when": "Spring 2014",
+      "where": "47.616875,-122.329713",
+      "result": {
+        "what": "Won",
+        "standing": "First",
+        "prize": "Global Finals in November, 2014"
+      },
+      "hack": {
+        "name": "Harmonic",
+        "tagline": "Tinder for Music Discovery",
+        "link": "http://www.goharmonic.com"
+      }
+    },
+    {
+      "name": "Seattle GiveCamp",
+      "when": "October 11, 2013",
+      "where": "47.638338,-122.125814",
+      "result": {
+        "what": "",
+        "standing": "",
+        "prize": ""
+      },
+      "hack": {
+        "name": "TOPS-GiveCamp",
+        "tagline": "Email marketing system for NPO",
+        "link": "https://github.com/karan/TOPS-GiveCamp"
+      }
+    },
+    {
+      "name": "CodeDay Seattle",
+      "when": "January 18, 2014",
+      "where": "47.633732,-122.340811",
+      "result": {
+        "what": "Won",
+        "standing": "Best Web Application",
+        "prize": "Trophy"
+      },
+      "hack": {
+        "name": "ZipUp",
+        "tagline": "Yelp for Bathrooms",
+        "link": "https://github.com/karan/ZipUp"
+      }
+    },
+    {
+      "name": "Code for the Kingdom",
+      "when": "March 21, 2014",
+      "where": "47.600288,-122.331164",
+      "result": {
+        "what": "",
+        "standing": "",
+        "prize": ""
+      },
+      "hack": {
+        "name": "Pillar",
+        "tagline": "Suicide Prevention Android App",
+        "link": "https://github.com/karan/Pillar"
+      }
+    },
+    {
+      "name": "LinkedIn Intern Hack Day",
+      "when": "July 11, 2014",
+      "where": "37.423277,-122.070737",
+      "result": {
+        "what": "",
+        "standing": "",
+        "prize": ""
+      },
+      "hack": {
+        "name": "Speekr",
+        "tagline": "Simple app to help learn spoken languages.",
+        "link": "https://speekr.herokuapp.com/"
+      }
+    },
+    {
+      "name": "AngelHack Silicon Valley 2014",
+      "when": "July 18, 2014",
+      "where": "37.484643,-122.203220",
+      "result": {
+        "what": "",
+        "standing": "",
+        "prize": ""
+      },
+      "hack": {
+        "name": "Navi",
+        "tagline": "Learn to code together",
+        "link": "https://gonavi.me"
+      }
+    },
+    {
+      "name": "Outside Hacks 2014",
+      "when": "July 26, 2014",
+      "where": "37.797329,-122.404642",
+      "result": {
+        "what": "Won",
+        "standing": "Rdio API Prize",
+        "prize": ""
+      },
+      "hack": {
+        "name": "AfterLands",
+        "tagline": "Crowdsourced hyperlocal music playlists",
+        "link": "https://github.com/karan/AfterLands"
+      }
+    },
+    {
+      "name": "YC Hacks 2013",
+      "when": "August 2, 2014",
+      "where": "37.386263,-122.066966",
+      "result": {
+        "what": "Won",
+        "standing": "Firebase + Bop.fm",
+        "prize": "Dinner with Firebase founders + Jambox"
+      },
+      "hack": {
+        "name": "Awear",
+        "tagline": "Context aware wearables using Myo and iBeacons",
+        "link": "https://github.com/karan/Awear"
+      }
+    }
+}
