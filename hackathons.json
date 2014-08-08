@@ -3,7 +3,8 @@
     {
       "name": "Facebook PNW Hackathon 2013",
       "when": "Spring 2013",
-      "where": "47.616875,-122.329713",
+      "latlng": "47.616875,-122.329713",
+      "place": "Facebook Seattle",
       "result": {
         "what": "",
         "standing": "",
@@ -18,7 +19,8 @@
     {
       "name": "Facebook PNW Hackathon 2014",
       "when": "Spring 2014",
-      "where": "47.616875,-122.329713",
+      "latlng": "47.616875,-122.329713",
+      "place": "Facebook Seattle",
       "result": {
         "what": "Won",
         "standing": "First",
@@ -33,7 +35,8 @@
     {
       "name": "Seattle GiveCamp",
       "when": "October 11, 2013",
-      "where": "47.638338,-122.125814",
+      "latlng": "47.638338,-122.125814",
+      "place": "Microsoft",
       "result": {
         "what": "",
         "standing": "",
@@ -48,7 +51,8 @@
     {
       "name": "CodeDay Seattle",
       "when": "January 18, 2014",
-      "where": "47.633732,-122.340811",
+      "latlng": "47.633732,-122.340811",
+      "place": "Appature",
       "result": {
         "what": "Won",
         "standing": "Best Web Application",
@@ -63,7 +67,8 @@
     {
       "name": "Code for the Kingdom",
       "when": "March 21, 2014",
-      "where": "47.600288,-122.331164",
+      "latlng": "47.600288,-122.331164",
+      "place": "Seattle Impact Hub",
       "result": {
         "what": "",
         "standing": "",
@@ -78,7 +83,8 @@
     {
       "name": "LinkedIn Intern Hack Day",
       "when": "July 11, 2014",
-      "where": "37.423277,-122.070737",
+      "latlng": "37.423277,-122.070737",
+      "place": "LinkedIn",
       "result": {
         "what": "",
         "standing": "",
@@ -93,7 +99,8 @@
     {
       "name": "AngelHack Silicon Valley 2014",
       "when": "July 18, 2014",
-      "where": "37.484643,-122.203220",
+      "latlng": "37.484643,-122.203220",
+      "place": "NestGSV",
       "result": {
         "what": "",
         "standing": "",
@@ -108,7 +115,8 @@
     {
       "name": "Outside Hacks 2014",
       "when": "July 26, 2014",
-      "where": "37.797329,-122.404642",
+      "latlng": "37.797329,-122.404642",
+      "place": "Weebly",
       "result": {
         "what": "Won",
         "standing": "Rdio API Prize",
@@ -123,7 +131,8 @@
     {
       "name": "YC Hacks 2013",
       "when": "August 2, 2014",
-      "where": "37.386263,-122.066966",
+      "latlng": "37.386263,-122.066966",
+      "place": "Y Combinator",
       "result": {
         "what": "Won",
         "standing": "Firebase + Bop.fm",
