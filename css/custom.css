@@ -1,22 +1,27 @@
 @font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff")
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v12/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v12/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v12/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v12/d-6IYplOFocCacKzxwXSOLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(http://fonts.gstatic.com/s/roboto/v12/mnpfi9pxYH-Go5UiibESIpBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v12/mnpfi9pxYH-Go5UiibESIrO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
 
 @font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format("woff")
-}
-
-@font-face {
-    font-family: 'Grand Hotel';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Grand Hotel'), local('GrandHotel-Regular'), url(http://themes.googleusercontent.com/static/fonts/grandhotel/v2/NrGQkrs9rbHm5EYx0Eil0rrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+  font-family: 'Gloria Hallelujah';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gloria Hallelujah'), local('GloriaHallelujah'), url(http://fonts.gstatic.com/s/gloriahallelujah/v6/CA1k7SlXcY5kvI81M_R28YGdvEu4SOXaLqFXyFUihk4.woff2) format('woff2'), url(http://fonts.gstatic.com/s/gloriahallelujah/v6/CA1k7SlXcY5kvI81M_R28bhi4u8Y7RaAY_ljmVkqsb8.woff) format('woff');
 }
 
 /* Start styling the page */
@@ -59,7 +64,7 @@ html, body {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: #3366a4;
     font-size: 16pt
@@ -272,17 +277,20 @@ small.text {
 
 h1.karan-goel {
     color: #fff;
-    font-size: 4.6em;
+    font-size: 3.6em;
     opacity: 1;
-    font-family: 'Grand Hotel', cursive;
+    font-weight: 900;
+    font-family: 'Roboto' ,sans-serif;
+    letter-spacing: 5px;
 }
 
 p.tagline {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #fff;
     opacity: 0.6;
     line-height: 1.25em;
-    margin: 2em 0 4em;
+    margin: 0 0 2em;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 .social {
