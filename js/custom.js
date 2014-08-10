@@ -13,17 +13,6 @@ $(document).ready(function() {
         }
     }
 
-    // on initial load, hide sidebar pannel
-    $("#menu-toggle").hide();
-    // when scrolling beyond top part, show menu
-    $(window).bind('scroll', function() {
-        if($(this).scrollTop() >= $("#top").height()) {
-            $("#menu-toggle").show();
-        } else {
-            $("#menu-toggle").hide();
-        }
-    });
-
     // smooth scroll
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -42,26 +31,31 @@ $(document).ready(function() {
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         e.stopPropagation();
-        $("#sidebar").addClass("active");
-        $(".page-wrapper").addClass("moveRight");
+        if ($("#sidebar").hasClass("active")) {
+            // close sidebar
+            closeSidebar();
+        } else {
+            // open sidebar
+            openSidebar();
+        }
     });
 
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $("#sidebar").removeClass("active");
-        $(".page-wrapper").removeClass("moveRight");
-    });
+    function openSidebar() {
+        $("#sidebar").addClass("active");
+        $("#menu-toggle").addClass("active");
+        $(".page-wrapper").addClass("moveRight");
+    }
 
     function closeSidebar() {
-        if ($("#sidebar").hasClass("active")) {
-            $("#sidebar").removeClass("active");
-            $(".page-wrapper").removeClass("moveRight");
-        }
+        $("#sidebar").removeClass("active");
+        $("#menu-toggle").removeClass("active");
+        $(".page-wrapper").removeClass("moveRight");
     }
 
     $(document).click(function() {
-        closeSidebar();
+        if ($("#sidebar").hasClass("active")) {
+            closeSidebar();
+        }
     });
 
     $("#sidebar a").click(function() {
