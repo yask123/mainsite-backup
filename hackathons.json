@@ -129,7 +129,7 @@
       }
     },
     {
-      "name": "YC Hacks 2013",
+      "name": "YC Hacks 2014",
       "when": "August 2, 2014",
       "latlng": "37.386263,-122.066966",
       "place": "Y Combinator",
@@ -142,6 +142,22 @@
         "name": "Awear",
         "tagline": "Context aware wearables using Myo and iBeacons",
         "link": "https://github.com/karan/Awear"
+      }
+    },
+    {
+      "name": "PennApps X",
+      "when": "September, 2014",
+      "latlng": "39.952068,-75.191185",
+      "place": "University of Pennsylvania",
+      "result": {
+        "what": "Won",
+        "standing": "Jawbone Prize",
+        "prize": "Jawbone UP24"
+      },
+      "hack": {
+        "name": "SafeBaby",
+        "tagline": "Suite of hardware, software and wearable hacks for your baby",
+        "link": "http://challengepost.com/software/safebaby"
       }
     }
   ]
