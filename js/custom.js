@@ -90,21 +90,49 @@ $(document).ready(function() {
         group.height(tallest);
     }
 
-    // change bg color on selecting different social networks
-    $(".btn-twitter").mouseover(function(e) {
-        $(".bg").css("background-image", "url(/images/schemes/blue.svg)");
-    });
+    // Background changing magic
+    $.fx.interval = -2000;
+    (function (bg, btn) {
+        btn.mouseover(function(e) {
+          bg.fadeTo(75, 0.9, "linear", function () {
+            bg.fadeTo(75, 1.0, "linear", function () {
+                bg.css("backgroundImage", "url(/images/schemes/orange.svg)");
+            });
+          });
+        });
+    }($(".bg"), $(".btn-blog")));
 
-    $(".btn-github").mouseover(function(e) {
-        $(".bg").css("background-image", "url(/images/schemes/gray.svg)");
-    });
+    $.fx.interval = -2000;
+    (function (bg, btn) {
+        btn.mouseover(function(e) {
+          bg.fadeTo(75, 0.9, "linear", function () {
+            bg.fadeTo(75, 1.0, "linear", function () {
+                bg.css("backgroundImage", "url(/images/schemes/blue.svg)");
+            });
+          });
+        });
+    }($(".bg"), $(".btn-twitter")));
 
-    $(".btn-linkedin").mouseover(function(e) {
-        $(".bg").css("background-image", "url(/images/schemes/purple.svg)");
-    });
+    $.fx.interval = -2000;
+    (function (bg, btn) {
+        btn.mouseover(function(e) {
+          bg.fadeTo(75, 0.9, "linear", function () {
+            bg.fadeTo(75, 1.0, "linear", function () {
+                bg.css("backgroundImage", "url(/images/schemes/gray.svg)");
+            });
+          });
+        });
+    }($(".bg"), $(".btn-github")));
 
-    $(".btn-blog").mouseover(function(e) {
-        $(".bg").css("background-image", "url(/images/schemes/orange.svg)");
-    });
+    $.fx.interval = -2000;
+    (function (bg, btn) {
+        btn.mouseover(function(e) {
+          bg.fadeTo(75, 0.9, "linear", function () {
+            bg.fadeTo(75, 1.0, "linear", function () {
+                bg.css("backgroundImage", "url(/images/schemes/purple.svg)");
+            });
+          });
+        });
+    }($(".bg"), $(".btn-linkedin")));
 
 });
