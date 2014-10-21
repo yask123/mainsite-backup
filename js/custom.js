@@ -136,9 +136,14 @@ $(document).ready(function() {
     }($(".bg"), $(".btn-linkedin")));
 
 
-    // Load up the hackathons map
+    ////////////////////////////////
+    // Load up the hackathons map //
+    ////////////////////////////////
+    
     $("#map_canvas").width($(window).width());
     $("#map_canvas").height($(window).height());
+
+    var infowindows = [];
 
     google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -168,17 +173,46 @@ $(document).ready(function() {
         });
 
         function addMarker(loc, hackathon) {
-            var marker = new google.maps.Marker({
-                position: loc,
-                map: map,
-                title: hackathon.name
-            });
+            var marker;
+            if (hackathon.result.what) {
+                marker = new google.maps.Marker({
+                    position: loc,
+                    map: map,
+                    title: hackathon.name,
+                    icon: 'http://wcdn4.dataknet.com/static/resources/icons/set19/f659c8f85d7.png'
+                });
+            } else {
+                marker = new google.maps.Marker({
+                    position: loc,
+                    map: map,
+                    title: hackathon.name
+                });
+            }
+
+            var ct = '<div id="map-info-content"><b>' + hackathon.name + 
+                     '</b><br>' + '<small><em>' + hackathon.when + '<br>at<br>' + 
+                     hackathon.place + '</em></small><br>';
+            if (hackathon.hack.name) {
+                ct += '<br><b>Project: <a href="' + hackathon.hack.link + 
+                      '" target="_blank">' + hackathon.hack.name + '</a></b><br>';
+            }
+            if (hackathon.result.what) {
+                ct += '<br>' + hackathon.result.what + ' ' + 
+                      hackathon.result.standing + '<br>' + '<b>Prize:</b> ' +
+                      hackathon.result.prize;
+            }
+            ct += '</div>';
+
             var infowindow = new google.maps.InfoWindow({
-                content: '<div id="map-content"><b>' + hackathon.name + 
-                         '</b><br>' + '<em>' + hackathon.when + '<br> at <br>' + 
-                         hackathon.place + '</em>'
+                content: ct
             });
+
+            infowindows.push(infowindow);
+
             google.maps.event.addListener(marker, 'click', function() {
+                for (var i = 0; i < infowindows.length; i++) {
+                    infowindows[i].close();
+                }
                 infowindow.open(map, marker);
             });
         }

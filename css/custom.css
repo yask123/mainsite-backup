@@ -544,6 +544,13 @@ input#mc-embedded-subscribe:hover {
     visibility: hidden;
 }
 
+#map-info-content {
+    padding: 10px;
+    line-height: 1.35;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 
 /* iphone landscape and portrait */
 @media screen and (min-width : 320px) and (max-width : 568px) {
