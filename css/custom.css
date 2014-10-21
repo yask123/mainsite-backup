@@ -309,11 +309,6 @@ p.tagline {
 }
 
 .social a:hover {
-/*    -moz-transform: rotate(-360deg);
-    -ms-transform: rotate(-360deg);
-    -o-transform: rotate(-360deg);
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);*/
     opacity: 1
 }
 
@@ -350,11 +345,11 @@ p.tagline {
 /* Style individual jumbotrons */
 
 .jumbotron#projects, 
-.jumbotron#minibio {
+.jumbotron#minibio,
+.jumbotron#hackathons {
     background: #fff;
     color: #3366a4;
     margin-bottom: 0;
-    padding: 0 10px
 }
 
 .jumbotron#work, 
@@ -362,7 +357,6 @@ p.tagline {
     background: #3366a4;
     margin-bottom: 0;
     color: #fff;
-    padding: 0 10px
 }
 
 .light {
