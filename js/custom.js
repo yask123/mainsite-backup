@@ -135,4 +135,53 @@ $(document).ready(function() {
         });
     }($(".bg"), $(".btn-linkedin")));
 
+
+    // Load up the hackathons map
+    $("#map_canvas").width($(window).width());
+    $("#map_canvas").height($(window).height());
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    function initialize() {
+        var map = new google.maps.Map(document.getElementById('map_canvas'), {
+            center: new google.maps.LatLng(50.903033, 10.496063),
+            zoom: 8,
+            scrollwheel: false
+        });
+
+        // Create a new LatLngBounds object
+        var markerBounds = new google.maps.LatLngBounds();
+
+        // Add your points to the LatLngBounds object.
+        var markers = [];
+        $.getJSON('/hackathons.json', function(data) {
+            var hackathons = data.hackathons;
+            for (var i in hackathons) {
+                hackathon = hackathons[i];
+                var point = new google.maps.LatLng(hackathon.latlng.split(',')[0],
+                                                   hackathon.latlng.split(',')[1]);
+                addMarker(point, hackathon);
+                markerBounds.extend(point);
+            }
+            // Then you just call the fitBounds method and the Maps widget does all rest.
+            map.fitBounds(markerBounds);
+        });
+
+        function addMarker(loc, hackathon) {
+            var marker = new google.maps.Marker({
+                position: loc,
+                map: map,
+                title: hackathon.name
+            });
+            var infowindow = new google.maps.InfoWindow({
+                content: '<div id="map-content"><b>' + hackathon.name + 
+                         '</b><br>' + '<em>' + hackathon.when + '<br> at <br>' + 
+                         hackathon.place + '</em>'
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+    }
+
 });
