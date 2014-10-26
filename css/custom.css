@@ -357,6 +357,13 @@ p.tagline {
     background: #3366a4;
     margin-bottom: 0;
     color: #fff;
+    background-image: url("http://www.slashie.org/res/bg/topsmallpolygon2.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
 }
 
 .light {
