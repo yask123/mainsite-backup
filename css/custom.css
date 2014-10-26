@@ -65,7 +65,7 @@ html, body {
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     color: #3366a4;
     font-size: 16pt
 }
@@ -357,7 +357,7 @@ p.tagline {
     background: #3366a4;
     margin-bottom: 0;
     color: #fff;
-    background-image: url("http://www.slashie.org/res/bg/topsmallpolygon2.svg");
+    background-image: url("/images/schemes/top_small.svg");
     background-repeat: no-repeat;
     background-position: top;
     -webkit-background-size: 100% auto;
