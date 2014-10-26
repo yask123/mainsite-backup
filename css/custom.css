@@ -90,8 +90,9 @@ a:hover {
 
 .jumbotron p, p {
     font-size: 0.9em;
+    font-weight: 400;
     line-height: 1.8em;
-    margin: 20px 0
+    margin: 20px 0;
 }
 
 a img {
