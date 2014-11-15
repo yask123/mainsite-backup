@@ -159,6 +159,22 @@
         "tagline": "Suite of hardware, software and wearable hacks for your baby",
         "link": "http://challengepost.com/software/safebaby"
       }
-    }
+    },
+    {
+      "name": "Facebook Hackathon Global Finals 2014",
+      "when": "November, 2014",
+      "latlng": "37.4841215,-122.1483163",
+      "place": "Facebook HQ",
+      "result": {
+        "what": "",
+        "standing": "",
+        "prize": ""
+      },
+      "hack": {
+        "name": "Rollen",
+        "tagline": "Find movies to watch with your friends frictionlessly.",
+        "link": "http://rollen.co"
+      }
+    },
   ]
 }
