@@ -20,6 +20,11 @@ html(lang="en")
                         li
                             i.fa.fa-chevron-circle-up
                             | Top 
+                    br
+                    a(href="#about", onclick="ga('send', 'event', 'navbar', 'click', 'About');")
+                        li
+                            i.fa.fa-user
+                            | About 
                     a(href="#work", onclick="ga('send', 'event', 'navbar', 'click', 'Work');")
                         li
                             i.fa.fa-users
@@ -28,10 +33,11 @@ html(lang="en")
                         li
                             i.fa.fa-code
                             | Projects 
-                    a(href="#about", onclick="ga('send', 'event', 'navbar', 'click', 'About');")
+                    a(href="#hackathons", target="_blank", onclick="ga('send', 'event', 'navbar', 'click', 'Hackathons');")
                         li
-                            i.fa.fa-user
-                            | About 
+                            i.fa.fa-coffee
+                            | Hackathons 
+                    br
                     a(href="/Karan.Goel.Resume.pdf", target="_blank", onclick="ga('send', 'event', 'navbar', 'click', 'Resume');")
                         li
                             i.fa.fa-file
@@ -40,52 +46,40 @@ html(lang="en")
                         li
                             i.fa.fa-rss
                             | Blog 
-                    a(href="#hackathons", target="_blank", onclick="ga('send', 'event', 'navbar', 'click', 'Hackathons');")
-                        li
-                            i.fa.fa-coffee
-                            | Hackathons 
 
-        section.top
+        section.top#top
             .bg
             .brand
                 h1 Karan Goel
-                h2 I'm a developer & maker of fine things.
+                h2 Developer & Maker of fine things.
 
                 include includes/social
 
             .arrow.col-xs-4.col-xs-offset-4
-                a(href="#minibio")
+                a(href="#about")
                     i.fa.fa-angle-down.fa-3x
 
-        section#minibio
+        section#about
             .container
-                include includes/content/minibio
+                include includes/content/about
 
-        .jumbotron#work
-            .jumbo-inner-wrapper
-                .container
-                    include includes/content/work
+        section#work
+            .container
+                include includes/content/work
 
 
-        .jumbotron#projects
-            .jumbo-inner-wrapper
-                .container
-                    include includes/content/projects
+        section#projects
+            .container
+                include includes/content/projects
 
-        .jumbotron#subscribe
+        section#subscribe
             .container
                 include includes/email
-        
-        .jumbotron#about
-            .jumbo-inner-wrapper
-                .container
-                    include includes/content/about
 
-        .jumbotron#hackathons
-            .jumbo-inner-wrapper
-                include includes/content/hackathons
+        section#hackathons
+            include includes/content/hackathons
 
-        .footer
+        section#footer
             include includes/footer
 
     include includes/scripts

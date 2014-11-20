@@ -3,16 +3,6 @@ $(document).ready(function() {
     // set height of the main top page the same as height of browser window
     $(".top").height($(window).height());
 
-    // set equal height for all jumbotrons
-    function heightJumbotrons() {
-        for (var i = 0; i < $(".jumbotron").length; i++) {
-            if (($(".jumbotron:not(#minibio)").eq(i).height() < $(window).height()) &&
-                ($(".jumbotron:not(#subscribe)").eq(i).height() < $(window).height())) {
-                $(".jumbotron").eq(i).height($(window).height());
-            }
-        }
-    }
-
     // smooth scroll
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -43,13 +33,11 @@ $(document).ready(function() {
     function openSidebar() {
         $("#sidebar").addClass("active");
         $("#menu-toggle").addClass("active");
-        $(".page-wrapper").addClass("moveRight");
     }
 
     function closeSidebar() {
         $("#sidebar").removeClass("active");
         $("#menu-toggle").removeClass("active");
-        $(".page-wrapper").removeClass("moveRight");
     }
 
     $(document).click(function() {
@@ -66,29 +54,7 @@ $(document).ready(function() {
     $(window).resize(function () {
         // for a single paged top part
         $(".top").height($(window).height());
-        heightJumbotrons();
     });
-
-    if ($(window).width() > 568) {
-        // make single items equal height only if we are not in mobile viewport
-        // make cards in work section the same height
-        equalHeight($(".jumbotron#work .single-item"));
-        // make cards in projects secton the same height
-        equalHeight($(".jumbotron#projects .single-item"));
-        heightJumbotrons();
-    }
-
-    // set equal height for all items
-    function equalHeight(group) {
-        tallest = 0;
-        group.each(function() {
-            thisHeight = $(this).height();
-            if(thisHeight > tallest) {
-                tallest = thisHeight;
-            }
-        });
-        group.height(tallest);
-    }
 
     // Background changing magic
     $.fx.interval = -2000;
