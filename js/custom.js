@@ -141,7 +141,7 @@ $(document).ready(function() {
     ////////////////////////////////
     
     $("#map_canvas").width($(window).width());
-    $("#map_canvas").height(0.8 * $(window).height());
+    $("#map_canvas").height(0.6 * $(window).height());
 
     var infowindows = [];
 
@@ -149,8 +149,8 @@ $(document).ready(function() {
 
     function initialize() {
         var map = new google.maps.Map(document.getElementById('map_canvas'), {
-            center: new google.maps.LatLng(50.903033, 10.496063),
-            zoom: 8,
+            center: new google.maps.LatLng(37.09024, -95.712891),
+            zoom: 5,
             // scrollwheel: false
         });
 

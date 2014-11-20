@@ -11,7 +11,7 @@ html(lang="en")
         // navbar
         #menu-toggle.btn.btn-lg
             i.fa.fa-list.fa-2x
-        div#sidebar
+        #sidebar
             #menu-close.btn.btn-lg.pull-right
                 i.fa.fa-times.fa-2x
             ul.sidebar-nav
@@ -44,49 +44,48 @@ html(lang="en")
                         li
                             i.fa.fa-coffee
                             | Hackathons 
-        
-        .page-wrapper
-            .jumbotron#top
-                .bg
-                .arrow.col-xs-4.col-xs-offset-4
-                    a(href="#minibio")
-                        i.fa.fa-angle-down.fa-3x
-                .top
-                    h1.karan-goel Karan Goel
-                    p.tagline I'm a developer & maker of fine things.
 
-                    include includes/social
-            
-            .jumbotron#minibio
-                .jumbo-inner-wrapper
-                    .container
-                        include includes/content/minibio
+        section.top
+            .bg
+            .brand
+                h1 Karan Goel
+                h2 I'm a developer & maker of fine things.
 
-            .jumbotron#work
-                .jumbo-inner-wrapper
-                    .container
-                        include includes/content/work
+                include includes/social
 
+            .arrow.col-xs-4.col-xs-offset-4
+                a(href="#minibio")
+                    i.fa.fa-angle-down.fa-3x
 
-            .jumbotron#projects
-                .jumbo-inner-wrapper
-                    .container
-                        include includes/content/projects
+        section#minibio
+            .container
+                include includes/content/minibio
 
-            .jumbotron#subscribe
+        .jumbotron#work
+            .jumbo-inner-wrapper
                 .container
-                    include includes/email
-            
-            .jumbotron#about
-                .jumbo-inner-wrapper
-                    .container
-                        include includes/content/about
+                    include includes/content/work
 
-            .jumbotron#hackathons
-                .jumbo-inner-wrapper
-                    include includes/content/hackathons
 
-            .footer
-                include includes/footer
+        .jumbotron#projects
+            .jumbo-inner-wrapper
+                .container
+                    include includes/content/projects
+
+        .jumbotron#subscribe
+            .container
+                include includes/email
+        
+        .jumbotron#about
+            .jumbo-inner-wrapper
+                .container
+                    include includes/content/about
+
+        .jumbotron#hackathons
+            .jumbo-inner-wrapper
+                include includes/content/hackathons
+
+        .footer
+            include includes/footer
 
     include includes/scripts
