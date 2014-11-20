@@ -117,7 +117,7 @@ $(document).ready(function() {
         var map = new google.maps.Map(document.getElementById('map_canvas'), {
             center: new google.maps.LatLng(37.09024, -95.712891),
             zoom: 5,
-            // scrollwheel: false
+            scrollwheel: false
         });
 
         // Create a new LatLngBounds object
