@@ -3,6 +3,10 @@ $(document).ready(function() {
     // set height of the main top page the same as height of browser window
     $(".top").height($(window).height());
 
+    if ($(window).width() < 630) {
+        $('.hackathons-nav').css('display', 'none');
+    }
+
     // smooth scroll
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
