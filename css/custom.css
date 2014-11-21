@@ -395,7 +395,7 @@ section {
 .brand {
     text-align: center;
     position: absolute;
-    height: 210px;
+    height: 120px;
     margin: auto;
     top: 0;
     left: 0;
@@ -409,44 +409,19 @@ section {
     font-size: 3.2em;
     font-weight: 300;
     color: #fff;
-    background: rgba(1,1,1,.1);
     padding: .3em;
     display: table;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .brand > h2 {
-    opacity: .7;
+    color: #fff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.6em;
     letter-spacing: .3em;
-    color: #fff;
     line-height: 1.4em;
-    margin: 0 0 2em;
-    margin-top: 0.7em;
-}
-
-.social {
-    padding: 0;
-    margin-top: 2em;
-}
-
-.social li {
-    margin-right: 10px
-}
-
-.social a {
-    color: #fff;
-    opacity: 0.6;
-    position: relative;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-    -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear
-}
-
-.social a:hover {
-    opacity: 1;
+    margin: 10px 0 0;
 }
 
 @-webkit-keyframes arrows {
@@ -498,6 +473,35 @@ section h1 {
 
 #about a:focus, #about a:hover {
     border-bottom: 1px dashed black;
+}
+
+.social {
+    padding: 0;
+    margin-top: 6em;
+}
+
+.social > li {
+    display: inline-block;
+    min-width: 50px;
+    min-height: 75px;
+    margin: 0 30px;
+    padding: 0 30px;
+    position: relative;
+}
+
+#about .social > li > a.btn-social {
+    color: #000;
+    opacity: 0.6;
+    position: relative;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    border: 0;
+}
+
+#about .social > li > a.btn-social:hover {
+    opacity: 1;
 }
 
 #work {
@@ -674,27 +678,30 @@ input#mc-embedded-subscribe:hover {
     margin: 0 auto 30px;
 }
 
-.hidden {
-    visibility: hidden;
+/* MEDIA QUEIES */
+
+@media only screen and (min-width: 1281px) {
+
+    .bg {
+        background-image :url("/images/bg-1920.jpg");
+    }
+
 }
 
+@media only screen and (min-width: 641px) and (max-width: 1280px) {
 
-@media screen and (min-width: 1281px) {
-  .bg {
-    background-image :url("/images/bg-1920.jpg");
-  }
+    .bg {
+        background-image :url("/images/bg-1280.jpg");
+    }
+
 }
 
-@media screen and (min-width: 641px) and (max-width: 1280px) {
-  .bg {
-    background-image :url("/images/bg-1280.jpg");
-  }
-}
+@media only screen and (max-width: 640px) {
 
-@media screen and (max-width: 640px) {
-  .bg {      
-     background-image :url("/images/bg-640.jpg");
-  }
+    .bg {      
+        background-image :url("/images/bg-640.jpg");
+    }
+
 }
 
 
@@ -705,7 +712,16 @@ input#mc-embedded-subscribe:hover {
     }
 
     .brand h1 {
-        letter-spacing: 8px;
+        font-size: 2.2em;
+    }
+
+    .brand h2 {
+        font-size: 1.3em;
+    }
+
+    .social > li {
+        margin: 0 15px;
+        padding: 0 15px;
     }
 
     #top .down {
@@ -724,20 +740,13 @@ input#mc-embedded-subscribe:hover {
         font-size: 13px;
     }
 
-    .social li {
-        margin-right: 0;
-    }
-
-    .btn-gplus, .btn-linkedin {
-        display: none;
+    .social > li {
+        margin: 0 15px;
+        padding: 0 15px;
     }
 
     .brand {
         height: 110px;
-    }
-
-    .brand h2 {
-        margin-top: 15px;
     }
 
     #about {
@@ -760,20 +769,21 @@ input#mc-embedded-subscribe:hover {
         font-size: 12px;
     }
 
-    .social li {
-        margin-right: 0;
-    }
-
-    .btn-gplus, .btn-linkedin {
-        display: none;
+    .social > li {
+        margin: 0 15px;
+        padding: 0 15px;
     }
 
     .brand {
         height: 110px;
     }
-    
-    .brand h2 {
-        margin-top: 10px;
+
+    .brand > h1 {
+        font-size: 1.8em;
+    }
+
+    .brand > h2 {
+        font-size: 1.2em;
     }
 
     #top .down {
@@ -792,24 +802,25 @@ input#mc-embedded-subscribe:hover {
 
 @media only screen and (max-width: 380px) {
 
-    .social li {
-        margin-right: 0;
+    body {
+        font-size: 12px;
     }
 
-    .btn-gplus, .btn-linkedin {
-        display: none;
+    .social > li {
+        margin: 0 15px;
+        padding: 0 15px;
     }
 
     .brand {
         height: 110px;
     }
 
-    .brand h1 {
+    .brand > h1 {
         font-size: 1.4em;
     }
 
-    .brand h2 {
-        font-size: 0.9em;
+    .brand > h2 {
+        font-size: 1em;
     }
 
     #hackathons {
