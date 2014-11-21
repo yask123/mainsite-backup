@@ -40,7 +40,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/css/style.min.css': ['css/custom.css', 'css/overrides.css']
+          'dist/css/style.min.css': ['css/fonts.css', 'css/custom.css', 'css/overrides.css']
         }
       }
     },
@@ -63,6 +63,7 @@ module.exports = function(grunt) {
       css: {
         files: [
           'css/custom.css',
+          'css/fonts.css',
           'css/overrides.css'
         ],
         tasks: ['cssmin']
