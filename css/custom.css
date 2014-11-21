@@ -375,16 +375,21 @@ section {
     display : block;
     opacity : 1;
     z-index: -1;
-    position: fixed;
+    position: relative;
     background-repeat: no-repeat;
     background-position : center;
     background-size : cover, 0px, 0px, 0px;
-    background-image :url("/images/schemes/orange.svg");
     -webkit-transition : background-image -150ms linear;
     -moz-transition : background-image -150ms linear;
     -ms-transition : background-image -150ms linear;
     -o-transition : background-image -150ms linear;
     transition : background-image -150ms linear;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
 }
 
 .brand {
@@ -673,6 +678,24 @@ input#mc-embedded-subscribe:hover {
     visibility: hidden;
 }
 
+
+@media screen and (min-width: 1281px) {
+  .bg {
+    background-image :url("/images/bg-1920.jpg");
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1280px) {
+  .bg {
+    background-image :url("/images/bg-1280.jpg");
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .bg {      
+     background-image :url("/images/bg-640.jpg");
+  }
+}
 
 
 @media only screen and (max-width: 750px) {

@@ -60,51 +60,6 @@ $(document).ready(function() {
         $(".top").height($(window).height());
     });
 
-    // Background changing magic
-    $.fx.interval = -2000;
-    (function (bg, btn) {
-        btn.mouseover(function(e) {
-          bg.fadeTo(75, 0.9, "linear", function () {
-            bg.fadeTo(75, 1.0, "linear", function () {
-                bg.css("backgroundImage", "url(/images/schemes/orange.svg)");
-            });
-          });
-        });
-    }($(".bg"), $(".btn-blog")));
-
-    $.fx.interval = -2000;
-    (function (bg, btn) {
-        btn.mouseover(function(e) {
-          bg.fadeTo(75, 0.9, "linear", function () {
-            bg.fadeTo(75, 1.0, "linear", function () {
-                bg.css("backgroundImage", "url(/images/schemes/blue.svg)");
-            });
-          });
-        });
-    }($(".bg"), $(".btn-twitter")));
-
-    $.fx.interval = -2000;
-    (function (bg, btn) {
-        btn.mouseover(function(e) {
-          bg.fadeTo(75, 0.9, "linear", function () {
-            bg.fadeTo(75, 1.0, "linear", function () {
-                bg.css("backgroundImage", "url(/images/schemes/gray.svg)");
-            });
-          });
-        });
-    }($(".bg"), $(".btn-github")));
-
-    $.fx.interval = -2000;
-    (function (bg, btn) {
-        btn.mouseover(function(e) {
-          bg.fadeTo(75, 0.9, "linear", function () {
-            bg.fadeTo(75, 1.0, "linear", function () {
-                bg.css("backgroundImage", "url(/images/schemes/purple.svg)");
-            });
-          });
-        });
-    }($(".bg"), $(".btn-linkedin")));
-
 
     ////////////////////////////////
     // Load up the hackathons map //
