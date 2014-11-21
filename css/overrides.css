@@ -1,0 +1,152 @@
+@media only screen and (min-width: 1281px) {
+
+    .bg {
+        background-image :url("../../images/bg-1920.jpg");
+    }
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1280px) {
+
+    .bg {
+        background-image :url("../../images/bg-1280.jpg");
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    .bg {      
+        background-image :url("../../images/bg-640.jpg");
+    }
+
+}
+
+
+@media only screen and (max-width: 750px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .brand h1 {
+        font-size: 2.2em;
+    }
+
+    .brand h2 {
+        font-size: 1.3em;
+    }
+
+    .social > li {
+        margin: 0 15px;
+        padding: 0 15px;
+    }
+
+    #top .down {
+        font-size: 15px;
+    }
+
+    .row {
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    .social > li {
+        margin: 0 15px;
+        padding: 0 15px;
+    }
+
+    .brand {
+        height: 110px;
+    }
+
+    #about {
+        padding: 60px 0 80px;
+    }
+
+    #hackathons {
+        display: none;
+    }
+
+    .row {
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .social > li {
+        margin: 0 15px;
+        padding: 0 15px;
+    }
+
+    .brand {
+        height: 110px;
+    }
+
+    .brand > h1 {
+        font-size: 1.8em;
+    }
+
+    .brand > h2 {
+        font-size: 1.2em;
+    }
+
+    #top .down {
+        font-size: 1em;
+    }
+
+    #hackathons {
+        display: none;
+    }
+
+    .row {
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .social > li {
+        margin: 0 15px;
+        padding: 0 15px;
+    }
+
+    .brand {
+        height: 110px;
+    }
+
+    .brand > h1 {
+        font-size: 1.4em;
+    }
+
+    .brand > h2 {
+        font-size: 1em;
+    }
+
+    #hackathons {
+        display: none;
+    }
+
+    .row {
+        margin: 0 auto;
+    }
+
+}

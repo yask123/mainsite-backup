@@ -40,7 +40,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/css/custom.min.css': 'css/custom.css'
+          'dist/css/style.min.css': ['css/custom.css', 'css/overrides.css']
         }
       }
     },
@@ -62,7 +62,8 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: [
-          'css/custom.css'
+          'css/custom.css',
+          'css/overrides.css'
         ],
         tasks: ['cssmin']
       },
