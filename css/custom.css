@@ -646,7 +646,8 @@ input#mc-embedded-subscribe:hover {
 
 .single-item {
     text-align: center;
-    margin-top: 2em
+    margin-top: 2em;
+    margin-bottom: 4em;
 }
 
 .item-image {
