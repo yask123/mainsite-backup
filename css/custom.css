@@ -552,7 +552,7 @@ section h1 {
 }
 
 #projects h3 a {
-    color: #d3d3d3;
+    color: #B59C61;
 }
 
 #projects p {
@@ -563,6 +563,23 @@ section h1 {
     color: #d3d3d3;
 }
 
+.skills {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.skills li {
+    color: #FFF;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    line-height: 32px;
+    display: inline;
+    border-radius: 4px;
+    font-size: 12px;
+    background: #666;
+    padding: 4px 9px;
+    margin: 0 5px 5px 0;
+}
+
 #subscribe {
     margin: 0;
     padding: 80px 0;
@@ -570,7 +587,7 @@ section h1 {
 }
 
 #subscribe h2 {
-    color: gray;
+    color: #B59C61;
     font-weight: 300;
     font-size: 1.4em;
     text-transform: uppercase;
@@ -684,7 +701,7 @@ input#mc-embedded-subscribe:hover {
 @media only screen and (min-width: 1281px) {
 
     .bg {
-        background-image :url("images/bg-1920.jpg");
+        background-image :url("/images/bg-1920.jpg");
     }
 
 }
@@ -692,7 +709,7 @@ input#mc-embedded-subscribe:hover {
 @media only screen and (min-width: 641px) and (max-width: 1280px) {
 
     .bg {
-        background-image :url("images/bg-1280.jpg");
+        background-image :url("/images/bg-1280.jpg");
     }
 
 }
@@ -700,7 +717,7 @@ input#mc-embedded-subscribe:hover {
 @media only screen and (max-width: 640px) {
 
     .bg {      
-        background-image :url("images/bg-640.jpg");
+        background-image :url("/images/bg-640.jpg");
     }
 
 }
