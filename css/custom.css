@@ -701,7 +701,7 @@ input#mc-embedded-subscribe:hover {
 @media only screen and (min-width: 1281px) {
 
     .bg {
-        background-image :url("/images/bg-1920.jpg");
+        background-image :url("../../images/bg-1920.jpg");
     }
 
 }
@@ -709,7 +709,7 @@ input#mc-embedded-subscribe:hover {
 @media only screen and (min-width: 641px) and (max-width: 1280px) {
 
     .bg {
-        background-image :url("/images/bg-1280.jpg");
+        background-image :url("../../images/bg-1280.jpg");
     }
 
 }
@@ -717,7 +717,7 @@ input#mc-embedded-subscribe:hover {
 @media only screen and (max-width: 640px) {
 
     .bg {      
-        background-image :url("/images/bg-640.jpg");
+        background-image :url("../../images/bg-640.jpg");
     }
 
 }
