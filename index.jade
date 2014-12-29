@@ -33,10 +33,6 @@ html(lang="en")
                         li
                             i.fa.fa-code
                             | Projects 
-                    a.hackathons-nav(href="#hackathons", target="_blank", onclick="ga('send', 'event', 'navbar', 'click', 'Hackathons');")
-                        li
-                            i.fa.fa-coffee
-                            | Hackathons 
                     br
                     a(href="/Karan.Goel.Resume.pdf", target="_blank", onclick="ga('send', 'event', 'navbar', 'click', 'Resume');")
                         li
@@ -69,9 +65,6 @@ html(lang="en")
         section#projects
             .container
                 include includes/content/projects
-
-        section#hackathons
-            include includes/content/hackathons
 
         section#footer
             include includes/footer

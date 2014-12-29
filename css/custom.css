@@ -439,18 +439,6 @@ input#mc-embedded-subscribe:hover {
     transition: all 0.2s linear
 }
 
-#hackathons {
-    padding: 100px 0 140px;
-    background: white;
-}
-
-#map-info-content {
-    padding: 10px;
-    line-height: 1.35;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
 #footer {
     padding: 100px 0 140px;
     background: whitesmoke;
