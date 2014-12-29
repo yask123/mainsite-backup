@@ -380,8 +380,8 @@ hr.head-separator {
 
 #subscribe h2 {
     color: #B59C61;
-    font-weight: 300;
-    font-size: 1.4em;
+    font-weight: 400;
+    font-size: 1.6em;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 10px 0 20px;
@@ -389,31 +389,31 @@ hr.head-separator {
 }
 
 input#mce-EMAIL.email, input#mce-FNAME, input#mce-LNAME {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
     height: 50px;
     width: 100%;
     padding: 7px 15px;
     display: inline-block;
     font-weight: bold;
     background: whitesmoke;
-    border: 5px solid rgba(102, 102, 102, 0.5);
+    border: 2px solid rgba(102, 102, 102, 0.5);
     margin-right: 3%;
     margin-top: 10px;
 }
 
 input#mc-embedded-subscribe {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
     display: inline-block;
     height: 50px;
     padding: 7px 10px;
     margin-top: 10px;
     color: whitesmoke;
     background-color: rgba(102, 102, 102, 0.5);
-    border: 5px solid rgba(102, 102, 102, 0.5);
+    border: 2px solid rgba(102, 102, 102, 0.5);
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
