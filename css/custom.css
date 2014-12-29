@@ -388,32 +388,31 @@ hr.head-separator {
     line-height: 1.5em;
 }
 
-input#mce-EMAIL.email {
+input#mce-EMAIL.email, input#mce-FNAME, input#mce-LNAME {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     height: 50px;
-    width: 70%;
-    max-width: 350px;
+    width: 100%;
     padding: 7px 15px;
     display: inline-block;
     font-weight: bold;
     background: whitesmoke;
     border: 5px solid rgba(102, 102, 102, 0.5);
-    margin-right: 3%
+    margin-right: 3%;
+    margin-top: 10px;
 }
 
 input#mc-embedded-subscribe {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    width: 25%;
-    max-width: 100px;
     display: inline-block;
     height: 50px;
     padding: 7px 10px;
-    color: #666;
-    background-color: whitesmoke;
+    margin-top: 10px;
+    color: whitesmoke;
+    background-color: rgba(102, 102, 102, 0.5);
     border: 5px solid rgba(102, 102, 102, 0.5);
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -423,8 +422,8 @@ input#mc-embedded-subscribe {
 }
 
 input#mc-embedded-subscribe:hover {
-    background-color: rgba(102, 102, 102, 0.5);
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: #666;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
