@@ -343,41 +343,33 @@ section h1 {
 }
 
 #projects h2 {
-    font-size: 1.8em;
-}
-
-#projects h3 {
-    font-weight: 400;
-    font-size: 1.4em;
-}
-
-#projects h3 a {
-    color: #B59C61;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 #projects p {
-    margin-top: 0px;
+    margin: 0 0 20px 0;
 }
 
 #projects a {
-    color: #d3d3d3;
+    color: #B59C61;
+    padding-bottom: 2px;
 }
 
-.skills {
-    list-style: none;
-    margin-top: 20px;
+#projects a:hover {
+    border-bottom: 1px dashed #B59C61;
 }
 
-.skills li {
-    color: #FFF;
-    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
-    line-height: 32px;
-    display: inline;
-    border-radius: 4px;
-    font-size: 12px;
-    background: #666;
-    padding: 4px 9px;
-    margin: 0 5px 5px 0;
+hr.head-separator {
+    width: 50%;
+    margin: 20px auto;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), #9c9c9c, rgba(255,255,255,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), #9c9c9c, rgba(255,255,255,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), #9c9c9c, rgba(255,255,255,0)); 
+    background-image:      -o-linear-gradient(left, rgba(255,255,255,0), #9c9c9c, rgba(255,255,255,0)); 
 }
 
 #subscribe {
