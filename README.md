@@ -1,7 +1,7 @@
-goel.io
+karan.goel.io
 =======
 
-My personal page @ [goel.io](http://www.goel.io/).
+My personal page @ [karan.goel.io](http://karan.goel.io/).
 
 ### Add code in this repo is `Copyright (c) 2015, Karan Goel`
 
