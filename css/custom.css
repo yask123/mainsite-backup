@@ -148,6 +148,10 @@ p {
     margin-right: 15px
 }
 
+#sidebar .space-left {
+    margin-left: 15px;
+}
+
 /***********************************/
 
 section {
@@ -168,7 +172,7 @@ section {
     text-align: center;
     overflow: hidden;
 
-    background: rgba(0, 0, 0, 0.4) url(../../images/bg-1280.jpg) no-repeat center center;
+    background: url(../../images/bg2-1920.jpg) no-repeat center center;
     background-size : cover, 0px, 0px, 0px;
     -webkit-transition : background-image -150ms linear;
     -moz-transition : background-image -150ms linear;
@@ -196,14 +200,12 @@ section {
 }
 
 .brand > h1 {
-    letter-spacing: .5em;
     font-size: 3.2em;
-    font-weight: 300;
+    font-weight: 700;
     color: #fff;
     padding: .3em;
     display: table;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .brand > h2 {
