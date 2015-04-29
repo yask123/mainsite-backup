@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1281px) {
 
-    .bg {
+    .top {
         background-image :url("../../images/bg-1920.jpg");
     }
 
@@ -8,7 +8,7 @@
 
 @media only screen and (min-width: 641px) and (max-width: 1280px) {
 
-    .bg {
+    .top {
         background-image :url("../../images/bg-1280.jpg");
     }
 
@@ -16,7 +16,7 @@
 
 @media only screen and (max-width: 640px) {
 
-    .bg {      
+    .top {
         background-image :url("../../images/bg-640.jpg");
     }
 
