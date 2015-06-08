@@ -2,7 +2,7 @@
 
 body {
   margin: 60px auto;
-  max-width: 680px;
+  max-width: 720px;
   line-height: 1.5;
   font-size: 20px;
   color: #444;
@@ -65,6 +65,7 @@ section {
 #footer {
   text-align: center;
   color: #aaa;
+  font-size: 14px;
 }
 
 
