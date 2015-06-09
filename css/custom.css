@@ -70,6 +70,7 @@ section {
 
 
 @media handheld, only screen and (max-width: 767px) {
+
   #habits .col-1-4 {
     width: 50%;
     display: inline-block;
