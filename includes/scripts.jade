@@ -6,17 +6,3 @@ script.
 
   ga('create', 'UA-9509587-16', 'auto');
   ga('send', 'pageview');
-
-script.
-  WebFontConfig = {
-    google: { families: [ 'Hind:600,400:latin', 'Londrina+Shadow::latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
